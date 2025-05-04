@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.36732575450588245,
+    "zoomFactor": 0.1271023371992676,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -875,6 +875,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LevelEnd",
+      "persistentUuid": "b2db891e-bbad-4695-b082-075d2039c7cb",
+      "width": 1227,
+      "x": -379,
+      "y": -4783,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1195,6 +1212,24 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "LevelEnd",
+      "texture": "InvisibleWall",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 200
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1208,6 +1243,9 @@
       },
       {
         "objectName": "InvisibleWall"
+      },
+      {
+        "objectName": "LevelEnd"
       },
       {
         "objectName": "LevelBottom"
@@ -1295,10 +1333,29 @@
             "EnemyShip",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"main\"",
+            ""
+          ]
         }
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2778,6 +2835,51 @@
           },
           "parameters": [
             "EnemyShip",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "LevelBottom",
+            "LevelEnd",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::IgnoreDefaultControls"
+          },
+          "parameters": [
+            "PlayerShip",
+            "TopDownMovement",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"rules\"",
             ""
           ]
         }
