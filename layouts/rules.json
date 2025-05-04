@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "main",
-  "name": "main",
+  "mangledName": "rules",
+  "name": "rules",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4950840073748888,
+    "zoomFactor": 0.546875,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,15 +26,16 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 138,
       "keepRatio": true,
       "layer": "",
-      "name": "PlayButton",
-      "persistentUuid": "b1fd6d25-0624-44d3-8e59-faf27ce54f03",
-      "width": 0,
-      "x": 266,
-      "y": 626,
+      "name": "Title",
+      "persistentUuid": "a0244e63-bfad-4526-8615-53e7252df9e9",
+      "width": 719,
+      "x": 3,
+      "y": 66,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -42,34 +43,16 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 88,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "MainSceneTitle",
-      "persistentUuid": "88a14e4d-03dd-4b75-8460-36f521b73296",
-      "width": 720,
-      "x": 0,
-      "y": 9,
+      "name": "ContinueButton",
+      "persistentUuid": "b0644d15-4ecd-4a25-bf2a-7857c88df1c4",
+      "width": 0,
+      "x": 260,
+      "y": 1150,
       "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 95,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Title",
-      "persistentUuid": "6c79e09f-704c-470b-810e-d5aff7c9b7b4",
-      "width": 715,
-      "x": 2,
-      "y": 48,
-      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -77,8 +60,50 @@
   ],
   "objects": [
     {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Title",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Rules",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 90,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Rules",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 90,
+        "color": "0;0;0"
+      }
+    },
+    {
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "PlayButton",
+      "name": "ContinueButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -117,7 +142,7 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "Play",
+          "string": "Continue",
           "font": "Roboto-Bold.ttf",
           "textAlignment": "center",
           "characterSize": 40,
@@ -140,7 +165,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Play",
+            "text": "Continue",
             "font": "Roboto-Bold.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -159,58 +184,16 @@
           "width": 192
         }
       }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Title",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "IkaRULEga",
-      "font": "",
-      "textAlignment": "center",
-      "characterSize": 90,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "IkaRULEga",
-        "font": "",
-        "textAlignment": "center",
-        "verticalTextAlignment": "center",
-        "characterSize": 90,
-        "color": "0;0;0"
-      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "PlayButton"
+        "objectName": "Title"
       },
       {
-        "objectName": "Title"
+        "objectName": "ContinueButton"
       }
     ]
   },
@@ -223,7 +206,7 @@
             "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
           },
           "parameters": [
-            "PlayButton",
+            "ContinueButton",
             ""
           ]
         }
@@ -235,7 +218,7 @@
           },
           "parameters": [
             "",
-            "\"upgrade\"",
+            "\"gameplay\"",
             ""
           ]
         }
@@ -289,10 +272,6 @@
     }
   ],
   "behaviorsSharedData": [
-    {
-      "name": "Animation",
-      "type": "AnimatableCapability::AnimatableBehavior"
-    },
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
