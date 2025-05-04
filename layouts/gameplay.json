@@ -39,8 +39,8 @@
       "name": "PlayerShip",
       "persistentUuid": "693d015b-80c4-44ba-94c5-60cc8a9c79f2",
       "width": 0,
-      "x": 204,
-      "y": 582,
+      "x": 223,
+      "y": 1105,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -919,9 +919,10 @@
   ],
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "PlayerShip",
+      "preScale": 0.25,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -980,11 +981,11 @@
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.01,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\PlayerShip.png",
+                  "image": "assets\\spaceship\\Spaceship_White.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1000,16 +1001,208 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 33,
-                        "y": 0
+                        "x": 612.5,
+                        "y": 356.5
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 747.5,
+                        "y": 567.5
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 489,
+                        "y": 559.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\spaceship\\Spaceship_Red.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 612.5,
+                        "y": 356.5
+                      },
+                      {
+                        "x": 747.5,
+                        "y": 567.5
+                      },
+                      {
+                        "x": 489,
+                        "y": 559.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\spaceship\\Spaceship_Yellow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 612.5,
+                        "y": 356.5
+                      },
+                      {
+                        "x": 747.5,
+                        "y": 567.5
+                      },
+                      {
+                        "x": 489,
+                        "y": 559.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\spaceship\\Spaceship_Blue.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 612.5,
+                        "y": 356.5
+                      },
+                      {
+                        "x": 747.5,
+                        "y": 567.5
+                      },
+                      {
+                        "x": 489,
+                        "y": 559.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\spaceship\\Spaceship_Orange.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 612.5,
+                        "y": 356.5
+                      },
+                      {
+                        "x": 747.5,
+                        "y": 567.5
+                      },
+                      {
+                        "x": 489,
+                        "y": 559.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\spaceship\\Spaceship_Green.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 612.5,
+                        "y": 356.5
+                      },
+                      {
+                        "x": 747.5,
+                        "y": 567.5
+                      },
+                      {
+                        "x": 489,
+                        "y": 559.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\spaceship\\Spaceship_Purple.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 612.5,
+                        "y": 356.5
+                      },
+                      {
+                        "x": 747.5,
+                        "y": 567.5
+                      },
+                      {
+                        "x": 489,
+                        "y": 559.5
                       }
                     ]
                   ]
@@ -1760,6 +1953,16 @@
       "actions": [
         {
           "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "SetStringObjectVariable"
           },
           "parameters": [
@@ -1767,15 +1970,6 @@
             "CurrentColor",
             "=",
             "\"255;255;255\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
           ]
         }
       ]
@@ -1824,6 +2018,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "SetStringObjectVariable"
@@ -1834,15 +2038,6 @@
             "=",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
-          ]
         }
       ]
     },
@@ -1890,6 +2085,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "2"
+          ]
+        },
         {
           "type": {
             "value": "SetStringObjectVariable"
@@ -1900,15 +2105,6 @@
             "=",
             "\"255;255;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
-          ]
         }
       ]
     },
@@ -1956,6 +2152,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "3"
+          ]
+        },
         {
           "type": {
             "value": "SetStringObjectVariable"
@@ -1966,15 +2172,6 @@
             "=",
             "\"0;0;255\""
           ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
-          ]
         }
       ]
     },
@@ -2022,6 +2219,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "4"
+          ]
+        },
         {
           "type": {
             "value": "SetStringObjectVariable"
@@ -2032,15 +2239,6 @@
             "=",
             "\"255;128;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
-          ]
         }
       ]
     },
@@ -2054,7 +2252,7 @@
           "parameters": [
             "PlayerShip",
             "Red",
-            "True",
+            "False",
             ""
           ]
         },
@@ -2065,7 +2263,7 @@
           "parameters": [
             "PlayerShip",
             "Yellow",
-            "False",
+            "True",
             ""
           ]
         },
@@ -2090,70 +2288,14 @@
       "actions": [
         {
           "type": {
-            "value": "SetStringObjectVariable"
+            "value": "ChangeSprite"
           },
           "parameters": [
             "PlayerShip",
-            "CurrentColor",
             "=",
-            "\"128;0;128\""
+            "5"
           ]
         },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Red",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Yellow",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Blue",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
         {
           "type": {
             "value": "SetStringObjectVariable"
@@ -2164,14 +2306,72 @@
             "=",
             "\"0;255;0\""
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "BooleanObjectVariable"
           },
           "parameters": [
             "PlayerShip",
-            "PlayerShip.CurrentColor"
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "6"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"128;0;128\""
           ]
         }
       ]
@@ -2222,6 +2422,16 @@
       "actions": [
         {
           "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "PlayerShip",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "SetStringObjectVariable"
           },
           "parameters": [
@@ -2229,15 +2439,6 @@
             "CurrentColor",
             "=",
             "\"255;255;255\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerShip",
-            "PlayerShip.CurrentColor"
           ]
         }
       ]
@@ -2961,6 +3162,15 @@
             "",
             "Currency"
           ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Animation"
+          ]
         }
       ]
     },
@@ -3079,6 +3289,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

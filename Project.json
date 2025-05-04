@@ -169,6 +169,62 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
           "name": "Roboto-Regular.ttf"
         }
+      },
+      {
+        "file": "assets/spaceship/Spaceship_White.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_White.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Spaceship_Red.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_Red.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Spaceship_Yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_Yellow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Spaceship_Blue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_Blue.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Spaceship_Orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_Orange.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Spaceship_Green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_Green.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Spaceship_Purple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Spaceship_Purple.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
