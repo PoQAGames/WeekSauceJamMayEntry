@@ -225,6 +225,62 @@
         "name": "assets\\spaceship\\Spaceship_Purple.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_White.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_White.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_Yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_Yellow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_Red.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_Red.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_Blue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_Blue.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_Orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_Orange.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_Green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_Green.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spaceship/Enemy1_Purple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spaceship\\Enemy1_Purple.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
