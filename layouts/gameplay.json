@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.41943397827590606,
+    "zoomFactor": 0.2308918338522488,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -107,6 +107,740 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "4159cf3e-66bc-41fe-b80b-0e0d4c770a4f",
+      "width": 0,
+      "x": 287,
+      "y": -344,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "316125a7-774b-42dd-bff3-3d247ffca845",
+      "width": 0,
+      "x": 574,
+      "y": -559,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "ca032826-857b-42c6-aa30-3e95bb97bb45",
+      "width": 0,
+      "x": 98,
+      "y": -103,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "d939361b-c5b8-425f-a81f-aec78dfec493",
+      "width": 0,
+      "x": 146,
+      "y": -718,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "d7d68b2d-4bea-488b-9194-9c315bdad27a",
+      "width": 0,
+      "x": 421,
+      "y": -1043,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "9bcc3a70-50d5-4601-a8f6-81cc3b6edd39",
+      "width": 0,
+      "x": 307,
+      "y": -1445,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "87e32dac-5c31-4491-99a3-1c4b0f580048",
+      "width": 0,
+      "x": 292,
+      "y": -1886,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "4303f6ef-2550-4f04-8a6d-63f71d2f3d52",
+      "width": 0,
+      "x": 579,
+      "y": -2101,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "bc046e3d-aef8-45d5-9f00-ed36e009e162",
+      "width": 0,
+      "x": 151,
+      "y": -2260,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "a0085b12-1536-4371-82a0-01e9c9ccfa58",
+      "width": 0,
+      "x": 426,
+      "y": -2585,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "b3842f99-4012-4089-accc-67e468bfeefa",
+      "width": 0,
+      "x": 312,
+      "y": -2987,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "1ae46e91-f4a4-4541-8b35-d780f57390e3",
+      "width": 0,
+      "x": 203,
+      "y": -3336,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "4636a8bc-79e9-4e0e-a068-801f4d648360",
+      "width": 0,
+      "x": 490,
+      "y": -3551,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "961e30d4-95a0-4c65-a264-0268c490ae6b",
+      "width": 0,
+      "x": 62,
+      "y": -3710,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "c7ae3a0a-2f22-4ee7-b425-9fee463332e5",
+      "width": 0,
+      "x": 337,
+      "y": -4035,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "ddab3f32-1d32-469c-8681-aefb60f23964",
+      "width": 0,
+      "x": 223,
+      "y": -4437,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "cb27aa35-fdcc-41d8-8721-beffa5b626a1",
+      "width": 0,
+      "x": 250,
+      "y": -2725,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "1aaf6915-77cf-463c-877a-159d1c48ee9e",
+      "width": 0,
+      "x": 537,
+      "y": -2940,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "f2c807ae-a8f3-4669-b64f-08f9ff365122",
+      "width": 0,
+      "x": 61,
+      "y": -2484,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "653771ca-7b47-409d-a48e-12859c4a8e71",
+      "width": 0,
+      "x": 188,
+      "y": -4137,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "b74b8c57-520c-414e-9e0e-641663627929",
+      "width": 0,
+      "x": 475,
+      "y": -4352,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "7c56d06d-7d23-4bbb-b9d7-4d049e9ff69f",
+      "width": 0,
+      "x": -1,
+      "y": -3896,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": true
+        }
+      ]
     }
   ],
   "objects": [
@@ -299,11 +1033,99 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EnemyShip",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "CurrentColor",
+          "type": "string",
+          "value": "\"0;0;0\""
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 200
+        }
+      ],
+      "animations": [
+        {
+          "name": "TempShip",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerShip.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "objectName": "EnemyShip"
+      },
       {
         "objectName": "PlayerShip"
       },
@@ -596,6 +1418,12 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -656,6 +1484,12 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -716,6 +1550,12 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -776,6 +1616,12 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -836,6 +1682,12 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -896,6 +1748,12 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -956,6 +1814,12 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1016,6 +1880,12 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1043,8 +1913,531 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"255;255;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"255;0;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"255;255;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"0;0;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"255;128;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"128;0;128\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"0;255;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"255;255;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "EnemyShip",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -1105,6 +2498,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "LinearMovement",
+      "type": "LinearMovement::LinearMovement"
     },
     {
       "name": "Opacity",
