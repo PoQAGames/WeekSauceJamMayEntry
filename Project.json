@@ -281,6 +281,62 @@
         "name": "assets\\spaceship\\Enemy1_Purple.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_White.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_White.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_Red.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_Red.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_Yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_Yellow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_Blue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_Blue.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_Orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_Orange.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_Green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_Green.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playership/Spaceship_Purple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playership\\Spaceship_Purple.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

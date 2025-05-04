@@ -985,7 +985,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_White.png",
+                  "image": "assets\\playership\\Spaceship_White.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1001,23 +1001,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Red.png",
+                  "image": "assets\\playership\\Spaceship_Red.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1033,23 +1033,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Yellow.png",
+                  "image": "assets\\playership\\Spaceship_Yellow.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1065,23 +1065,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Blue.png",
+                  "image": "assets\\playership\\Spaceship_Blue.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1097,23 +1097,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Orange.png",
+                  "image": "assets\\playership\\Spaceship_Orange.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1129,23 +1129,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Green.png",
+                  "image": "assets\\playership\\Spaceship_Green.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1161,23 +1161,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Purple.png",
+                  "image": "assets\\playership\\Spaceship_Purple.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1193,16 +1193,16 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
@@ -1372,7 +1372,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_White.png",
+                  "image": "assets\\playership\\Spaceship_White.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1388,23 +1388,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_Red.png",
+                  "image": "assets\\playership\\Spaceship_Red.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1420,23 +1420,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_Yellow.png",
+                  "image": "assets\\playership\\Spaceship_Yellow.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1452,23 +1452,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_Blue.png",
+                  "image": "assets\\playership\\Spaceship_Blue.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1484,23 +1484,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_Orange.png",
+                  "image": "assets\\playership\\Spaceship_Orange.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1516,23 +1516,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_Green.png",
+                  "image": "assets\\playership\\Spaceship_Green.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1548,23 +1548,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Enemy1_Purple.png",
+                  "image": "assets\\playership\\Spaceship_Purple.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1580,16 +1580,16 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 522,
-                        "y": 577
+                        "x": 508.5,
+                        "y": 547.5
                       },
                       {
-                        "x": 615,
-                        "y": 357
+                        "x": 618.5,
+                        "y": 329.5
                       },
                       {
-                        "x": 705.5,
-                        "y": 575
+                        "x": 718.5,
+                        "y": 557.5
                       }
                     ]
                   ]
