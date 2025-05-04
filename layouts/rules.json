@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "upgrade",
-  "name": "upgrade",
+  "mangledName": "rules",
+  "name": "rules",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -28,14 +28,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 96,
+      "height": 138,
       "keepRatio": true,
       "layer": "",
       "name": "Title",
-      "persistentUuid": "abe78606-46a9-4f19-96f6-aa5adaed9919",
-      "width": 717,
-      "x": 2,
-      "y": 49,
+      "persistentUuid": "a0244e63-bfad-4526-8615-53e7252df9e9",
+      "width": 719,
+      "x": 3,
+      "y": 66,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -47,11 +47,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "ReadyButton",
-      "persistentUuid": "e691efbe-0aeb-45f8-b26c-345cb032ddf5",
+      "name": "ContinueButton",
+      "persistentUuid": "b0644d15-4ecd-4a25-bf2a-7857c88df1c4",
       "width": 0,
-      "x": 238,
-      "y": 1165,
+      "x": 260,
+      "y": 1150,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -70,7 +70,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Upgrades",
+      "string": "Rules",
       "font": "",
       "textAlignment": "center",
       "characterSize": 90,
@@ -93,7 +93,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Upgrades",
+        "text": "Rules",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
@@ -103,7 +103,7 @@
     },
     {
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "ReadyButton",
+      "name": "ContinueButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -142,7 +142,7 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "Ready",
+          "string": "Continue",
           "font": "Roboto-Bold.ttf",
           "textAlignment": "center",
           "characterSize": 40,
@@ -165,7 +165,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Ready",
+            "text": "Continue",
             "font": "Roboto-Bold.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -193,7 +193,7 @@
         "objectName": "Title"
       },
       {
-        "objectName": "ReadyButton"
+        "objectName": "ContinueButton"
       }
     ]
   },
@@ -206,7 +206,7 @@
             "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
           },
           "parameters": [
-            "ReadyButton",
+            "ContinueButton",
             ""
           ]
         }
