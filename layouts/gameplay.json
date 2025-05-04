@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2308918338522488,
+    "zoomFactor": 0.36732575450588245,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -84,8 +84,8 @@
       "name": "InvisibleWall",
       "persistentUuid": "6ce010ce-5a88-4edc-8642-674d894bf29f",
       "width": 728,
-      "x": 0,
-      "y": -19,
+      "x": -2,
+      "y": -30,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -841,6 +841,40 @@
           "value": true
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LevelTop",
+      "persistentUuid": "9557d668-40bd-4124-b724-6b05ca66ef66",
+      "width": 1777,
+      "x": -442,
+      "y": -183,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LevelBottom",
+      "persistentUuid": "cfcbe3fb-2944-4c9e-aade-2d50e988b197",
+      "width": 1462,
+      "x": -353,
+      "y": 1412,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -963,7 +997,28 @@
       "name": "PlayerBullet",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Red",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Yellow",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Blue",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "CurrentColor",
+          "type": "string",
+          "value": "0"
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -1118,6 +1173,28 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "LevelBottom",
+      "texture": "InvisibleWall",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "LevelTop",
+      "texture": "InvisibleWall",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1131,6 +1208,12 @@
       },
       {
         "objectName": "InvisibleWall"
+      },
+      {
+        "objectName": "LevelBottom"
+      },
+      {
+        "objectName": "LevelTop"
       },
       {
         "objectName": "PlayerBullet"
@@ -1172,6 +1255,54 @@
       "conditions": [
         {
           "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerShip",
+            "EnemyShip",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "!=",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerShip",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "EnemyShip",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "KeyFromTextPressed"
           },
           "parameters": [
@@ -1194,8 +1325,8 @@
           "parameters": [
             "",
             "PlayerBullet",
-            "PlayerShip.X()",
-            "PlayerShip.Y()",
+            "PlayerShip.CenterX()",
+            "PlayerShip.CenterY()",
             ""
           ]
         },
@@ -1206,7 +1337,7 @@
           "parameters": [
             "PlayerBullet",
             "270",
-            "200",
+            "500",
             "1"
           ]
         },
@@ -1218,6 +1349,106 @@
             "PlayerBullet",
             "PlayerShip.CurrentColor"
           ]
+        },
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerBullet",
+            "CurrentColor",
+            "=",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "Red",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "Red",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "Yellow",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "Yellow",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "Blue",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "Blue",
+                "True",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2435,6 +2666,119 @@
           "parameters": [
             "EnemyShip",
             "EnemyShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "EnemyShip",
+            "PlayerBullet",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerBullet",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "EnemyShip",
+                "CurrentColor",
+                "=",
+                "PlayerBullet.CurrentColor"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemyShip",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerBullet",
+            "LevelTop",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerBullet",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "EnemyShip",
+            "LevelBottom",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "EnemyShip",
+            ""
           ]
         }
       ]
