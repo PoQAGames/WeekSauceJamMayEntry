@@ -265,6 +265,14 @@
         "name": "assets\\enemyship\\Enemy1_Purple.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Object_Asteroid.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Object_Asteroid.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

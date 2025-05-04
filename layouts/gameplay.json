@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.13138826996359695,
+    "zoomFactor": 0.27253598967729414,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -915,6 +915,150 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "224deed5-8d1b-4ee4-a549-78dc85ea1caa",
+      "width": 0,
+      "x": -88,
+      "y": -1022,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "5db21e7c-90ae-492a-8d9f-ab5539dba888",
+      "width": 0,
+      "x": 393,
+      "y": -1262,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "f49f0098-ea50-41e5-a59f-f3894579b979",
+      "width": 0,
+      "x": 74,
+      "y": -1729,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "33fd4c6c-f75a-433d-a6f5-6190a19a2f2a",
+      "width": 0,
+      "x": 359,
+      "y": -2301,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "83f05e79-9eee-4975-b423-4b7ce15cf7dc",
+      "width": 0,
+      "x": 59,
+      "y": -2487,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "95a32c22-7080-4603-b8a4-702e8ef2580d",
+      "width": 0,
+      "x": 323,
+      "y": -3254,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "7236efb9-1703-4186-9257-72b717f1613e",
+      "width": 0,
+      "x": -55,
+      "y": -3551,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "f91429bd-2922-4b6a-9cf7-d8d3c73f45c0",
+      "width": 0,
+      "x": 378,
+      "y": -3873,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "a65a8f48-6a32-4283-a496-0709b8d2b515",
+      "width": 0,
+      "x": -99,
+      "y": -4285,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1639,6 +1783,82 @@
           "SpeedY": 200
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Rock",
+      "preScale": 0.25,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 500
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Object_Asteroid.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 675,
+                        "y": 376.5
+                      },
+                      {
+                        "x": 787,
+                        "y": 421
+                      },
+                      {
+                        "x": 799,
+                        "y": 508.5
+                      },
+                      {
+                        "x": 714.5,
+                        "y": 543
+                      },
+                      {
+                        "x": 563,
+                        "y": 511.5
+                      },
+                      {
+                        "x": 569.5,
+                        "y": 434
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1646,6 +1866,9 @@
     "children": [
       {
         "objectName": "EnemyShip"
+      },
+      {
+        "objectName": "Rock"
       },
       {
         "objectName": "PlayerShip"
@@ -1693,6 +1916,72 @@
             "PlayerShip",
             "InvisibleWall",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Rock",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerShip",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"main\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Currency",
+            "=",
+            "Currency"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"Save\"",
+            "\"Currency\"",
+            "Variable(Currency)"
           ]
         }
       ]
@@ -3362,6 +3651,34 @@
           },
           "parameters": [
             "EnemyShip",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Rock",
+            "LevelBottom",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Rock",
             ""
           ]
         }
