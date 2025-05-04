@@ -1,0 +1,35 @@
+{
+  "associatedLayout": "main",
+  "name": "Currency",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "CurrencyDisplay",
+            "CurrentCurrency",
+            "!=",
+            "Currency"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "CurrencyDisplay",
+            "Text",
+            "=",
+            "\"$\" + Currency"
+          ]
+        }
+      ]
+    }
+  ]
+}

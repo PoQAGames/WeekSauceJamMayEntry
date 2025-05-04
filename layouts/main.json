@@ -73,6 +73,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CurrencyDisplay",
+      "persistentUuid": "40855d8c-311c-489e-b782-7a51fad85971",
+      "width": 0,
+      "x": 332,
+      "y": 452,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -240,6 +256,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -289,10 +310,6 @@
     }
   ],
   "behaviorsSharedData": [
-    {
-      "name": "Animation",
-      "type": "AnimatableCapability::AnimatableBehavior"
-    },
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
