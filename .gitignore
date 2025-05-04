@@ -2,6 +2,3 @@
 .DS_Store
 /dist
 *.autosave
-
-# debug scenes
-layouts/debug-*.json
