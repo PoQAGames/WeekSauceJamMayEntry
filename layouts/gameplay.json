@@ -1926,11 +1926,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyFromTextPressed"
+            "value": "CollisionNP"
           },
           "parameters": [
-            "PlayerShip",
             "Rock",
+            "PlayerShip",
             "",
             "",
             ""
@@ -1988,16 +1988,14 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "CollisionNP"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
-            "PlayerShip",
-            "EnemyShip",
-            "",
             "",
             "\"Space\""
           ]
@@ -3285,7 +3283,7 @@
             "EnemyShip",
             "CurrentColor",
             "=",
-            "\"0;255;0\""
+            "\"0;210;0\""
           ]
         },
         {
@@ -3361,7 +3359,7 @@
             "EnemyShip",
             "CurrentColor",
             "=",
-            "\"0;210;0\""
+            "\"212;0;255\""
           ]
         },
         {
