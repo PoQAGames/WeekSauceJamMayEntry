@@ -111,7 +111,7 @@
   ],
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "PlayerShip",
       "type": "Sprite",
@@ -176,7 +176,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "assets\\PlayerShip.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -224,7 +224,7 @@
       "behaviors": []
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "PlayerBullet",
       "type": "Sprite",
@@ -244,7 +244,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "assets\\PlayerBullet.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -261,18 +261,34 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
+                        "y": 10.5
                       },
                       {
                         "x": 0,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 10.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 16,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 10.5,
+                        "y": 16
+                      },
+                      {
+                        "x": 5.5,
                         "y": 16
                       }
                     ]
@@ -343,6 +359,17 @@
         },
         {
           "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "!=",
+            "\"255;255;255\""
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
@@ -378,7 +405,7 @@
           },
           "parameters": [
             "PlayerBullet",
-            "PlayerShip.Red"
+            "PlayerShip.CurrentColor"
           ]
         }
       ]
@@ -541,6 +568,486 @@
             "Blue",
             "False",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"255;255;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"255;0;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"255;255;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"0;0;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"255;128;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"128;0;128\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"0;255;0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Yellow",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "=",
+            "\"255;255;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PlayerShip",
+            "PlayerShip.CurrentColor"
           ]
         }
       ]

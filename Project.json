@@ -122,6 +122,22 @@
         "name": "NewSprite3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/PlayerShip.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerShip.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerBullet.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
