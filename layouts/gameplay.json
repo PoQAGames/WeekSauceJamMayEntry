@@ -1505,92 +1505,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "PlayerShip",
-            "EnemyShip",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "StringObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "CurrentColor",
-            "!=",
-            "EnemyShip.CurrentColor"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "PlayerShip",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "EnemyShip",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"main\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Currency",
-            "=",
-            "Currency"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"Save\"",
-            "\"Currency\"",
-            "Variable(Currency)"
-          ]
-        }
-      ]
-    },
-    {
       "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -1601,6 +1515,17 @@
           "parameters": [
             "",
             "\"Space\""
+          ]
+        },
+        {
+          "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "!=",
+            "\"255;255;255\""
           ]
         },
         {
@@ -1794,7 +1719,7 @@
             "PlayerShip",
             "Yellow",
             "True",
-            "\"255;255;0\""
+            "\"255;243;0\""
           ]
         }
       ]
@@ -2103,7 +2028,7 @@
             "PlayerShip",
             "CurrentColor",
             "=",
-            "\"255;255;0\""
+            "\"255;243;0\""
           ]
         }
       ]
@@ -2237,7 +2162,7 @@
             "PlayerShip",
             "CurrentColor",
             "=",
-            "\"255;128;0\""
+            "\"255;124;0\""
           ]
         }
       ]
@@ -2304,7 +2229,7 @@
             "PlayerShip",
             "CurrentColor",
             "=",
-            "\"0;255;0\""
+            "\"0;210;0\""
           ]
         }
       ]
@@ -2371,7 +2296,7 @@
             "PlayerShip",
             "CurrentColor",
             "=",
-            "\"128;0;128\""
+            "\"212;0;255\""
           ]
         }
       ]
@@ -2627,7 +2552,7 @@
             "EnemyShip",
             "CurrentColor",
             "=",
-            "\"255;255;0\""
+            "\"255;243;0\""
           ]
         },
         {
@@ -2759,7 +2684,7 @@
             "EnemyShip",
             "CurrentColor",
             "=",
-            "\"255;128;0\""
+            "\"255;124;0\""
           ]
         },
         {
@@ -2825,7 +2750,7 @@
             "EnemyShip",
             "CurrentColor",
             "=",
-            "\"128;0;128\""
+            "\"212;0;255\""
           ]
         },
         {
@@ -2891,7 +2816,7 @@
             "EnemyShip",
             "CurrentColor",
             "=",
-            "\"0;255;0\""
+            "\"0;210;0\""
           ]
         },
         {
@@ -2972,6 +2897,83 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerShip",
+            "EnemyShip",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "CurrentColor",
+            "!=",
+            "EnemyShip.CurrentColor"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerShip",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "EnemyShip",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"Save\"",
+            "\"Currency\"",
+            "Currency"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"main\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3125,6 +3127,16 @@
             "PlayerShip",
             "TopDownMovement",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"Save\"",
+            "\"Currency\"",
+            "Currency"
           ]
         },
         {
