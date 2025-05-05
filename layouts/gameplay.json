@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "gameplay",
   "name": "gameplay",
-  "r": 209,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.529035740215685,
+    "zoomFactor": 0.27253598967729414,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -123,8 +123,8 @@
       "name": "EnemyShip",
       "persistentUuid": "4159cf3e-66bc-41fe-b80b-0e0d4c770a4f",
       "width": 0,
-      "x": 287,
-      "y": -344,
+      "x": 180,
+      "y": -336,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -155,7 +155,7 @@
       "name": "EnemyShip",
       "persistentUuid": "316125a7-774b-42dd-bff3-3d247ffca845",
       "width": 0,
-      "x": 574,
+      "x": 437,
       "y": -559,
       "zOrder": 3,
       "numberProperties": [
@@ -219,7 +219,7 @@
       "name": "EnemyShip",
       "persistentUuid": "d939361b-c5b8-425f-a81f-aec78dfec493",
       "width": 0,
-      "x": 146,
+      "x": 9,
       "y": -718,
       "zOrder": 3,
       "numberProperties": [
@@ -251,8 +251,8 @@
       "name": "EnemyShip",
       "persistentUuid": "d7d68b2d-4bea-488b-9194-9c315bdad27a",
       "width": 0,
-      "x": 421,
-      "y": -1043,
+      "x": 292,
+      "y": -1005,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -288,8 +288,8 @@
       "name": "EnemyShip",
       "persistentUuid": "9bcc3a70-50d5-4601-a8f6-81cc3b6edd39",
       "width": 0,
-      "x": 307,
-      "y": -1445,
+      "x": 178,
+      "y": -1407,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -325,8 +325,8 @@
       "name": "EnemyShip",
       "persistentUuid": "87e32dac-5c31-4491-99a3-1c4b0f580048",
       "width": 0,
-      "x": 292,
-      "y": -1886,
+      "x": 163,
+      "y": -1848,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -357,8 +357,8 @@
       "name": "EnemyShip",
       "persistentUuid": "4303f6ef-2550-4f04-8a6d-63f71d2f3d52",
       "width": 0,
-      "x": 579,
-      "y": -2101,
+      "x": 450,
+      "y": -2063,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -389,8 +389,8 @@
       "name": "EnemyShip",
       "persistentUuid": "bc046e3d-aef8-45d5-9f00-ed36e009e162",
       "width": 0,
-      "x": 151,
-      "y": -2260,
+      "x": 22,
+      "y": -2222,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -421,8 +421,8 @@
       "name": "EnemyShip",
       "persistentUuid": "a0085b12-1536-4371-82a0-01e9c9ccfa58",
       "width": 0,
-      "x": 426,
-      "y": -2585,
+      "x": 297,
+      "y": -2547,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -458,8 +458,8 @@
       "name": "EnemyShip",
       "persistentUuid": "b3842f99-4012-4089-accc-67e468bfeefa",
       "width": 0,
-      "x": 312,
-      "y": -2987,
+      "x": 183,
+      "y": -2949,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -495,8 +495,8 @@
       "name": "EnemyShip",
       "persistentUuid": "1ae46e91-f4a4-4541-8b35-d780f57390e3",
       "width": 0,
-      "x": 203,
-      "y": -3336,
+      "x": 74,
+      "y": -3298,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -527,8 +527,8 @@
       "name": "EnemyShip",
       "persistentUuid": "4636a8bc-79e9-4e0e-a068-801f4d648360",
       "width": 0,
-      "x": 490,
-      "y": -3551,
+      "x": 361,
+      "y": -3513,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -559,8 +559,8 @@
       "name": "EnemyShip",
       "persistentUuid": "961e30d4-95a0-4c65-a264-0268c490ae6b",
       "width": 0,
-      "x": 62,
-      "y": -3710,
+      "x": -67,
+      "y": -3672,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -591,8 +591,8 @@
       "name": "EnemyShip",
       "persistentUuid": "c7ae3a0a-2f22-4ee7-b425-9fee463332e5",
       "width": 0,
-      "x": 337,
-      "y": -4035,
+      "x": 208,
+      "y": -3997,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -628,8 +628,8 @@
       "name": "EnemyShip",
       "persistentUuid": "ddab3f32-1d32-469c-8681-aefb60f23964",
       "width": 0,
-      "x": 223,
-      "y": -4437,
+      "x": 94,
+      "y": -4399,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -665,8 +665,8 @@
       "name": "EnemyShip",
       "persistentUuid": "cb27aa35-fdcc-41d8-8721-beffa5b626a1",
       "width": 0,
-      "x": 250,
-      "y": -2725,
+      "x": 121,
+      "y": -2687,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -697,8 +697,8 @@
       "name": "EnemyShip",
       "persistentUuid": "1aaf6915-77cf-463c-877a-159d1c48ee9e",
       "width": 0,
-      "x": 537,
-      "y": -2940,
+      "x": 408,
+      "y": -2902,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -729,8 +729,8 @@
       "name": "EnemyShip",
       "persistentUuid": "f2c807ae-a8f3-4669-b64f-08f9ff365122",
       "width": 0,
-      "x": 61,
-      "y": -2484,
+      "x": -68,
+      "y": -2446,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -761,8 +761,8 @@
       "name": "EnemyShip",
       "persistentUuid": "653771ca-7b47-409d-a48e-12859c4a8e71",
       "width": 0,
-      "x": 188,
-      "y": -4137,
+      "x": 59,
+      "y": -4099,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -793,8 +793,8 @@
       "name": "EnemyShip",
       "persistentUuid": "b74b8c57-520c-414e-9e0e-641663627929",
       "width": 0,
-      "x": 475,
-      "y": -4352,
+      "x": 346,
+      "y": -4314,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -825,8 +825,8 @@
       "name": "EnemyShip",
       "persistentUuid": "7c56d06d-7d23-4bbb-b9d7-4d049e9ff69f",
       "width": 0,
-      "x": -1,
-      "y": -3896,
+      "x": -130,
+      "y": -3858,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -858,8 +858,8 @@
       "name": "LevelTop",
       "persistentUuid": "9557d668-40bd-4124-b724-6b05ca66ef66",
       "width": 1777,
-      "x": -442,
-      "y": -183,
+      "x": -509,
+      "y": -107,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -912,6 +912,150 @@
       "x": 16,
       "y": 10,
       "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "224deed5-8d1b-4ee4-a549-78dc85ea1caa",
+      "width": 0,
+      "x": -88,
+      "y": -1022,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "5db21e7c-90ae-492a-8d9f-ab5539dba888",
+      "width": 0,
+      "x": 393,
+      "y": -1262,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "f49f0098-ea50-41e5-a59f-f3894579b979",
+      "width": 0,
+      "x": 74,
+      "y": -1729,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "33fd4c6c-f75a-433d-a6f5-6190a19a2f2a",
+      "width": 0,
+      "x": 359,
+      "y": -2301,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "83f05e79-9eee-4975-b423-4b7ce15cf7dc",
+      "width": 0,
+      "x": 59,
+      "y": -2487,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "95a32c22-7080-4603-b8a4-702e8ef2580d",
+      "width": 0,
+      "x": 323,
+      "y": -3254,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "7236efb9-1703-4186-9257-72b717f1613e",
+      "width": 0,
+      "x": -55,
+      "y": -3551,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "f91429bd-2922-4b6a-9cf7-d8d3c73f45c0",
+      "width": 0,
+      "x": 378,
+      "y": -3873,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Rock",
+      "persistentUuid": "a65a8f48-6a32-4283-a496-0709b8d2b515",
+      "width": 0,
+      "x": -99,
+      "y": -4285,
+      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -985,7 +1129,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_White.png",
+                  "image": "assets\\playership\\Spaceship_White.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1001,23 +1145,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Red.png",
+                  "image": "assets\\playership\\Spaceship_Red.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1033,23 +1177,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Yellow.png",
+                  "image": "assets\\playership\\Spaceship_Yellow.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1065,23 +1209,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Blue.png",
+                  "image": "assets\\playership\\Spaceship_Blue.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1097,23 +1241,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Orange.png",
+                  "image": "assets\\playership\\Spaceship_Orange.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1129,23 +1273,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Green.png",
+                  "image": "assets\\playership\\Spaceship_Green.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1161,23 +1305,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\spaceship\\Spaceship_Purple.png",
+                  "image": "assets\\playership\\Spaceship_Purple.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1193,16 +1337,16 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 612.5,
-                        "y": 356.5
+                        "x": 494.5,
+                        "y": 566
                       },
                       {
-                        "x": 747.5,
-                        "y": 567.5
+                        "x": 615.5,
+                        "y": 330.5
                       },
                       {
-                        "x": 489,
-                        "y": 559.5
+                        "x": 730,
+                        "y": 567
                       }
                     ]
                   ]
@@ -1323,9 +1467,10 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "EnemyShip",
+      "preScale": 0.25,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1367,11 +1512,11 @@
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\PlayerShip.png",
+                  "image": "assets\\enemyship\\Enemy1_White.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1387,16 +1532,208 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 33,
-                        "y": 0
+                        "x": 517,
+                        "y": 574.5
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 614,
+                        "y": 350
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 701.5,
+                        "y": 572.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemyship\\Enemy1_Red.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 517,
+                        "y": 574.5
+                      },
+                      {
+                        "x": 614,
+                        "y": 350
+                      },
+                      {
+                        "x": 701.5,
+                        "y": 572.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemyship\\Enemy1_Yellow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 517,
+                        "y": 574.5
+                      },
+                      {
+                        "x": 614,
+                        "y": 350
+                      },
+                      {
+                        "x": 701.5,
+                        "y": 572.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemyship\\Enemy1_Blue.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 517,
+                        "y": 574.5
+                      },
+                      {
+                        "x": 614,
+                        "y": 350
+                      },
+                      {
+                        "x": 701.5,
+                        "y": 572.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemyship\\Enemy1_Orange.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 517,
+                        "y": 574.5
+                      },
+                      {
+                        "x": 614,
+                        "y": 350
+                      },
+                      {
+                        "x": 701.5,
+                        "y": 572.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemyship\\Enemy1_Green.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 517,
+                        "y": 574.5
+                      },
+                      {
+                        "x": 614,
+                        "y": 350
+                      },
+                      {
+                        "x": 701.5,
+                        "y": 572.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemyship\\Enemy1_Purple.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 517,
+                        "y": 574.5
+                      },
+                      {
+                        "x": 614,
+                        "y": 350
+                      },
+                      {
+                        "x": 701.5,
+                        "y": 572.5
                       }
                     ]
                   ]
@@ -1446,6 +1783,82 @@
           "SpeedY": 200
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Rock",
+      "preScale": 0.25,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 500
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Object_Asteroid.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 675,
+                        "y": 376.5
+                      },
+                      {
+                        "x": 787,
+                        "y": 421
+                      },
+                      {
+                        "x": 799,
+                        "y": 508.5
+                      },
+                      {
+                        "x": 714.5,
+                        "y": 543
+                      },
+                      {
+                        "x": 563,
+                        "y": 511.5
+                      },
+                      {
+                        "x": 569.5,
+                        "y": 434
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1453,6 +1866,9 @@
     "children": [
       {
         "objectName": "EnemyShip"
+      },
+      {
+        "objectName": "Rock"
       },
       {
         "objectName": "PlayerShip"
@@ -1500,6 +1916,73 @@
             "PlayerShip",
             "InvisibleWall",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Rock",
+            "PlayerShip",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerShip",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"main\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Currency",
+            "=",
+            "Currency"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"Save\"",
+            "\"Currency\"",
+            "Variable(Currency)"
           ]
         }
       ]
@@ -2425,11 +2908,21 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "0"
           ]
         }
       ]
@@ -2491,11 +2984,21 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "1"
           ]
         }
       ]
@@ -2557,11 +3060,21 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "2"
           ]
         }
       ]
@@ -2623,11 +3136,21 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "3"
           ]
         }
       ]
@@ -2689,77 +3212,21 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "EnemyShip",
-            "Red",
-            "True",
-            ""
+            "Animation"
           ]
         },
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "ChangeSprite"
           },
           "parameters": [
             "EnemyShip",
-            "Yellow",
             "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "EnemyShip",
-            "Blue",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetStringObjectVariable"
-          },
-          "parameters": [
-            "EnemyShip",
-            "CurrentColor",
-            "=",
-            "\"212;0;255\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "4"
           ]
         }
       ]
@@ -2821,11 +3288,97 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Red",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Yellow",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Blue",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringObjectVariable"
+          },
+          "parameters": [
+            "EnemyShip",
+            "CurrentColor",
+            "=",
+            "\"212;0;255\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+          },
+          "parameters": [
+            "EnemyShip",
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "6"
           ]
         }
       ]
@@ -2887,11 +3440,21 @@
         },
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
             "EnemyShip",
-            "EnemyShip.CurrentColor"
+            "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeSprite"
+          },
+          "parameters": [
+            "EnemyShip",
+            "=",
+            "0"
           ]
         }
       ]
@@ -3091,6 +3654,34 @@
           },
           "parameters": [
             "EnemyShip",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Rock",
+            "LevelBottom",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Rock",
             ""
           ]
         }
