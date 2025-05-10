@@ -368,7 +368,49 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Color",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Blue",
+          "type": "string",
+          "value": "\"0;0;255\""
+        },
+        {
+          "name": "Green",
+          "type": "string",
+          "value": "\"0;210;0\""
+        },
+        {
+          "name": "None",
+          "type": "string",
+          "value": "\"255;255;255\""
+        },
+        {
+          "name": "Orange",
+          "type": "string",
+          "value": "\"255;160;0\""
+        },
+        {
+          "name": "Purple",
+          "type": "string",
+          "value": "\"212;0;255\""
+        },
+        {
+          "name": "Red",
+          "type": "string",
+          "value": "\"255;0;0\""
+        },
+        {
+          "name": "Yellow",
+          "type": "string",
+          "value": "\"255;243;0\""
+        }
+      ]
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
