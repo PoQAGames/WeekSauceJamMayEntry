@@ -27,6 +27,22 @@
       "name": "Currency",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Upgrades",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "UpgradesString",
+      "type": "string",
+      "value": "0"
     }
   ],
   "instances": [
@@ -2010,116 +2026,183 @@
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Start",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "Red",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "ColorSlot1",
+                "=",
+                "\"Red\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "ColorSlot2",
+                "=",
+                "\"Red\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "HealthBar",
+                "Resizable",
+                "=",
+                "PlayerShip.Health / PlayerShip.MaxHealth * 64"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "HealthBar",
+                "PlayerShip.CenterX() - 38",
+                "PlayerShip.CenterY() - 32",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "PlayerShip",
+                "HealthBar"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "HealthBar",
+                "Sticker",
+                "PlayerShip",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"Upgrades\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ReadStringFromStorage"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"Upgrades\"",
+                    "",
+                    "UpgradesString"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure2"
+                  },
+                  "parameters": [
+                    "UpgradesString",
+                    "Upgrades"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "MaxHealth",
+                    "=",
+                    "Upgrades.Health"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Health",
+                    "=",
+                    "PlayerShip.MaxHealth"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"ShootTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Red",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "ColorSlot1",
-            "=",
-            "\"Red\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "ColorSlot2",
-            "=",
-            "\"Red\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "HealthBar",
-            "PlayerShip.CenterX() - HealthBar.Width() * 2",
-            "PlayerShip.CenterY() - 32",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Health",
-            "=",
-            "PlayerShip.MaxHealth"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetWidth"
-          },
-          "parameters": [
-            "HealthBar",
-            "Resizable",
-            "=",
-            "PlayerShip.Health / PlayerShip.MaxHealth * 64"
-          ]
-        },
-        {
-          "type": {
-            "value": "LinkedObjects::LinkObjects"
-          },
-          "parameters": [
-            "",
-            "PlayerShip",
-            "HealthBar"
-          ]
-        },
-        {
-          "type": {
-            "value": "Sticker::Sticker::Stick"
-          },
-          "parameters": [
-            "HealthBar",
-            "Sticker",
-            "PlayerShip",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
