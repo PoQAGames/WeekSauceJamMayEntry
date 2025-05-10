@@ -273,6 +273,38 @@
         "name": "assets\\Object_Asteroid.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/HealthBar.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "HealthBar",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health/HealthBar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\health\\HealthBar.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/HealthBar2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "HealthBar2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/HealthBar3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "HealthBar3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -372,6 +404,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
     }
   ],
   "externalLayouts": []
