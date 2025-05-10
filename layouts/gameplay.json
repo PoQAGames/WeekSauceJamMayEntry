@@ -1146,6 +1146,13 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": -800
+        },
+        {
+          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 5000,
@@ -1154,7 +1161,6 @@
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
           "deceleration": 5000,
-          "ignoreDefaultControls": false,
           "maxSpeed": 800,
           "movementAngleOffset": 0,
           "rotateObject": false,
@@ -2132,6 +2138,16 @@
                 "PlayerShip",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "PlayerShip",
+                "LinearMovement",
+                "no"
+              ]
             }
           ],
           "events": [
@@ -2197,6 +2213,118 @@
                     "PlayerShip.MaxHealth"
                   ]
                 }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Level Win",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "LevelBottom",
+                "LevelEnd",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"Currency\"",
+                "Currency"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "PlayerShip",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "PlayerShip",
+                "LinearMovement",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "InvisibleWall",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "PlayerBullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"rules\"",
+                ""
               ]
             }
           ]
@@ -4406,61 +4534,6 @@
           },
           "parameters": [
             "Rock",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "LevelBottom",
-            "LevelEnd",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TopDownMovementBehavior::IgnoreDefaultControls"
-          },
-          "parameters": [
-            "PlayerShip",
-            "TopDownMovement",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"Save\"",
-            "\"Currency\"",
-            "Currency"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"rules\"",
             ""
           ]
         }
