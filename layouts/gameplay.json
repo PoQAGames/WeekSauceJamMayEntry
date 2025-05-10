@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.27253598967729414,
+    "zoomFactor": 0.5653158055126333,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -27,6 +27,22 @@
       "name": "Currency",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Upgrades",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "UpgradesString",
+      "type": "string",
+      "value": "0"
     }
   ],
   "instances": [
@@ -44,7 +60,18 @@
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "MaxHealth",
+          "type": "number",
+          "value": 3
+        }
+      ]
     },
     {
       "angle": 0,
@@ -1104,6 +1131,16 @@
           "name": "ColorSlot2",
           "type": "string",
           "value": "Red"
+        },
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "MaxHealth",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1508,6 +1545,11 @@
           "name": "CurrentColor",
           "type": "string",
           "value": "\"0;0;0\""
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 1
         }
       ],
       "effects": [],
@@ -1806,7 +1848,13 @@
       "preScale": 0.25,
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 3
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -1874,6 +1922,74 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HealthBar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "HealthBar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "HealthBar3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1881,6 +1997,9 @@
     "children": [
       {
         "objectName": "EnemyShip"
+      },
+      {
+        "objectName": "HealthBar"
       },
       {
         "objectName": "Rock"
@@ -1907,61 +2026,183 @@
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Start",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "Red",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "ColorSlot1",
+                "=",
+                "\"Red\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "PlayerShip",
+                "ColorSlot2",
+                "=",
+                "\"Red\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "HealthBar",
+                "Resizable",
+                "=",
+                "PlayerShip.Health / PlayerShip.MaxHealth * 64"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "HealthBar",
+                "PlayerShip.CenterX() - 38",
+                "PlayerShip.CenterY() - 32",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "PlayerShip",
+                "HealthBar"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "HealthBar",
+                "Sticker",
+                "PlayerShip",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"Upgrades\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ReadStringFromStorage"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"Upgrades\"",
+                    "",
+                    "UpgradesString"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure2"
+                  },
+                  "parameters": [
+                    "UpgradesString",
+                    "Upgrades"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "MaxHealth",
+                    "=",
+                    "Upgrades.Health"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Health",
+                    "=",
+                    "PlayerShip.MaxHealth"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"ShootTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Red",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "ColorSlot1",
-            "=",
-            "\"Red\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "ColorSlot2",
-            "=",
-            "\"Red\""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -2012,49 +2253,22 @@
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "SetNumberObjectVariable"
           },
           "parameters": [
             "PlayerShip",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"main\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Currency",
+            "Health",
             "=",
-            "Currency"
+            "PlayerShip.Health - Rock.Damage"
           ]
         },
         {
           "type": {
-            "value": "EcrireFichierExp"
+            "value": "Delete"
           },
           "parameters": [
-            "\"Save\"",
-            "\"Currency\"",
-            "Variable(Currency)"
+            "Rock",
+            ""
           ]
         }
       ]
@@ -2231,6 +2445,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2413,6 +2628,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2595,6 +2811,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2772,174 +2989,6 @@
                 ""
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Num1\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Red",
-            "True",
-            "\"255;0;0\""
-          ]
-        }
-      ]
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Num2\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Yellow",
-            "True",
-            "\"255;243;0\""
-          ]
-        }
-      ]
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Num3\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Blue",
-            "True",
-            "\"0;0;255\""
-          ]
-        }
-      ]
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"Num1\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Red",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"Num2\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Yellow",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"Num3\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "Blue",
-            "False",
-            ""
           ]
         }
       ]
@@ -4121,17 +4170,71 @@
             "value": "Delete"
           },
           "parameters": [
+            "EnemyShip",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Health",
+            "=",
+            "PlayerShip.Health - EnemyShip.Damage"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+          },
+          "parameters": [
+            "HealthBar",
+            "Resizable",
+            "=",
+            "PlayerShip.Health / PlayerShip.MaxHealth * 64"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "PlayerShip",
+            "Health",
+            "<=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
             "PlayerShip",
             ""
           ]
         },
         {
           "type": {
-            "value": "Delete"
+            "value": "Wait"
           },
           "parameters": [
-            "EnemyShip",
-            ""
+            "3"
           ]
         },
         {
@@ -4142,14 +4245,6 @@
             "\"Save\"",
             "\"Currency\"",
             "Currency"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "3"
           ]
         },
         {
@@ -4445,6 +4540,34 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerBullet",
+            "Rock",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerBullet",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -4521,6 +4644,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "Text",
