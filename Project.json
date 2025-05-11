@@ -361,6 +361,38 @@
         "name": "Explosion8",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Explosion5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Explosion5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Explosion6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Explosion7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Explosion8.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
