@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5653158055126333,
+    "zoomFactor": 1.097367969562956,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1152,9 +1152,9 @@
           "SpeedY": -800
         },
         {
-          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "ignoreDefaultControls": false,
           "acceleration": 5000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2698,7 +2698,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3260,7 +3259,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Color",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3809,7 +3807,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Enemy Color",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4735,7 +4732,16 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": []
         }
       ],
