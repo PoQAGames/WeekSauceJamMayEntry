@@ -275,14 +275,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/HealthBar.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "HealthBar",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/health/HealthBar.png",
         "kind": "image",
         "metadata": "",
@@ -376,37 +368,37 @@
         {
           "name": "Blue",
           "type": "string",
-          "value": "\"0;0;255\""
+          "value": "0;0;255"
         },
         {
           "name": "Green",
           "type": "string",
-          "value": "\"0;210;0\""
+          "value": "0;210;0"
         },
         {
           "name": "None",
           "type": "string",
-          "value": "\"255;255;255\""
+          "value": "0;0;0"
         },
         {
           "name": "Orange",
           "type": "string",
-          "value": "\"255;160;0\""
+          "value": "255;160;0"
         },
         {
           "name": "Purple",
           "type": "string",
-          "value": "\"212;0;255\""
+          "value": "212;0;255"
         },
         {
           "name": "Red",
           "type": "string",
-          "value": "\"255;0;0\""
+          "value": "255;0;0"
         },
         {
           "name": "Yellow",
           "type": "string",
-          "value": "\"255;243;0\""
+          "value": "255;243;0"
         }
       ]
     }
