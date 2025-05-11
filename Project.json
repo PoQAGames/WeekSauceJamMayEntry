@@ -1,7 +1,7 @@
 {
   "firstLayout": "main",
   "gdVersion": {
-    "build": 228,
+    "build": 230,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -295,6 +295,70 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "HealthBar3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explosion8",
         "smoothed": true,
         "userAdded": false
       }
