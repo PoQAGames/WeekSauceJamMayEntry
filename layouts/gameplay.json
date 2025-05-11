@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.097367969562956,
+    "zoomFactor": 0.9610368693714763,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2137,6 +2137,175 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Explosion",
+      "preScale": 0.25,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Explosion5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 135,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 181
+                      },
+                      {
+                        "x": 135,
+                        "y": 181
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Explosion6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 135,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 181
+                      },
+                      {
+                        "x": 135,
+                        "y": 181
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Explosion7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 135,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 181
+                      },
+                      {
+                        "x": 135,
+                        "y": 181
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Explosion8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 135,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 138
+                      },
+                      {
+                        "x": 185,
+                        "y": 181
+                      },
+                      {
+                        "x": 135,
+                        "y": 181
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2168,6 +2337,9 @@
       },
       {
         "objectName": "PlayerBullet"
+      },
+      {
+        "objectName": "Explosion"
       }
     ]
   },
@@ -2516,7 +2688,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2549,6 +2720,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Explosion",
+                "EnemyShip.CenterX()",
+                "EnemyShip.CenterY()",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Delete"
@@ -2652,7 +2835,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2696,6 +2878,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Explosion",
+                    "EnemyShip.CenterX()",
+                    "EnemyShip.CenterY()",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Delete"
@@ -4568,8 +4762,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "Grouped events",
+      "name": "Game Over",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -4595,6 +4788,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Explosion",
+                "PlayerShip.CenterX()",
+                "PlayerShip.CenterY()",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Delete"
@@ -4636,20 +4841,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -4887,6 +5078,31 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Explosion",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Explosion",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
