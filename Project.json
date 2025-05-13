@@ -1,7 +1,7 @@
 {
   "firstLayout": "main",
   "gdVersion": {
-    "build": 230,
+    "build": 228,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -359,6 +359,22 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Explosion8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG_Galaxy1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG_Galaxy1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG_Galaxy1_Stars.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG_Galaxy1_Stars.png",
         "smoothed": true,
         "userAdded": false
       }

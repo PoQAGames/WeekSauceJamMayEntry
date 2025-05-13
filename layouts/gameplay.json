@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.097367969562956,
+    "zoomFactor": 0.929687500000004,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1086,6 +1086,40 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1282,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BG_Galaxy1",
+      "persistentUuid": "133394e8-75aa-4b64-83af-6d0438796aea",
+      "width": 720,
+      "x": 1,
+      "y": -2,
+      "zOrder": -2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1280,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BG_Galaxy1_Stars",
+      "persistentUuid": "4cc65649-cb39-4e31-b1d4-4168b5a06ae8",
+      "width": 720,
+      "x": 0,
+      "y": 0,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2137,6 +2171,28 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 1245,
+      "name": "BG_Galaxy1",
+      "texture": "BG_Galaxy1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 1245,
+      "name": "BG_Galaxy1_Stars",
+      "texture": "BG_Galaxy1_Stars.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -2168,6 +2224,12 @@
       },
       {
         "objectName": "PlayerBullet"
+      },
+      {
+        "objectName": "BG_Galaxy1"
+      },
+      {
+        "objectName": "BG_Galaxy1_Stars"
       }
     ]
   },
@@ -4887,6 +4949,38 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::YOffset"
+          },
+          "parameters": [
+            "BG_Galaxy1",
+            "-",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::YOffset"
+          },
+          "parameters": [
+            "BG_Galaxy1_Stars",
+            "-",
+            "2"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
