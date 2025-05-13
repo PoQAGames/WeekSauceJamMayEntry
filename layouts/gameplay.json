@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.929687500000004,
+    "zoomFactor": 0.9610368693714763,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1091,15 +1091,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1282,
+      "height": 1281,
       "keepRatio": true,
       "layer": "",
       "name": "BG_Galaxy1",
-      "persistentUuid": "133394e8-75aa-4b64-83af-6d0438796aea",
-      "width": 720,
+      "persistentUuid": "691fd60c-648f-494c-be33-036ad89d1af5",
+      "width": 718,
       "x": 1,
-      "y": -2,
-      "zOrder": -2,
+      "y": -1,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1111,12 +1111,12 @@
       "height": 1280,
       "keepRatio": true,
       "layer": "",
-      "name": "BG_Galaxy1_Stars",
-      "persistentUuid": "4cc65649-cb39-4e31-b1d4-4168b5a06ae8",
+      "name": "BG_Glaxaxy1_Stars",
+      "persistentUuid": "07255e5f-2e8e-42f7-a5b0-6a7ba79180c1",
       "width": 720,
       "x": 0,
       "y": 0,
-      "zOrder": -1,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2173,28 +2173,6 @@
       ]
     },
     {
-      "assetStoreId": "",
-      "height": 1245,
-      "name": "BG_Galaxy1",
-      "texture": "BG_Galaxy1.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 720,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "height": 1245,
-      "name": "BG_Galaxy1_Stars",
-      "texture": "BG_Galaxy1_Stars.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 720,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Explosion",
@@ -2362,6 +2340,28 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "BG_Galaxy1",
+      "texture": "BG_Galaxy1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 1245,
+      "name": "BG_Glaxaxy1_Stars",
+      "texture": "BG_Galaxy1_Stars.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -2395,13 +2395,13 @@
         "objectName": "PlayerBullet"
       },
       {
+        "objectName": "Explosion"
+      },
+      {
         "objectName": "BG_Galaxy1"
       },
       {
-        "objectName": "BG_Galaxy1_Stars"
-      },
-      {
-        "objectName": "Explosion"
+        "objectName": "BG_Glaxaxy1_Stars"
       }
     ]
   },
@@ -5120,6 +5120,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Background",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5140,6 +5141,31 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Explosion",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Explosion",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -5166,34 +5192,9 @@
             "value": "TiledSpriteObject::YOffset"
           },
           "parameters": [
-            "BG_Galaxy1_Stars",
+            "BG_Glaxaxy1_Stars",
             "-",
             "2"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-          },
-          "parameters": [
-            "Explosion",
-            "Animation"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Explosion",
-            ""
           ]
         }
       ]

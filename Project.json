@@ -363,25 +363,10 @@
         "userAdded": false
       },
       {
-        "file": "BG_Galaxy1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "BG_Galaxy1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
         "file": "assets/Explosion5.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Explosion5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "BG_Galaxy1_Stars.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "BG_Galaxy1_Stars.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -406,6 +391,22 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Explosion8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG_Galaxy1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG_Galaxy1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG_Galaxy1_Stars.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG_Galaxy1_Stars.png",
         "smoothed": true,
         "userAdded": false
       }
