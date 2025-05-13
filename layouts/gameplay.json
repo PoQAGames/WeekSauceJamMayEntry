@@ -1086,6 +1086,40 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1281,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BG_Galaxy1",
+      "persistentUuid": "691fd60c-648f-494c-be33-036ad89d1af5",
+      "width": 718,
+      "x": 1,
+      "y": -1,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1280,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BG_Glaxaxy1_Stars",
+      "persistentUuid": "07255e5f-2e8e-42f7-a5b0-6a7ba79180c1",
+      "width": 720,
+      "x": 0,
+      "y": 0,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2306,6 +2340,28 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "BG_Galaxy1",
+      "texture": "BG_Galaxy1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 1245,
+      "name": "BG_Glaxaxy1_Stars",
+      "texture": "BG_Galaxy1_Stars.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -2340,6 +2396,12 @@
       },
       {
         "objectName": "Explosion"
+      },
+      {
+        "objectName": "BG_Galaxy1"
+      },
+      {
+        "objectName": "BG_Glaxaxy1_Stars"
       }
     ]
   },
@@ -5058,6 +5120,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Background",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5100,6 +5163,38 @@
           "parameters": [
             "Explosion",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::YOffset"
+          },
+          "parameters": [
+            "BG_Galaxy1",
+            "-",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::YOffset"
+          },
+          "parameters": [
+            "BG_Glaxaxy1_Stars",
+            "-",
+            "2"
           ]
         }
       ]
