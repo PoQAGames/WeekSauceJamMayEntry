@@ -415,7 +415,35 @@
           "group": "IkaRuleGa",
           "name": "TakeDamage",
           "sentence": "_PARAM0_ takes _PARAM1_ damage.",
-          "events": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Health",
+                    "=",
+                    "max(0, Health - Damage)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetX"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "Scale",
+                    "=",
+                    "Health / MaxHealth"
+                  ]
+                }
+              ]
+            }
+          ],
           "parameters": [
             {
               "description": "Object",
@@ -475,6 +503,146 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "the maxHealth of the object.",
+          "fullName": "MaxHealth",
+          "functionType": "ExpressionAndCondition",
+          "group": "EnemyShip configuration",
+          "name": "MaxHealth",
+          "sentence": "the maxHealth",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "MaxHealth"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "MaxHealth",
+          "name": "SetMaxHealth",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "MaxHealth",
+                    "=",
+                    "Value"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the health of the object.",
+          "fullName": "Health",
+          "functionType": "ExpressionAndCondition",
+          "group": "EnemyShip configuration",
+          "name": "Health",
+          "sentence": "the health",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Health"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "Health",
+          "name": "SetHealth",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Health",
+                    "=",
+                    "Value"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [
@@ -493,6 +661,24 @@
             "Purple"
           ],
           "name": "Color"
+        },
+        {
+          "value": "3",
+          "type": "Number",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "MaxHealth"
+        },
+        {
+          "value": "3",
+          "type": "Number",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "Health"
         }
       ],
       "objects": [

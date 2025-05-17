@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.15002679255025617,
+    "zoomFactor": 0.46331118245140024,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -380,6 +380,103 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "00c7943a-f9bd-433a-9c2d-24abdb9cd781",
+      "width": 0,
+      "x": 471,
+      "y": 106,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "9449433f-1eb2-4817-a8e3-635888382de3",
+      "width": 0,
+      "x": 318,
+      "y": 112,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "eeedadae-12f5-4ebb-bca8-8cfb566c422f",
+      "width": 0,
+      "x": 18,
+      "y": 286,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "766393e9-8247-4479-b3c6-5d21d3d796b4",
+      "width": 0,
+      "x": 396,
+      "y": 463,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "fa4f58c6-21ad-4f48-af9b-c1e50ee11625",
+      "width": 0,
+      "x": 206,
+      "y": 450,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 125,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DebugText",
+      "persistentUuid": "26bf5a0d-0c21-4fe0-82c9-f7c8a3ada1a1",
+      "width": 709,
+      "x": 5,
+      "y": 1172,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -409,7 +506,7 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 0
+          "value": 1
         },
         {
           "name": "TempDamage",
@@ -812,7 +909,9 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {}
+      "content": {
+        "Color": "Blue"
+      }
     },
     {
       "assetStoreId": "",
@@ -852,6 +951,48 @@
         }
       ],
       "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DebugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "Roboto-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "Roboto-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -889,6 +1030,9 @@
       },
       {
         "objectName": "PlayerShip"
+      },
+      {
+        "objectName": "DebugText"
       }
     ]
   },
@@ -985,6 +1129,23 @@
                   "parameters": [
                     "UpgradesStringTemp",
                     "UpgradeLevels"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetColor"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "=",
+                    "Colors[RandomInRange(0, 6)]",
+                    ""
                   ]
                 }
               ]
@@ -1441,6 +1602,66 @@
                   "parameters": [
                     "PlayerBullet",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DebugText",
+                    "Text",
+                    "=",
+                    "\"Damage: \" + PlayerBullet.TempDamage"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::Health"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "<=",
+                    "0",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Explosion",
+                    "EnemyShip.CenterX()",
+                    "EnemyShip.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Currency",
+                    "+",
+                    "1"
                   ]
                 }
               ]

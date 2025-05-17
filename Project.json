@@ -539,6 +539,36 @@
       "name": "Currency",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Colors",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "Red"
+        },
+        {
+          "type": "string",
+          "value": "Yellow"
+        },
+        {
+          "type": "string",
+          "value": "Blue"
+        },
+        {
+          "type": "string",
+          "value": "Orange"
+        },
+        {
+          "type": "string",
+          "value": "Green"
+        },
+        {
+          "type": "string",
+          "value": "Purple"
+        }
+      ]
     }
   ],
   "layouts": [
