@@ -474,7 +474,7 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Color",
+      "name": "ColorCodes",
       "type": "structure",
       "children": [
         {

@@ -402,22 +402,7 @@
       "updateIfNotVisible": false,
       "variables": [
         {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "CurrentColor",
+          "name": "Color",
           "type": "string",
           "value": "0"
         }
@@ -544,6 +529,11 @@
           "name": "Damage",
           "type": "number",
           "value": 3
+        },
+        {
+          "name": "TempDamage",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1313,7 +1303,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1329,14 +1318,48 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Rock",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Rock",
+                    "TempDamage",
+                    "=",
+                    "Rock.Damage"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::Function"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Rock.TempDamage",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Rock",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -1579,7 +1602,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Game Over",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1597,6 +1619,12 @@
                 "0",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -1695,144 +1723,176 @@
       ]
     },
     {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareTimer"
-          },
-          "parameters": [
-            "",
-            "\"ShootTimer\"",
-            ">",
-            "PlayerShip.ShootCooldown()"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "PlayerBullet",
-            "PlayerShip.CenterX()",
-            "PlayerShip.CenterY()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AddForceAL"
-          },
-          "parameters": [
-            "PlayerBullet",
-            "270",
-            "500",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"ShootTimer\""
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Shooting",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "CompareTimer"
               },
               "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
+                "",
+                "\"ShootTimer\"",
+                ">",
+                "PlayerShip.ShootCooldown()"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "PlayerBullet",
+                "PlayerShip.CenterX()",
+                "PlayerShip.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
               },
               "parameters": [
                 "PlayerBullet",
-                "Red",
-                "True",
-                ""
+                "270",
+                "500",
+                "1"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "SetStringObjectVariable"
               },
               "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "True",
-                ""
+                "PlayerBullet",
+                "Color",
+                "=",
+                "PlayerShip.Color()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "ColorCodes[PlayerBullet.Color]"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\""
               ]
             }
           ],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Yellow",
-                "True",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Red",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Red",
+                    "True",
+                    ""
+                  ]
+                }
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "True",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Yellow",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Yellow",
+                    "True",
+                    ""
+                  ]
+                }
               ]
-            }
-          ],
-          "actions": [
+            },
             {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Blue",
-                "True",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Blue",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Blue",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -1881,38 +1941,6 @@
           "parameters": [
             "Explosion",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TiledSpriteObject::YOffset"
-          },
-          "parameters": [
-            "BG_Galaxy1",
-            "-",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TiledSpriteObject::YOffset"
-          },
-          "parameters": [
-            "BG_Glaxaxy1_Stars",
-            "-",
-            "2"
           ]
         }
       ]

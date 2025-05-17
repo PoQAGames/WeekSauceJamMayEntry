@@ -1397,6 +1397,80 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onCreated",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "\"Red\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "PlayerShip takes damage",
+          "functionType": "Action",
+          "group": "PlayerShip",
+          "name": "Function",
+          "sentence": "_PARAM0_ takes _PARAM1_ damage.",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetHealth"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "max(Object.Health() - Damage, 0)",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            },
+            {
+              "description": "",
+              "name": "Damage",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [
@@ -1497,7 +1571,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 475.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 726.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 614,
+                            "y": 348.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1526,7 +1615,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 475.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 726.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 614,
+                            "y": 348.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1555,7 +1659,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 475.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 726.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 614,
+                            "y": 348.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1584,7 +1703,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 475.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 726.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 614,
+                            "y": 348.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1613,7 +1747,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 475.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 726.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 614,
+                            "y": 348.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1642,7 +1791,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 475.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 726.5,
+                            "y": 558
+                          },
+                          {
+                            "x": 614,
+                            "y": 348.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1705,18 +1869,7 @@
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Health",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "MaxHealth",
-              "type": "number",
-              "value": 3
-            }
-          ]
+          "initialVariables": []
         }
       ]
     }
