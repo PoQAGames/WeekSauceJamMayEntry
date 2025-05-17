@@ -513,6 +513,32 @@
           "value": "255;243;0"
         }
       ]
+    },
+    {
+      "name": "UpgradeLevels",
+      "type": "structure",
+      "children": [
+        {
+          "name": "FireRate",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Speed",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Currency",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
