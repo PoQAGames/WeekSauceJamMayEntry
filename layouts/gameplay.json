@@ -18,61 +18,23 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9610368693714763,
+    "zoomFactor": 0.30104611971824774,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Currency",
+      "name": "CurrencyTemp",
       "type": "number",
       "value": 0
     },
     {
-      "name": "Upgrades",
-      "type": "structure",
-      "children": [
-        {
-          "name": "Health",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "UpgradesString",
+      "name": "UpgradesStringTemp",
       "type": "string",
       "value": "0"
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "PlayerShip",
-      "persistentUuid": "693d015b-80c4-44ba-94c5-60cc8a9c79f2",
-      "width": 0,
-      "x": 223,
-      "y": 1105,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Health",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "MaxHealth",
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -140,740 +102,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "4159cf3e-66bc-41fe-b80b-0e0d4c770a4f",
-      "width": 0,
-      "x": 180,
-      "y": -336,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "316125a7-774b-42dd-bff3-3d247ffca845",
-      "width": 0,
-      "x": 437,
-      "y": -559,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "ca032826-857b-42c6-aa30-3e95bb97bb45",
-      "width": 0,
-      "x": 98,
-      "y": -103,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "d939361b-c5b8-425f-a81f-aec78dfec493",
-      "width": 0,
-      "x": 9,
-      "y": -718,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "d7d68b2d-4bea-488b-9194-9c315bdad27a",
-      "width": 0,
-      "x": 292,
-      "y": -1005,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "9bcc3a70-50d5-4601-a8f6-81cc3b6edd39",
-      "width": 0,
-      "x": 178,
-      "y": -1407,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "87e32dac-5c31-4491-99a3-1c4b0f580048",
-      "width": 0,
-      "x": 163,
-      "y": -1848,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "4303f6ef-2550-4f04-8a6d-63f71d2f3d52",
-      "width": 0,
-      "x": 450,
-      "y": -2063,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "bc046e3d-aef8-45d5-9f00-ed36e009e162",
-      "width": 0,
-      "x": 22,
-      "y": -2222,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "a0085b12-1536-4371-82a0-01e9c9ccfa58",
-      "width": 0,
-      "x": 297,
-      "y": -2547,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "b3842f99-4012-4089-accc-67e468bfeefa",
-      "width": 0,
-      "x": 183,
-      "y": -2949,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "1ae46e91-f4a4-4541-8b35-d780f57390e3",
-      "width": 0,
-      "x": 74,
-      "y": -3298,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "4636a8bc-79e9-4e0e-a068-801f4d648360",
-      "width": 0,
-      "x": 361,
-      "y": -3513,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "961e30d4-95a0-4c65-a264-0268c490ae6b",
-      "width": 0,
-      "x": -67,
-      "y": -3672,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "c7ae3a0a-2f22-4ee7-b425-9fee463332e5",
-      "width": 0,
-      "x": 208,
-      "y": -3997,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "ddab3f32-1d32-469c-8681-aefb60f23964",
-      "width": 0,
-      "x": 94,
-      "y": -4399,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "cb27aa35-fdcc-41d8-8721-beffa5b626a1",
-      "width": 0,
-      "x": 121,
-      "y": -2687,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "1aaf6915-77cf-463c-877a-159d1c48ee9e",
-      "width": 0,
-      "x": 408,
-      "y": -2902,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "f2c807ae-a8f3-4669-b64f-08f9ff365122",
-      "width": 0,
-      "x": -68,
-      "y": -2446,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "653771ca-7b47-409d-a48e-12859c4a8e71",
-      "width": 0,
-      "x": 59,
-      "y": -4099,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "b74b8c57-520c-414e-9e0e-641663627929",
-      "width": 0,
-      "x": 346,
-      "y": -4314,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 180,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "7c56d06d-7d23-4bbb-b9d7-4d049e9ff69f",
-      "width": 0,
-      "x": -130,
-      "y": -3858,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        }
-      ]
     },
     {
       "angle": 0,
@@ -966,42 +194,10 @@
       "keepRatio": true,
       "layer": "",
       "name": "Rock",
-      "persistentUuid": "5db21e7c-90ae-492a-8d9f-ab5539dba888",
-      "width": 0,
-      "x": 393,
-      "y": -1262,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
       "persistentUuid": "f49f0098-ea50-41e5-a59f-f3894579b979",
       "width": 0,
       "x": 74,
       "y": -1729,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
-      "persistentUuid": "33fd4c6c-f75a-433d-a6f5-6190a19a2f2a",
-      "width": 0,
-      "x": 359,
-      "y": -2301,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -1030,42 +226,10 @@
       "keepRatio": true,
       "layer": "",
       "name": "Rock",
-      "persistentUuid": "95a32c22-7080-4603-b8a4-702e8ef2580d",
-      "width": 0,
-      "x": 323,
-      "y": -3254,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
       "persistentUuid": "7236efb9-1703-4186-9257-72b717f1613e",
       "width": 0,
       "x": -55,
       "y": -3551,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
-      "persistentUuid": "f91429bd-2922-4b6a-9cf7-d8d3c73f45c0",
-      "width": 0,
-      "x": 378,
-      "y": -3873,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -1114,341 +278,144 @@
       "name": "BG_Glaxaxy1_Stars",
       "persistentUuid": "07255e5f-2e8e-42f7-a5b0-6a7ba79180c1",
       "width": 720,
-      "x": 0,
-      "y": 0,
+      "x": -5,
+      "y": 3,
       "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "54003d19-53fc-49ff-884e-59f4c2d7a9bc",
+      "width": 0,
+      "x": 164,
+      "y": 98,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PlayerShip",
+      "persistentUuid": "a1516b48-dd0a-443a-bf7f-daf8b76c3740",
+      "width": 0,
+      "x": 212,
+      "y": 999,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "00c7943a-f9bd-433a-9c2d-24abdb9cd781",
+      "width": 0,
+      "x": 471,
+      "y": 106,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "9449433f-1eb2-4817-a8e3-635888382de3",
+      "width": 0,
+      "x": 318,
+      "y": 112,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "eeedadae-12f5-4ebb-bca8-8cfb566c422f",
+      "width": 0,
+      "x": 84,
+      "y": 452,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "766393e9-8247-4479-b3c6-5d21d3d796b4",
+      "width": 0,
+      "x": 409,
+      "y": 463,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemyShip",
+      "persistentUuid": "fa4f58c6-21ad-4f48-af9b-c1e50ee11625",
+      "width": 0,
+      "x": 236,
+      "y": 447,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 125,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DebugText",
+      "persistentUuid": "26bf5a0d-0c21-4fe0-82c9-f7c8a3ada1a1",
+      "width": 709,
+      "x": 5,
+      "y": 1172,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "PlayerShip",
-      "preScale": 0.25,
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "CurrentColor",
-          "type": "string",
-          "value": "\"0;0;0\""
-        },
-        {
-          "name": "AttackSpeed",
-          "type": "number",
-          "value": 0.5
-        },
-        {
-          "name": "ColorSlot1",
-          "type": "string",
-          "value": "Red"
-        },
-        {
-          "name": "ColorSlot2",
-          "type": "string",
-          "value": "Red"
-        },
-        {
-          "name": "Health",
-          "type": "number",
-          "value": 1
-        },
-        {
-          "name": "MaxHealth",
-          "type": "number",
-          "value": 0
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "LinearMovement",
-          "type": "LinearMovement::LinearMovement",
-          "SpeedX": 0,
-          "SpeedY": -800
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "ignoreDefaultControls": false,
-          "acceleration": 5000,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 5000,
-          "maxSpeed": 800,
-          "movementAngleOffset": 0,
-          "rotateObject": false,
-          "viewpoint": "TopDown"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-          "TopDownMovement": "TopDownMovement",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "StickMode": "Analog"
-        }
-      ],
-      "animations": [
-        {
-          "name": "TempShip",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.01,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_White.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_Red.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_Yellow.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_Blue.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_Orange.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_Green.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\playership\\Spaceship_Purple.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 494.5,
-                        "y": 566
-                      },
-                      {
-                        "x": 615.5,
-                        "y": 330.5
-                      },
-                      {
-                        "x": 730,
-                        "y": 567
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "assetStoreId": "",
       "height": 32,
@@ -1468,24 +435,19 @@
       "updateIfNotVisible": false,
       "variables": [
         {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "CurrentColor",
+          "name": "Color",
           "type": "string",
           "value": "0"
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "TempDamage",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1559,430 +521,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "EnemyShip",
-      "preScale": 0.25,
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Red",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Yellow",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Blue",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "CurrentColor",
-          "type": "string",
-          "value": "\"0;0;0\""
-        },
-        {
-          "name": "Damage",
-          "type": "number",
-          "value": 1
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "LinearMovement",
-          "type": "LinearMovement::LinearMovement",
-          "SpeedX": 0,
-          "SpeedY": 200
-        }
-      ],
-      "animations": [
-        {
-          "name": "TempShip",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.2,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_White.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_Red.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_Yellow.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_Blue.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_Orange.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_Green.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\enemyship\\Enemy1_Purple.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Explosion",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Explosion5",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Explosion6",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Explosion7",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Explosion8",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 517,
-                        "y": 574.5
-                      },
-                      {
-                        "x": 614,
-                        "y": 350
-                      },
-                      {
-                        "x": 701.5,
-                        "y": 572.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "height": 32,
       "name": "LevelBottom",
@@ -2033,7 +571,12 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 3
+          "value": 1
+        },
+        {
+          "name": "TempDamage",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -2094,74 +637,6 @@
                       {
                         "x": 569.5,
                         "y": 434
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "HealthBar",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Sticker",
-          "type": "Sticker::Sticker",
-          "OnlyFollowPosition": true,
-          "IsDestroyedWithParent": true
-        }
-      ],
-      "animations": [
-        {
-          "name": "HealthBar",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "HealthBar3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
                       }
                     ]
                   ]
@@ -2362,22 +837,111 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "EnemyShip",
+      "type": "IkaRuleGa::EnemyShip",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "Color": "Blue"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "PlayerShip",
+      "type": "IkaRuleGa::PlayerShip",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 0
+        },
+        {
+          "acceleration": 4000,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 4000,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 200,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        },
+        {
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+          "TopDownMovement": "TopDownMovement",
+          "ControllerIdentifier": 1,
+          "JoystickIdentifier": "Primary",
+          "StickMode": "Analog"
+        }
+      ],
+      "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DebugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "Roboto-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "Roboto-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "EnemyShip"
+        "objectName": "BG_Galaxy1"
       },
       {
-        "objectName": "HealthBar"
+        "objectName": "BG_Glaxaxy1_Stars"
       },
       {
         "objectName": "Rock"
-      },
-      {
-        "objectName": "PlayerShip"
       },
       {
         "objectName": "InvisibleWall"
@@ -2398,10 +962,13 @@
         "objectName": "Explosion"
       },
       {
-        "objectName": "BG_Galaxy1"
+        "objectName": "EnemyShip"
       },
       {
-        "objectName": "BG_Glaxaxy1_Stars"
+        "objectName": "PlayerShip"
+      },
+      {
+        "objectName": "DebugText"
       }
     ]
   },
@@ -2411,8 +978,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "Start",
+      "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -2428,104 +994,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "ColorSlot1",
-                "=",
-                "\"Red\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "ColorSlot2",
-                "=",
-                "\"Red\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetWidth"
-              },
-              "parameters": [
-                "HealthBar",
-                "Resizable",
-                "=",
-                "PlayerShip.Health / PlayerShip.MaxHealth * 64"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "HealthBar",
-                "PlayerShip.CenterX() - 38",
-                "PlayerShip.CenterY() - 32",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "LinkedObjects::LinkObjects"
-              },
-              "parameters": [
-                "",
-                "PlayerShip",
-                "HealthBar"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "HealthBar",
-                "Sticker",
-                "PlayerShip",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "PlayerShip",
-                "LinearMovement",
-                "no"
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2549,7 +1018,17 @@
                     "\"Save\"",
                     "\"Currency\"",
                     "",
-                    "Currency"
+                    "CurrencyTemp"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Currency",
+                    "=",
+                    "CurrencyTemp"
                   ]
                 }
               ]
@@ -2576,7 +1055,7 @@
                     "\"Save\"",
                     "\"Upgrades\"",
                     "",
-                    "UpgradesString"
+                    "UpgradesStringTemp"
                   ]
                 },
                 {
@@ -2584,8 +1063,8 @@
                     "value": "JSONToVariableStructure2"
                   },
                   "parameters": [
-                    "UpgradesString",
-                    "Upgrades"
+                    "UpgradesStringTemp",
+                    "UpgradeLevels"
                   ]
                 }
               ]
@@ -2596,33 +1075,13 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberObjectVariable"
+                    "value": "IkaRuleGa::EnemyShip::SetColor"
                   },
                   "parameters": [
-                    "PlayerShip",
-                    "MaxHealth",
+                    "EnemyShip",
                     "=",
-                    "Upgrades.Health"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Health",
-                    "=",
-                    "PlayerShip.MaxHealth"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ShootTimer\""
+                    "Colors[RandomInRange(0, 5)]",
+                    ""
                   ]
                 }
               ]
@@ -2637,7 +1096,103 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
+      "name": "Configure PlayerShip At Start",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "LinearMovement",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetMaxHP"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "1 + UpgradeLevels.Health * 1",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetSpeed"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "=",
+                    "800 + UpgradeLevels.Speed * 25",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetShootCooldown"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "=",
+                    "max(0.5, 1 - UpgradeLevels.FireRate * 0.05)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ShootTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "TopDownMovement",
+                    "=",
+                    "PlayerShip.Speed()"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2672,7 +1227,7 @@
               "parameters": [
                 "\"Save\"",
                 "\"Currency\"",
-                "Currency"
+                "CurrencyTemp"
               ]
             },
             {
@@ -2763,79 +1318,6 @@
               },
               "parameters": [
                 "PlayerShip",
-                "EnemyShip",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "!=",
-                "EnemyShip.CurrentColor"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Explosion",
-                "EnemyShip.CenterX()",
-                "EnemyShip.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "EnemyShip",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Health",
-                "=",
-                "PlayerShip.Health - EnemyShip.Damage"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetWidth"
-              },
-              "parameters": [
-                "HealthBar",
-                "Resizable",
-                "=",
-                "PlayerShip.Health / PlayerShip.MaxHealth * 64"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "PlayerShip",
                 "InvisibleWall",
                 "",
                 "",
@@ -2857,7 +1339,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2873,25 +1354,48 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Health",
-                "=",
-                "PlayerShip.Health - Rock.Damage"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Rock",
+                    "TempDamage",
+                    "=",
+                    "Rock.Damage"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::TakeDamage"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Rock.TempDamage",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Rock",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Rock",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -2915,11 +1419,13 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
                 "PlayerBullet",
-                ""
+                "TempDamage",
+                "=",
+                "PlayerBullet.Damage"
               ]
             }
           ],
@@ -2929,13 +1435,136 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "StringObjectVariable"
+                    "value": "IkaRuleGa::ColorFullMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerBullet.Color",
+                    "EnemyShip.Color()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "TempDamage",
+                    "=",
+                    "PlayerBullet.TempDamage * 2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorPartialMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerBullet.Color",
+                    "EnemyShip.Color()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "TempDamage",
+                    "=",
+                    "PlayerBullet.TempDamage * 1.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorNoMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerBullet.Color",
+                    "EnemyShip.Color()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "TempDamage",
+                    "=",
+                    "PlayerBullet.TempDamage * 0.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::TakeDamage"
                   },
                   "parameters": [
                     "EnemyShip",
-                    "CurrentColor",
+                    "PlayerBullet.TempDamage",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DebugText",
+                    "Text",
                     "=",
-                    "PlayerBullet.CurrentColor"
+                    "\"C1: \" + PlayerBullet.Color + \", C2: \" + EnemyShip.Color() + \", Dmg: \" + PlayerBullet.TempDamage"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::Health"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "<=",
+                    "0",
+                    ""
                   ]
                 }
               ],
@@ -2967,8 +1596,8 @@
                   },
                   "parameters": [
                     "Currency",
-                    "=",
-                    "Currency + 1"
+                    "+",
+                    "1"
                   ]
                 }
               ]
@@ -3100,7 +1729,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3116,174 +1744,17 @@
           "actions": [
             {
               "type": {
-                "value": "SetStringObjectVariable"
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
               },
               "parameters": [
                 "PlayerShip",
-                "ColorSlot2",
-                "=",
-                "PlayerShip.ColorSlot1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "ColorSlot1",
-                "=",
-                "\"Red\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
+                "\"Red\"",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Red\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Red",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Yellow\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Red",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Yellow",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Blue\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Red",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
               ]
             }
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3299,174 +1770,17 @@
           "actions": [
             {
               "type": {
-                "value": "SetStringObjectVariable"
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
               },
               "parameters": [
                 "PlayerShip",
-                "ColorSlot2",
-                "=",
-                "PlayerShip.ColorSlot1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "ColorSlot1",
-                "=",
-                "\"Yellow\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
+                "\"Yellow\"",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Yellow\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Yellow",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Red\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Red",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Yellow",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Blue\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Yellow",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
               ]
             }
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3482,1336 +1796,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetStringObjectVariable"
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
               },
               "parameters": [
                 "PlayerShip",
-                "ColorSlot2",
-                "=",
-                "PlayerShip.ColorSlot1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "ColorSlot1",
-                "=",
-                "\"Blue\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
+                "\"Blue\"",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Blue\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Red\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Red",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "ColorSlot2",
-                    "=",
-                    "\"Yellow\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Yellow",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Player Color",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.None"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.Red"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.Yellow"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.Blue"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "4"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.Orange"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.Green"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "6"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.Purple"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "PlayerShip",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "CurrentColor",
-                "=",
-                "Color.None"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Enemy Color",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.None"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.Red"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.Yellow"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "2"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.Blue"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.Orange"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "4"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.Green"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "5"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.Purple"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "6"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Red",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "EnemyShip",
-                "CurrentColor",
-                "=",
-                "Color.None"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "EnemyShip",
-                "Animation"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "EnemyShip",
-                "=",
-                "0"
               ]
             }
           ]
@@ -4833,13 +1823,13 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberObjectVariable"
+                "value": "IkaRuleGa::PlayerShip::Health"
               },
               "parameters": [
                 "PlayerShip",
-                "Health",
                 "<=",
-                "0"
+                "0",
+                ""
               ]
             },
             {
@@ -4886,7 +1876,7 @@
               "parameters": [
                 "\"Save\"",
                 "\"Currency\"",
-                "Currency"
+                "CurrencyTemp"
               ]
             },
             {
@@ -4915,7 +1905,7 @@
             "CurrencyDisplay",
             "CurrentCurrency",
             "!=",
-            "Currency"
+            "CurrencyTemp"
           ]
         }
       ],
@@ -4928,7 +1918,7 @@
             "CurrencyDisplay",
             "CurrentCurrency",
             "=",
-            "Currency"
+            "CurrencyTemp"
           ]
         },
         {
@@ -4939,178 +1929,7 @@
             "CurrencyDisplay",
             "Text",
             "=",
-            "\"$\" + Currency"
-          ]
-        }
-      ]
-    },
-    {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "StringObjectVariable"
-          },
-          "parameters": [
-            "PlayerShip",
-            "CurrentColor",
-            "!=",
-            "\"255;255;255\""
-          ]
-        },
-        {
-          "type": {
-            "value": "CompareTimer"
-          },
-          "parameters": [
-            "",
-            "\"ShootTimer\"",
-            ">",
-            "PlayerShip.Variable(AttackSpeed)"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "PlayerBullet",
-            "PlayerShip.CenterX()",
-            "PlayerShip.CenterY()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AddForceAL"
-          },
-          "parameters": [
-            "PlayerBullet",
-            "270",
-            "500",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "PlayerBullet",
-            "PlayerShip.CurrentColor"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringObjectVariable"
-          },
-          "parameters": [
-            "PlayerBullet",
-            "CurrentColor",
-            "=",
-            "PlayerShip.CurrentColor"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"ShootTimer\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Red",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Red",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Yellow",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Yellow",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerShip",
-                "Blue",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Blue",
-                "True",
-                ""
-              ]
-            }
+            "\"$\" + CurrencyTemp"
           ]
         }
       ]
@@ -5120,7 +1939,178 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
+      "name": "Shooting",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\"",
+                ">",
+                "PlayerShip.ShootCooldown()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "PlayerBullet",
+                "PlayerShip.CenterX()",
+                "PlayerShip.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "270",
+                "500",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "Color",
+                "=",
+                "PlayerShip.Color()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "ColorCodes[PlayerBullet.Color]"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Red",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Red",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Yellow",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Yellow",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Blue",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Blue",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "name": "Background",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5163,38 +2153,6 @@
           "parameters": [
             "Explosion",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TiledSpriteObject::YOffset"
-          },
-          "parameters": [
-            "BG_Galaxy1",
-            "-",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TiledSpriteObject::YOffset"
-          },
-          "parameters": [
-            "BG_Glaxaxy1_Stars",
-            "-",
-            "2"
           ]
         }
       ]
@@ -5274,10 +2232,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Sticker",
-      "type": "Sticker::Sticker"
     },
     {
       "name": "Text",

@@ -18,26 +18,15 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.5117784035210174,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Currency",
+      "name": "CurrencyTemp",
       "type": "number",
       "value": 0
-    },
-    {
-      "name": "Upgrades",
-      "type": "structure",
-      "children": [
-        {
-          "name": "Health",
-          "type": "number",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "TempUpgrades",
@@ -643,7 +632,17 @@
             "\"Save\"",
             "\"Currency\"",
             "",
-            "Currency"
+            "CurrencyTemp"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Currency",
+            "=",
+            "CurrencyTemp"
           ]
         }
       ],
@@ -679,7 +678,7 @@
               },
               "parameters": [
                 "TempUpgrades",
-                "Upgrades"
+                "UpgradeLevels"
               ]
             }
           ]
@@ -706,8 +705,8 @@
           },
           "parameters": [
             "Currency",
-            "=",
-            "Currency + 1"
+            "+",
+            "1"
           ]
         }
       ]
@@ -733,7 +732,7 @@
           "parameters": [
             "Currency",
             "=",
-            "max(0, Currency - 1)"
+            "max(0, Currency- 1)"
           ]
         }
       ]
@@ -769,17 +768,7 @@
           "parameters": [
             "\"Save\"",
             "\"Upgrades\"",
-            "ToJSON(Upgrades)"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierTxt"
-          },
-          "parameters": [
-            "\"Save\"",
-            "\"Upgrades\"",
-            "ToJSON(Upgrades)"
+            "ToJSON(UpgradeLevels)"
           ]
         }
       ],
@@ -867,7 +856,7 @@
                 "UpgradeHealthButton",
                 "CurrentLevel",
                 "!=",
-                "Upgrades.Health"
+                "UpgradeLevels.Health"
               ]
             },
             {
@@ -886,7 +875,7 @@
                 "UpgradeHealthButton",
                 "Cost",
                 "=",
-                "pow(Upgrades.Health, 2)"
+                "pow(UpgradeLevels.Health, 2)"
               ]
             },
             {
@@ -897,7 +886,7 @@
                 "Current_Health_Display",
                 "Text",
                 "=",
-                "\"Health: \" + Upgrades.Health"
+                "\"Health: \" + UpgradeLevels.Health"
               ]
             },
             {
@@ -918,7 +907,7 @@
                 "UpgradeHealthButton",
                 "CurrentLevel",
                 "=",
-                "Upgrades.Health"
+                "UpgradeLevels.Health"
               ]
             }
           ]
@@ -1032,9 +1021,9 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "Upgrades.Health",
+                "UpgradeLevels.Health",
                 "=",
-                "Upgrades.Health + 1"
+                "UpgradeLevels.Health + 1"
               ]
             },
             {
