@@ -647,8 +647,8 @@
       ],
       "propertyDescriptors": [
         {
-          "value": "",
-          "type": "Choice",
+          "value": "Red",
+          "type": "String",
           "label": "",
           "description": "",
           "group": "",
@@ -2088,7 +2088,7 @@
           "name": "PreviousToggleColor"
         },
         {
-          "value": "",
+          "value": "Red",
           "type": "String",
           "label": "",
           "description": "",
