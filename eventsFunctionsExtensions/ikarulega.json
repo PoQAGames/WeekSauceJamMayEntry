@@ -558,13 +558,13 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "IkaRuleGa::PlayerShip::SetMaxHealth"
                   },
                   "parameters": [
-                    "Ship",
-                    "MaxHealth",
+                    "Object",
                     "=",
-                    "NewMaxHealth"
+                    "NewMaxHealth",
+                    ""
                   ]
                 }
               ]
@@ -586,13 +586,30 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "IkaRuleGa::PlayerShip::SetHealth"
                   },
                   "parameters": [
-                    "Ship",
-                    "Health",
+                    "Object",
                     "=",
-                    "NewMaxHealth"
+                    "NewMaxHealth",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DebugText",
+                    "Text",
+                    "=",
+                    "Health"
                   ]
                 }
               ]
@@ -611,8 +628,10 @@
               "type": "expression"
             },
             {
+              "defaultValue": "True",
               "description": "",
               "name": "HealToFull",
+              "optional": true,
               "type": "trueorfalse"
             }
           ],
@@ -1436,7 +1455,7 @@
           "fullName": "PlayerShip takes damage",
           "functionType": "Action",
           "group": "PlayerShip",
-          "name": "Function",
+          "name": "TakeDamage",
           "sentence": "_PARAM0_ takes _PARAM1_ damage.",
           "events": [
             {
@@ -1452,6 +1471,17 @@
                     "=",
                     "max(Object.Health() - Damage, 0)",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetX"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "Scale",
+                    "=",
+                    "Health / MaxHealth"
                   ]
                 }
               ]
@@ -1813,6 +1843,108 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HealthBar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\health\\HealthBar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DebugText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Test",
+          "font": "Roboto-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "255;255;255",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Test",
+            "font": "Roboto-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -1820,6 +1952,12 @@
         "children": [
           {
             "objectName": "Ship"
+          },
+          {
+            "objectName": "HealthBar"
+          },
+          {
+            "objectName": "DebugText"
           }
         ]
       },
@@ -1867,6 +2005,39 @@
           "x": 0,
           "y": 0,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HealthBar",
+          "persistentUuid": "01d43827-feb3-496d-8be1-0dc2f58e0331",
+          "width": 0,
+          "x": 120,
+          "y": 42,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 30,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DebugText",
+          "persistentUuid": "db2a33fa-3701-41ba-a989-11ccf17d92a5",
+          "width": 220,
+          "x": 51,
+          "y": 148,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []

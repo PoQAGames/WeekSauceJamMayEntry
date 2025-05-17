@@ -528,7 +528,7 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 3
+          "value": 1
         },
         {
           "name": "TempDamage",
@@ -594,74 +594,6 @@
                       {
                         "x": 569.5,
                         "y": 434
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "HealthBar",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Sticker",
-          "type": "Sticker::Sticker",
-          "OnlyFollowPosition": true,
-          "IsDestroyedWithParent": true
-        }
-      ],
-      "animations": [
-        {
-          "name": "HealthBar",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "HealthBar3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
                       }
                     ]
                   ]
@@ -920,9 +852,6 @@
       },
       {
         "objectName": "BG_Glaxaxy1_Stars"
-      },
-      {
-        "objectName": "HealthBar"
       },
       {
         "objectName": "Rock"
@@ -1337,7 +1266,7 @@
                 },
                 {
                   "type": {
-                    "value": "IkaRuleGa::PlayerShip::Function"
+                    "value": "IkaRuleGa::PlayerShip::TakeDamage"
                   },
                   "parameters": [
                     "PlayerShip",
