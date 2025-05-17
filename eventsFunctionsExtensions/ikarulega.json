@@ -16,7 +16,347 @@
   "dependencies": [],
   "globalVariables": [],
   "sceneVariables": [],
-  "eventsFunctions": [],
+  "eventsFunctions": [
+    {
+      "description": "For instance, orange is full match for orange but not for red or yellow.",
+      "fullName": "Color Is Full Match",
+      "functionType": "Condition",
+      "name": "ColorFullMatch",
+      "sentence": "_PARAM1_ fully matches _PARAM2_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareStrings"
+              },
+              "parameters": [
+                "Color1",
+                "=",
+                "Color2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "True"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Color1",
+          "type": "string"
+        },
+        {
+          "description": "",
+          "name": "Color2",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "For instance, red partial matches with orange but not with red or blue.",
+      "fullName": "Color Is Partial Match",
+      "functionType": "Condition",
+      "name": "ColorPartialMatch",
+      "sentence": "_PARAM1_ is a partial match for _PARAM2_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Color1",
+                "=",
+                "\"Orange\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Color2",
+                    "=",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Color2",
+                    "=",
+                    "\"Yellow\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Color1",
+                "=",
+                "\"Green\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Color2",
+                    "=",
+                    "\"Blue\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Color2",
+                    "=",
+                    "\"Yellow\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Color1",
+                "=",
+                "\"Purple\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Color2",
+                    "=",
+                    "\"Red\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Color2",
+                    "=",
+                    "\"Blue\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Color1",
+          "type": "string"
+        },
+        {
+          "description": "",
+          "name": "Color2",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "For instance, red is no match for green.",
+      "fullName": "Color Is No Match",
+      "functionType": "Condition",
+      "name": "ColorNoMatch",
+      "sentence": "_PARAM1_ is a no match for _PARAM2_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "IkaRuleGa::ColorPartialMatch"
+              },
+              "parameters": [
+                "",
+                "Color1",
+                "Color2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "IkaRuleGa::ColorFullMatch"
+              },
+              "parameters": [
+                "",
+                "Color1",
+                "Color2",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Color1",
+          "type": "string"
+        },
+        {
+          "description": "",
+          "name": "Color2",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
   "eventsBasedBehaviors": [],
   "eventsBasedObjects": [
     {
@@ -31,8 +371,119 @@
       "fullName": "",
       "isUsingLegacyInstancesRenderer": false,
       "name": "EnemyShip",
-      "eventsFunctions": [],
-      "propertyDescriptors": [],
+      "eventsFunctions": [
+        {
+          "description": "the color of the object.",
+          "fullName": "Color",
+          "functionType": "ExpressionAndCondition",
+          "group": "EnemyShip configuration",
+          "name": "Color",
+          "sentence": "the color",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Color"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "supplementaryInformation": "[\"Red\",\"Yellow\",\"Blue\",\"Orange\",\"Green\",\"Purple\"]",
+            "type": "stringWithSelector"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "EnemyShip takes damage",
+          "functionType": "Action",
+          "group": "IkaRuleGa",
+          "name": "TakeDamage",
+          "sentence": "_PARAM0_ takes _PARAM1_ damage.",
+          "events": [],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            },
+            {
+              "description": "",
+              "name": "Damage",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "Color",
+          "name": "SetColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Color",
+                    "=",
+                    "Value"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "Choice",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [
+            "Red",
+            "Yellow",
+            "Blue",
+            "Orange",
+            "Green",
+            "Purple"
+          ],
+          "name": "Color"
+        }
+      ],
       "objects": [
         {
           "adaptCollisionMaskAutomatically": false,
@@ -600,19 +1051,7 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "DebugText",
-                    "Text",
-                    "=",
-                    "Health"
-                  ]
-                }
-              ]
+              "actions": []
             }
           ],
           "parameters": [
@@ -1454,7 +1893,7 @@
         {
           "fullName": "PlayerShip takes damage",
           "functionType": "Action",
-          "group": "PlayerShip",
+          "group": "IkaRuleGa",
           "name": "TakeDamage",
           "sentence": "_PARAM0_ takes _PARAM1_ damage.",
           "events": [
@@ -1915,7 +2354,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Test",
+          "string": "",
           "font": "Roboto-Regular.ttf",
           "textAlignment": "left",
           "characterSize": 30,
@@ -1938,7 +2377,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Test",
+            "text": "",
             "font": "Roboto-Regular.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
