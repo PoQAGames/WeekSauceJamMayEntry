@@ -451,6 +451,17 @@
                     "=",
                     "Value"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "Animation",
+                    "=",
+                    "Color"
+                  ]
                 }
               ]
             }
@@ -488,88 +499,22 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "EnemyShip",
+          "name": "Ship",
           "preScale": 0.25,
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Red",
-              "type": "boolean",
-              "value": false
-            },
-            {
-              "name": "Yellow",
-              "type": "boolean",
-              "value": false
-            },
-            {
-              "name": "Blue",
-              "type": "boolean",
-              "value": false
-            },
-            {
-              "name": "CurrentColor",
-              "type": "string",
-              "value": "\"0;0;0\""
-            },
-            {
-              "name": "Damage",
-              "type": "number",
-              "value": 1
-            }
-          ],
+          "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "LinearMovement",
-              "type": "LinearMovement::LinearMovement",
-              "SpeedX": 0,
-              "SpeedY": 200
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
-              "name": "TempShip",
+              "name": "Red",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.2,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_White.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 574.5
-                          },
-                          {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 701.5,
-                            "y": 572.5
-                          }
-                        ]
-                      ]
-                    },
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\enemyship\\Enemy1_Red.png",
@@ -589,19 +534,31 @@
                         [
                           {
                             "x": 517,
-                            "y": 574.5
+                            "y": 586
                           },
                           {
                             "x": 614,
                             "y": 350
                           },
                           {
-                            "x": 701.5,
-                            "y": 572.5
+                            "x": 718,
+                            "y": 587.5
                           }
                         ]
                       ]
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Yellow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\enemyship\\Enemy1_Yellow.png",
@@ -621,19 +578,31 @@
                         [
                           {
                             "x": 517,
-                            "y": 574.5
+                            "y": 586
                           },
                           {
                             "x": 614,
                             "y": 350
                           },
                           {
-                            "x": 701.5,
-                            "y": 572.5
+                            "x": 718,
+                            "y": 587.5
                           }
                         ]
                       ]
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blue",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\enemyship\\Enemy1_Blue.png",
@@ -653,51 +622,31 @@
                         [
                           {
                             "x": 517,
-                            "y": 574.5
+                            "y": 586
                           },
                           {
                             "x": 614,
                             "y": 350
                           },
                           {
-                            "x": 701.5,
-                            "y": 572.5
+                            "x": 718,
+                            "y": 587.5
                           }
                         ]
                       ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Orange.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 574.5
-                          },
-                          {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 701.5,
-                            "y": 572.5
-                          }
-                        ]
-                      ]
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\enemyship\\Enemy1_Green.png",
@@ -717,19 +666,75 @@
                         [
                           {
                             "x": 517,
-                            "y": 574.5
+                            "y": 586
                           },
                           {
                             "x": 614,
                             "y": 350
                           },
                           {
-                            "x": 701.5,
-                            "y": 572.5
+                            "x": 718,
+                            "y": 587.5
                           }
                         ]
                       ]
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Orange",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Orange.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Purple",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\enemyship\\Enemy1_Purple.png",
@@ -749,15 +754,15 @@
                         [
                           {
                             "x": 517,
-                            "y": 574.5
+                            "y": 586
                           },
                           {
                             "x": 614,
                             "y": 350
                           },
                           {
-                            "x": 701.5,
-                            "y": 572.5
+                            "x": 718,
+                            "y": 587.5
                           }
                         ]
                       ]
@@ -765,19 +770,30 @@
                   ]
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "HealthBar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
             {
-              "name": "Explosion",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": true,
-                      "image": "Explosion5",
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\health\\HealthBar.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -790,118 +806,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 574.5
-                          },
-                          {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 701.5,
-                            "y": 572.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Explosion6",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 574.5
-                          },
-                          {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 701.5,
-                            "y": 572.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Explosion7",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 574.5
-                          },
-                          {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 701.5,
-                            "y": 572.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Explosion8",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 574.5
-                          },
-                          {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 701.5,
-                            "y": 572.5
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -914,7 +819,10 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "EnemyShip"
+            "objectName": "Ship"
+          },
+          {
+            "objectName": "HealthBar"
           }
         ]
       },
@@ -956,7 +864,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "EnemyShip",
+          "name": "Ship",
           "persistentUuid": "ca4156da-b426-4779-b924-556b6fc5a9df",
           "width": 0,
           "x": 1.4210854715202004e-14,
@@ -969,18 +877,23 @@
             }
           ],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Yellow",
-              "type": "boolean",
-              "value": false
-            },
-            {
-              "name": "Red",
-              "type": "boolean",
-              "value": true
-            }
-          ]
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HealthBar",
+          "persistentUuid": "11631948-2574-4ad8-a97a-3e9fc93eb918",
+          "width": 0,
+          "x": 136,
+          "y": 5,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ]
     },
