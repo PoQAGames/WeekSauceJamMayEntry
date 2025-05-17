@@ -16,60 +16,7 @@
   "dependencies": [],
   "globalVariables": [],
   "sceneVariables": [],
-  "eventsFunctions": [
-    {
-      "description": "Return the new color after this color is added.",
-      "fullName": "Add Colors",
-      "functionType": "StringExpression",
-      "name": "AddColors",
-      "sentence": "",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "CurrentColor",
-                "=",
-                "\"Red\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetReturnString"
-              },
-              "parameters": [
-                "\"Red\""
-              ]
-            }
-          ]
-        }
-      ],
-      "expressionType": {
-        "supplementaryInformation": "[]",
-        "type": "stringWithSelector"
-      },
-      "parameters": [
-        {
-          "description": "",
-          "name": "CurrentColor",
-          "type": "string"
-        },
-        {
-          "description": "",
-          "name": "AddedColor",
-          "supplementaryInformation": "[\"Red\",\"Yellow\",\"Blue\"]",
-          "type": "stringWithSelector"
-        }
-      ],
-      "objectGroups": []
-    }
-  ],
+  "eventsFunctions": [],
   "eventsBasedBehaviors": [],
   "eventsBasedObjects": [
     {
@@ -950,6 +897,505 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "fullName": "Toggle Color",
+          "functionType": "Action",
+          "name": "ToggleColor",
+          "sentence": "_PARAM0_ toggles _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::PreviousToggleColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "\"Red\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Red\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Red\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Yellow\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Orange\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Blue\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Purple\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::PreviousToggleColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "\"Yellow\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Red\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Orange\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Yellow\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Yellow\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Blue\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Green\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::PreviousToggleColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "\"Blue\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Red\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Purple\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Yellow\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Green\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Color",
+                        "=",
+                        "\"Blue\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "IkaRuleGa::PlayerShip::SetColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "\"Blue\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetPreviousToggleColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "Color",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            },
+            {
+              "description": "",
+              "name": "Color",
+              "supplementaryInformation": "[\"Red\",\"Yellow\",\"Blue\"]",
+              "type": "stringWithSelector"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the previousToggleColor of the object.",
+          "fullName": "PreviousToggleColor",
+          "functionType": "ExpressionAndCondition",
+          "group": "PlayerShip configuration",
+          "name": "PreviousToggleColor",
+          "sentence": "the previousToggleColor",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "PreviousToggleColor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "PreviousToggleColor",
+          "name": "SetPreviousToggleColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "PreviousToggleColor",
+                    "=",
+                    "Value"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the color of the object.",
+          "fullName": "Color",
+          "functionType": "ExpressionAndCondition",
+          "group": "PlayerShip configuration",
+          "name": "Color",
+          "sentence": "the color",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Color"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "Color",
+          "name": "SetColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Color",
+                    "=",
+                    "Value"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "=",
+                    "PlayerShip.Color"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [
@@ -988,6 +1434,24 @@
           "group": "",
           "extraInformation": [],
           "name": "ShootCooldown"
+        },
+        {
+          "value": "Red",
+          "type": "String",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "PreviousToggleColor"
+        },
+        {
+          "value": "",
+          "type": "String",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "Color"
         }
       ],
       "objects": [

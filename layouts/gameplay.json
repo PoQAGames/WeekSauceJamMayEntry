@@ -1506,7 +1506,18 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
+              },
+              "parameters": [
+                "PlayerShip",
+                "\"Red\"",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1521,7 +1532,18 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
+              },
+              "parameters": [
+                "PlayerShip",
+                "\"Yellow\"",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1536,7 +1558,18 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
+              },
+              "parameters": [
+                "PlayerShip",
+                "\"Blue\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
