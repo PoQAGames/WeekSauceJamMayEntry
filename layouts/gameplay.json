@@ -896,12 +896,12 @@
           "SpeedY": 0
         },
         {
-          "acceleration": 2000,
+          "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 2000,
+          "deceleration": 4000,
           "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": 0,
@@ -1167,7 +1167,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1280,7 +1279,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1491,7 +1489,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1676,7 +1673,7 @@
             "",
             "\"ShootTimer\"",
             ">",
-            "PlayerShip.Variable(AttackSpeed)"
+            "PlayerShip.ShootCooldown()"
           ]
         }
       ],

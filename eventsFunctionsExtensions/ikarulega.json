@@ -16,7 +16,60 @@
   "dependencies": [],
   "globalVariables": [],
   "sceneVariables": [],
-  "eventsFunctions": [],
+  "eventsFunctions": [
+    {
+      "description": "Return the new color after this color is added.",
+      "fullName": "Add Colors",
+      "functionType": "StringExpression",
+      "name": "AddColors",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentColor",
+                "=",
+                "\"Red\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Red\""
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "supplementaryInformation": "[]",
+        "type": "stringWithSelector"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "CurrentColor",
+          "type": "string"
+        },
+        {
+          "description": "",
+          "name": "AddedColor",
+          "supplementaryInformation": "[\"Red\",\"Yellow\",\"Blue\"]",
+          "type": "stringWithSelector"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
   "eventsBasedBehaviors": [],
   "eventsBasedObjects": [
     {
@@ -945,7 +998,13 @@
           "preScale": 0.25,
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Color",
+              "type": "string",
+              "value": "None"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
