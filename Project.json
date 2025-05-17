@@ -569,6 +569,17 @@
           "value": "Purple"
         }
       ]
+    },
+    {
+      "name": "Rules",
+      "type": "structure",
+      "children": [
+        {
+          "name": "TestRule",
+          "type": "boolean",
+          "value": false
+        }
+      ]
     }
   ],
   "layouts": [
