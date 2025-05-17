@@ -561,7 +561,7 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "PlayerShip",
+                    "Ship",
                     "MaxHealth",
                     "=",
                     "NewMaxHealth"
@@ -589,7 +589,7 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "PlayerShip",
+                    "Ship",
                     "Health",
                     "=",
                     "NewMaxHealth"
@@ -1376,12 +1376,13 @@
                 },
                 {
                   "type": {
-                    "value": "ChangeSprite"
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "PlayerShip",
+                    "Ship",
+                    "Animation",
                     "=",
-                    "PlayerShip.Color"
+                    "Object.Color()"
                   ]
                 }
               ]
@@ -1458,7 +1459,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "PlayerShip",
+          "name": "Ship",
           "preScale": 0.25,
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1473,7 +1474,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "TempShip",
+              "name": "Red",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1481,38 +1482,6 @@
                   "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.01,
                   "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_White.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
-                    },
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playership\\Spaceship_Red.png",
@@ -1528,23 +1497,20 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
-                    },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Yellow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playership\\Spaceship_Yellow.png",
@@ -1560,23 +1526,20 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
-                    },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blue",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playership\\Spaceship_Blue.png",
@@ -1592,23 +1555,20 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
-                    },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Orange",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playership\\Spaceship_Orange.png",
@@ -1624,23 +1584,20 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
-                    },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playership\\Spaceship_Green.png",
@@ -1656,23 +1613,20 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
-                    },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Purple",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playership\\Spaceship_Purple.png",
@@ -1688,22 +1642,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 494.5,
-                            "y": 566
-                          },
-                          {
-                            "x": 615.5,
-                            "y": 330.5
-                          },
-                          {
-                            "x": 730,
-                            "y": 567
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -1716,7 +1655,7 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "PlayerShip"
+            "objectName": "Ship"
           }
         ]
       },
@@ -1758,7 +1697,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "PlayerShip",
+          "name": "Ship",
           "persistentUuid": "435b9961-0707-4459-b043-4464c5a0524f",
           "width": 0,
           "x": 0,
