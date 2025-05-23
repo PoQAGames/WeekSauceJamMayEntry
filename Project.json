@@ -1,7 +1,7 @@
 {
   "firstLayout": "main",
   "gdVersion": {
-    "build": 228,
+    "build": 230,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -519,6 +519,16 @@
       "type": "structure",
       "children": [
         {
+          "name": "ChromaSpread",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "DamageRock",
+          "type": "number",
+          "value": 1
+        },
+        {
           "name": "FireRate",
           "type": "number",
           "value": 0
@@ -529,9 +539,19 @@
           "value": 0
         },
         {
+          "name": "ProjectileSpeed",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Speed",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "TwinCannons",
+          "type": "number",
+          "value": 1
         }
       ]
     },
@@ -575,9 +595,9 @@
       "type": "structure",
       "children": [
         {
-          "name": "TestRule",
-          "type": "boolean",
-          "value": false
+          "name": "Tanky",
+          "type": "number",
+          "value": 0
         }
       ]
     }
