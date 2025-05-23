@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.43357743047024017,
+    "zoomFactor": 0.4194339782759088,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -978,6 +978,7 @@
               ]
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1658,8 +1659,8 @@
                   },
                   "parameters": [
                     "UpgradeLevels.DamageRock",
-                    ">",
-                    "0"
+                    ">=",
+                    "1"
                   ]
                 }
               ],
@@ -1905,7 +1906,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1976,91 +1976,403 @@
           ],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Chroma Spread",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Red",
-                    "True",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevels.ChromaSpread",
+                        ">=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()-22",
+                            "PlayerShip.CenterY()-4",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "265",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "Colors[RandomInRange(0, 5)]"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()+12 ",
+                            "PlayerShip.CenterY()-4",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "275",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "Colors[RandomInRange(0, 5)]"
+                          ]
+                        }
+                      ]
+                    }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevels.ChromaSpread",
+                        ">=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()-22",
+                            "PlayerShip.CenterY()-4",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "260",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "Colors[RandomInRange(0, 5)]"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()+12",
+                            "PlayerShip.CenterY()-4",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "280",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "Colors[RandomInRange(0, 5)]"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevels.ChromaSpread",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()-22",
+                            "PlayerShip.CenterY()-4",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "255",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "Colors[RandomInRange(0, 5)]"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()+12",
+                            "PlayerShip.CenterY()-4",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "285",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "Colors[RandomInRange(0, 5)]"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "Red",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
+              "parameters": []
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Twin Cannons",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Yellow",
-                    "True",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevels.TwinCannons",
+                        ">=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()-33",
+                            "PlayerShip.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "270",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBullet",
+                            "PlayerShip.CenterX()+18",
+                            "PlayerShip.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "270",
+                            "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                            "1"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "Yellow",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerShip",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "Blue",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
+              "parameters": []
             }
           ]
         }

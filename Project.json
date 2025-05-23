@@ -519,9 +519,14 @@
       "type": "structure",
       "children": [
         {
+          "name": "ChromaSpread",
+          "type": "number",
+          "value": 3
+        },
+        {
           "name": "DamageRock",
           "type": "number",
-          "value": 0
+          "value": 1
         },
         {
           "name": "FireRate",
@@ -542,6 +547,11 @@
           "name": "Speed",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "TwinCannons",
+          "type": "number",
+          "value": 1
         }
       ]
     },
@@ -585,9 +595,9 @@
       "type": "structure",
       "children": [
         {
-          "name": "TestRule",
-          "type": "boolean",
-          "value": false
+          "name": "Tanky",
+          "type": "number",
+          "value": 0
         }
       ]
     }
