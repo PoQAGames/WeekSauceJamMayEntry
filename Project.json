@@ -1,7 +1,7 @@
 {
   "firstLayout": "main",
   "gdVersion": {
-    "build": 228,
+    "build": 230,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -518,6 +518,11 @@
       "name": "UpgradeLevels",
       "type": "structure",
       "children": [
+        {
+          "name": "DamageRock",
+          "type": "number",
+          "value": 0
+        },
         {
           "name": "FireRate",
           "type": "number",

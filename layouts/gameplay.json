@@ -842,6 +842,7 @@
       "assetStoreId": "",
       "name": "EnemyShip",
       "type": "IkaRuleGa::EnemyShip",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -853,6 +854,7 @@
       "assetStoreId": "",
       "name": "PlayerShip",
       "type": "IkaRuleGa::PlayerShip",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -863,6 +865,8 @@
           "SpeedY": 0
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -872,9 +876,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         },
         {
@@ -1712,6 +1714,34 @@
               "parameters": [
                 "PlayerBullet",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "UpgradeLevels.DamageRock",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Rock",
+                    ""
+                  ]
+                }
               ]
             }
           ]
