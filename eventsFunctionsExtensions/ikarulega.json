@@ -1116,6 +1116,7 @@
       "defaultName": "",
       "description": "",
       "fullName": "",
+      "isAnimatable": true,
       "isUsingLegacyInstancesRenderer": false,
       "name": "PlayerShip",
       "objects": [
@@ -1155,7 +1156,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1163,16 +1164,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 475.5,
-                            "y": 558
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 726.5,
-                            "y": 558
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 614,
-                            "y": 348.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1199,7 +1204,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1207,16 +1212,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 475.5,
-                            "y": 558
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 726.5,
-                            "y": 558
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 614,
-                            "y": 348.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1243,7 +1252,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1251,16 +1260,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 475.5,
-                            "y": 558
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 726.5,
-                            "y": 558
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 614,
-                            "y": 348.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1287,7 +1300,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1295,16 +1308,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 475.5,
-                            "y": 558
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 726.5,
-                            "y": 558
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 614,
-                            "y": 348.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1331,7 +1348,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1339,16 +1356,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 475.5,
-                            "y": 558
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 726.5,
-                            "y": 558
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 614,
-                            "y": 348.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1375,7 +1396,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1383,16 +1404,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 475.5,
-                            "y": 558
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 726.5,
-                            "y": 558
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 614,
-                            "y": 348.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1443,48 +1468,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "DebugText",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "",
-          "font": "Roboto-Regular.ttf",
-          "textAlignment": "left",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "255;255;255",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "",
-            "font": "Roboto-Regular.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 30,
-            "color": "255;255;255"
-          }
         }
       ],
       "objectsFolderStructure": {
@@ -1495,9 +1478,6 @@
           },
           {
             "objectName": "HealthBar"
-          },
-          {
-            "objectName": "DebugText"
           }
         ]
       },
@@ -1561,23 +1541,6 @@
           "x": 120,
           "y": 42,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 30,
-          "keepRatio": true,
-          "layer": "",
-          "name": "DebugText",
-          "persistentUuid": "db2a33fa-3701-41ba-a989-11ccf17d92a5",
-          "width": 220,
-          "x": 51,
-          "y": 148,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
