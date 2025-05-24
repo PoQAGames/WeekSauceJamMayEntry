@@ -425,7 +425,7 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 1
+          "value": 5
         },
         {
           "name": "TempDamage",
@@ -876,6 +876,48 @@
         "adaptCollisionMaskAutomatically": true,
         "animations": []
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -913,6 +955,9 @@
       },
       {
         "objectName": "PlayerShip"
+      },
+      {
+        "objectName": "debugText"
       }
     ]
   },
@@ -1027,6 +1072,16 @@
                     "=",
                     "Colors[RandomInRange(0, 5)]",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::InitializeHealth"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "10 + 20 * RulesBad.EnemyHealthRule",
+                    "10 + 20 * Rules.EnemyHealthRule"
                   ]
                 }
               ]
