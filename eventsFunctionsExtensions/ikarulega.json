@@ -971,6 +971,16 @@
               "name": "Object",
               "supplementaryInformation": "IkaRuleGa::EnemyShip",
               "type": "object"
+            },
+            {
+              "description": "",
+              "name": "Parameter",
+              "type": "objectList"
+            },
+            {
+              "description": "",
+              "name": "Parameter2",
+              "type": "objectList"
             }
           ],
           "objectGroups": []
@@ -1063,6 +1073,56 @@
               "name": "Object",
               "supplementaryInformation": "IkaRuleGa::EnemyShip",
               "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "InitializeHealth",
+          "sentence": "Set MaxHP of _PARAM0_ to _PARAM1_. Also set CurrentHP",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetMaxHealth"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "HP",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetHealth"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "HP",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            },
+            {
+              "description": "",
+              "name": "HP",
+              "type": "expression"
             }
           ],
           "objectGroups": []

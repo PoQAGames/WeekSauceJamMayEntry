@@ -521,7 +521,7 @@
         {
           "name": "ChromaSpread",
           "type": "number",
-          "value": 3
+          "value": 0
         },
         {
           "name": "DamageRock",
@@ -551,7 +551,7 @@
         {
           "name": "TwinCannons",
           "type": "number",
-          "value": 1
+          "value": 0
         }
       ]
     },
@@ -591,11 +591,22 @@
       ]
     },
     {
-      "name": "Rules",
+      "name": "RulesBad",
       "type": "structure",
       "children": [
         {
-          "name": "Tanky",
+          "name": "EnemyHealthRule",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "RulesGood",
+      "type": "structure",
+      "children": [
+        {
+          "name": "PlayerHealthRule",
           "type": "number",
           "value": 0
         }
