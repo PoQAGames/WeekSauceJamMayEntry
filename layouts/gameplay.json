@@ -1988,37 +1988,6 @@
             },
             {
               "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "270",
-                "500 + 200 * UpgradeLevels.ProjectileSpeed",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Color",
-                "=",
-                "PlayerShip.Color()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "ColorCodes[PlayerBullet.Color]"
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetTimer"
               },
               "parameters": [
@@ -2028,6 +1997,55 @@
             }
           ],
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Single Bullet",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "270",
+                        "500 + 200 * UpgradeLevels.ProjectileSpeed",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "Color",
+                        "=",
+                        "PlayerShip.Color()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "ColorCodes[PlayerBullet.Color]"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -2088,7 +2106,16 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "Colors[RandomInRange(0, 5)]"
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
@@ -2128,7 +2155,16 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "Colors[RandomInRange(0, 5)]"
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
@@ -2186,7 +2222,16 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "Colors[RandomInRange(0, 5)]"
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
@@ -2226,7 +2271,16 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "Colors[RandomInRange(0, 5)]"
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
@@ -2284,7 +2338,16 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "Colors[RandomInRange(0, 5)]"
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
@@ -2324,7 +2387,16 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "Colors[RandomInRange(0, 5)]"
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
@@ -2390,6 +2462,26 @@
                             "500 + 200 * UpgradeLevels.ProjectileSpeed",
                             "1"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
+                          ]
                         }
                       ]
                     },
@@ -2418,6 +2510,26 @@
                             "270",
                             "500 + 200 * UpgradeLevels.ProjectileSpeed",
                             "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringObjectVariable"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Color",
+                            "=",
+                            "PlayerShip.Color()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "ColorCodes[PlayerBullet.Color]"
                           ]
                         }
                       ]
