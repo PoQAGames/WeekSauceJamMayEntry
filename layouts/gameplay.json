@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4194339782759088,
+    "zoomFactor": 0.40575189059438516,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,6 +32,11 @@
       "name": "UpgradesStringTemp",
       "type": "string",
       "value": "0"
+    },
+    {
+      "name": "DamageTemp",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -291,22 +296,6 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "54003d19-53fc-49ff-884e-59f4c2d7a9bc",
-      "width": 0,
-      "x": 164,
-      "y": 98,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
       "name": "PlayerShip",
       "persistentUuid": "a1516b48-dd0a-443a-bf7f-daf8b76c3740",
       "width": 0,
@@ -323,12 +312,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "00c7943a-f9bd-433a-9c2d-24abdb9cd781",
+      "name": "EnemySpawner",
+      "persistentUuid": "e3640e35-3892-464b-a534-073c6ca1691b",
       "width": 0,
-      "x": 471,
-      "y": 106,
-      "zOrder": 12,
+      "x": 94,
+      "y": -289,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -339,12 +328,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "9449433f-1eb2-4817-a8e3-635888382de3",
+      "name": "EnemySpawner",
+      "persistentUuid": "b3ee4423-45ff-45cf-b7a8-62e965c418fd",
       "width": 0,
-      "x": 318,
-      "y": 112,
-      "zOrder": 13,
+      "x": 238,
+      "y": -234,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -355,12 +344,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "eeedadae-12f5-4ebb-bca8-8cfb566c422f",
+      "name": "EnemySpawner",
+      "persistentUuid": "c3fd7a63-9db0-42ed-8033-c91e61034b45",
       "width": 0,
-      "x": 84,
-      "y": 452,
-      "zOrder": 14,
+      "x": 459,
+      "y": -179,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -371,12 +360,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "766393e9-8247-4479-b3c6-5d21d3d796b4",
+      "name": "EnemySpawner",
+      "persistentUuid": "dcf76c2b-c186-4a55-bbfd-73f20fb97923",
       "width": 0,
-      "x": 409,
-      "y": 463,
-      "zOrder": 15,
+      "x": 371,
+      "y": -420,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -387,12 +376,205 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyShip",
-      "persistentUuid": "fa4f58c6-21ad-4f48-af9b-c1e50ee11625",
+      "name": "EnemySpawner",
+      "persistentUuid": "8db38d4b-4430-4e5c-8fff-230fe1287939",
       "width": 0,
-      "x": 236,
-      "y": 447,
-      "zOrder": 16,
+      "x": 621,
+      "y": -585,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "81961e2b-6382-4da0-9bd6-f7efafcff575",
+      "width": 0,
+      "x": 262,
+      "y": -632,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "e9a9c8ee-7313-496b-9429-4d5cee2c8ef8",
+      "width": 0,
+      "x": 435,
+      "y": -766,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "69a0bda9-fbc6-4129-bbaf-bda5de487ed7",
+      "width": 0,
+      "x": 137,
+      "y": -504,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "5855a9c4-9a42-4201-acd0-9607be06ec45",
+      "width": 0,
+      "x": 245,
+      "y": -902,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "931f5bab-1ed4-4562-8acc-a7cc766b7e73",
+      "width": 0,
+      "x": 526,
+      "y": -1090,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "8b51d24d-098b-4a5f-8504-3a24108e1c5f",
+      "width": 0,
+      "x": 223,
+      "y": -1222,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "51f78e7e-872e-48fe-abff-feb80de80b61",
+      "width": 0,
+      "x": 473,
+      "y": -1387,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "4022c3a1-8a44-44ee-bb84-9cfc4276a140",
+      "width": 0,
+      "x": 114,
+      "y": -1434,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "8dcb13ba-2830-4fdc-834d-6bc2ee2d55d5",
+      "width": 0,
+      "x": 287,
+      "y": -1568,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "f890c717-4c55-4d67-892a-7bc72024dd18",
+      "width": 0,
+      "x": 97,
+      "y": -1704,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "e5a334a5-961c-42f2-aff4-84865ef7978d",
+      "width": 0,
+      "x": 378,
+      "y": -1892,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 251,
+      "keepRatio": true,
+      "layer": "",
+      "name": "debugText",
+      "persistentUuid": "7ce1feca-c5c8-43ce-b0c1-55fd40a0da4f",
+      "width": 663,
+      "x": 28,
+      "y": 1007,
+      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -426,11 +608,6 @@
           "name": "Damage",
           "type": "number",
           "value": 5
-        },
-        {
-          "name": "TempDamage",
-          "type": "number",
-          "value": 0
         }
       ],
       "effects": [],
@@ -555,11 +732,6 @@
           "name": "Damage",
           "type": "number",
           "value": 1
-        },
-        {
-          "name": "TempDamage",
-          "type": "number",
-          "value": 0
         }
       ],
       "effects": [],
@@ -827,7 +999,22 @@
       "type": "IkaRuleGa::EnemyShip",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 100
+        },
+        {
+          "name": "RepeatTimer",
+          "type": "RepeatEveryXSeconds::RepeatTimer",
+          "TimerName": "MyTimer",
+          "TimerLength": 1,
+          "Limit": -1,
+          "Counter": 0
+        }
+      ],
       "content": {
         "Color": "Blue"
       }
@@ -891,9 +1078,9 @@
       "textAlignment": "left",
       "characterSize": 60,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -914,8 +1101,146 @@
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 60,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EnemySpawner",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": 100
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerBullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EnemyBullet",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Color",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerBullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -937,6 +1262,9 @@
         "objectName": "LevelEnd"
       },
       {
+        "objectName": "EnemyBullet"
+      },
+      {
         "objectName": "LevelBottom"
       },
       {
@@ -956,6 +1284,9 @@
       },
       {
         "objectName": "debugText"
+      },
+      {
+        "objectName": "EnemySpawner"
       }
     ]
   },
@@ -965,6 +1296,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1094,6 +1426,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1191,6 +1524,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1303,6 +1637,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1337,6 +1672,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1360,11 +1696,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberObjectVariable"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Rock",
-                    "TempDamage",
+                    "DamageTemp",
                     "=",
                     "Rock.Damage"
                   ]
@@ -1375,7 +1710,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "Rock.TempDamage",
+                    "DamageTemp",
                     ""
                   ]
                 }
@@ -1399,6 +1734,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1417,11 +1753,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberObjectVariable"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "PlayerBullet",
-                "TempDamage",
+                "DamageTemp",
                 "=",
                 "PlayerBullet.Damage"
               ]
@@ -1446,13 +1781,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberObjectVariable"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "PlayerBullet",
-                    "TempDamage",
+                    "DamageTemp",
                     "=",
-                    "PlayerBullet.TempDamage * 2"
+                    "DamageTemp * 2"
                   ]
                 }
               ]
@@ -1475,13 +1809,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberObjectVariable"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "PlayerBullet",
-                    "TempDamage",
+                    "DamageTemp",
                     "=",
-                    "PlayerBullet.TempDamage * 1.5"
+                    "DamageTemp * 1.5"
                   ]
                 }
               ]
@@ -1504,13 +1837,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberObjectVariable"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "PlayerBullet",
-                    "TempDamage",
+                    "DamageTemp",
                     "=",
-                    "PlayerBullet.TempDamage * 0.5"
+                    "DamageTemp * 0.5"
                   ]
                 }
               ]
@@ -1525,7 +1857,7 @@
                   },
                   "parameters": [
                     "EnemyShip",
-                    "PlayerBullet.TempDamage",
+                    "DamageTemp",
                     ""
                   ]
                 },
@@ -1676,6 +2008,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1730,6 +2063,260 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerShip",
+                "EnemyShip",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemyShip",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "DamageTemp",
+                "=",
+                "EnemyShip.CollisionDamage()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorFullMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShip.Color()",
+                    "EnemyShip.Color()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorPartialMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShip.Color()",
+                    "EnemyShip.Color()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::TakeDamage"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "DamageTemp * 0.5",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorNoMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShip.Color()",
+                    "EnemyShip.Color()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::TakeDamage"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "DamageTemp",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EnemyBullet",
+                "Rock",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemyBullet",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EnemyBullet",
+                "PlayerShip",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemyBullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "DamageTemp",
+                "=",
+                "EnemyBullet.Damage"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorFullMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShip.Color()",
+                    "EnemyBullet.Color",
+                    ""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorPartialMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShip.Color()",
+                    "EnemyBullet.Color",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::TakeDamage"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "DamageTemp * 0.5",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::ColorNoMatch"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShip.Color()",
+                    "EnemyBullet.Color",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::TakeDamage"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "DamageTemp",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -1739,6 +2326,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1829,6 +2417,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Game Over",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1910,44 +2499,63 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "HUD",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "NumberObjectVariable"
-          },
-          "parameters": [
-            "CurrencyDisplay",
-            "CurrentCurrency",
-            "!=",
-            "CurrencyTemp"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "CurrencyDisplay",
+                "CurrentCurrency",
+                "!=",
+                "Currency"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "CurrencyDisplay",
+                "CurrentCurrency",
+                "=",
+                "CurrencyTemp"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "CurrencyDisplay",
+                "Text",
+                "=",
+                "\"$\" + CurrencyTemp"
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "CurrencyDisplay",
-            "CurrentCurrency",
-            "=",
-            "CurrencyTemp"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "CurrencyDisplay",
-            "Text",
-            "=",
-            "\"$\" + CurrencyTemp"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -2535,6 +3143,107 @@
               "parameters": []
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Enemy",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "\"ShootTimer\"",
+                    ">=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "\"ShootTimer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnemyBullet",
+                        "EnemyShip.CenterX()",
+                        "EnemyShip.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "EnemyBullet",
+                        "Damage",
+                        "=",
+                        "EnemyShip.BulletDamage()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "EnemyBullet",
+                        "Color",
+                        "=",
+                        "EnemyShip.Color()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "EnemyBullet",
+                        "ColorCodes[EnemyBullet.Color]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "EnemyBullet",
+                        "90",
+                        "500",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "parameters": []
@@ -2544,6 +3253,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Background",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2589,6 +3299,96 @@
           ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Enemy Spawning",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "LevelTop",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyShip",
+                    "EnemySpawner.CenterX()",
+                    "EnemySpawner.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EnemySpawner",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetColor"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "=",
+                    "Colors[RandomInRange(0, 5)]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "\"ShootTimer\""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -2657,6 +3457,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "RepeatTimer",
+      "type": "RepeatEveryXSeconds::RepeatTimer"
     },
     {
       "name": "Resizable",
