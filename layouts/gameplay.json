@@ -825,7 +825,6 @@
       "assetStoreId": "",
       "name": "EnemyShip",
       "type": "IkaRuleGa::EnemyShip",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -837,7 +836,6 @@
       "assetStoreId": "",
       "name": "PlayerShip",
       "type": "IkaRuleGa::PlayerShip",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
