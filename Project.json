@@ -409,6 +409,144 @@
         "name": "BG_Galaxy1_Stars.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Test_logo_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Test_logo_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_MainTitle_Suite_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_MainTitle_Suite_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_Combat_03.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_Combat_03.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_Victory_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_Level1Start_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_Shoot_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_Shoot_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_Shoot_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_Shoot_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_Explode_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_Explode_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_Explosion_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_ColorSwap_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_Explosion_03.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_03.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_Explosion_04.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_04.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_MenuClick_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_HiddenEnd.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_HiddenEnd.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -633,6 +771,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/debug-tj"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/title"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
     }
   ],
   "externalEvents": [],
@@ -660,6 +806,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/repeateveryxseconds"
     }
   ],
   "externalLayouts": []
