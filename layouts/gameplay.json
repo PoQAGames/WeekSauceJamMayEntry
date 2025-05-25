@@ -1976,18 +1976,6 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "PlayerBullet",
-                "PlayerShip.CenterX()-5",
-                "PlayerShip.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetTimer"
               },
               "parameters": [
@@ -2010,6 +1998,18 @@
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "PlayerBullet",
+                        "PlayerShip.CenterX()-5",
+                        "PlayerShip.CenterY()-4",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "AddForceAL"
