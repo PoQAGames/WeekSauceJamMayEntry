@@ -2106,7 +2106,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "Colors[RandomInRange(0, 5)]"
                           ]
                         },
                         {
@@ -2155,7 +2155,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "Colors[RandomInRange(0, 5)]"
                           ]
                         },
                         {
@@ -2222,7 +2222,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "Colors[RandomInRange(0, 5)]"
                           ]
                         },
                         {
@@ -2271,7 +2271,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "Colors[RandomInRange(0, 5)]"
                           ]
                         },
                         {
@@ -2338,7 +2338,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "Colors[RandomInRange(0, 5)]"
                           ]
                         },
                         {
@@ -2387,7 +2387,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "Colors[RandomInRange(0, 5)]"
                           ]
                         },
                         {
@@ -2402,11 +2402,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
                 }
               ],
               "parameters": []
@@ -2471,7 +2466,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "PlayerShip.PreviousToggleColor()"
                           ]
                         },
                         {
@@ -2520,7 +2515,7 @@
                             "PlayerBullet",
                             "Color",
                             "=",
-                            "PlayerShip.Color()"
+                            "PlayerShip.PreviousPreviousInput()"
                           ]
                         },
                         {

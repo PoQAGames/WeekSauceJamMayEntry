@@ -1859,6 +1859,17 @@
               "actions": [
                 {
                   "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetPreviousPreviousInput"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "Object.PreviousToggleColor()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "IkaRuleGa::PlayerShip::SetPreviousToggleColor"
                   },
                   "parameters": [
@@ -1869,6 +1880,11 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": [
@@ -2058,6 +2074,17 @@
                     "\"Red\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::PlayerShip::SetPreviousPreviousInput"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "\"Red\"",
+                    ""
+                  ]
                 }
               ]
             }
@@ -2122,6 +2149,76 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "the formerInput of the object.",
+          "fullName": "Previous Previous input",
+          "functionType": "ExpressionAndCondition",
+          "group": "PlayerShip configuration",
+          "name": "PreviousPreviousInput",
+          "sentence": "the formerInput",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "PreviousPreviousToggleColor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "PreviousPreviousInput",
+          "name": "SetPreviousPreviousInput",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "PreviousPreviousToggleColor",
+                    "=",
+                    "Value"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::PlayerShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [
@@ -2178,6 +2275,15 @@
           "group": "",
           "extraInformation": [],
           "name": "Color"
+        },
+        {
+          "value": "",
+          "type": "String",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "PreviousPreviousToggleColor"
         }
       ],
       "objects": [
