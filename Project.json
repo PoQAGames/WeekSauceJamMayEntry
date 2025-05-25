@@ -521,12 +521,12 @@
         {
           "name": "ChromaSpread",
           "type": "number",
-          "value": 1
+          "value": 0
         },
         {
           "name": "DamageRock",
           "type": "number",
-          "value": 1
+          "value": 0
         },
         {
           "name": "FireRate",
@@ -551,7 +551,7 @@
         {
           "name": "TwinCannons",
           "type": "number",
-          "value": 0
+          "value": 1
         }
       ]
     },
