@@ -34,7 +34,7 @@
       "value": "0"
     },
     {
-      "name": "DamageTemp",
+      "name": "NumberTemp",
       "type": "number",
       "value": 0
     }
@@ -1415,6 +1415,25 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
+                    "0",
+                    "yes",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1699,7 +1718,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "DamageTemp",
+                    "NumberTemp",
                     "=",
                     "Rock.Damage"
                   ]
@@ -1710,7 +1729,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "DamageTemp",
+                    "NumberTemp",
                     ""
                   ]
                 }
@@ -1734,7 +1753,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1756,7 +1774,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "DamageTemp",
+                "NumberTemp",
                 "=",
                 "PlayerBullet.Damage"
               ]
@@ -1784,9 +1802,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "DamageTemp",
+                    "NumberTemp",
                     "=",
-                    "DamageTemp * 2"
+                    "NumberTemp * 2"
                   ]
                 }
               ]
@@ -1812,9 +1830,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "DamageTemp",
+                    "NumberTemp",
                     "=",
-                    "DamageTemp * 1.5"
+                    "NumberTemp * 1.5"
                   ]
                 }
               ]
@@ -1840,9 +1858,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "DamageTemp",
+                    "NumberTemp",
                     "=",
-                    "DamageTemp * 0.5"
+                    "NumberTemp * 0.5"
                   ]
                 }
               ]
@@ -1857,7 +1875,7 @@
                   },
                   "parameters": [
                     "EnemyShip",
-                    "DamageTemp",
+                    "NumberTemp",
                     ""
                   ]
                 },
@@ -1917,6 +1935,76 @@
                     "Currency",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NumberTemp",
+                    "=",
+                    "RandomInRange(0, 1)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "NumberTemp",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_03.wav",
+                        "",
+                        "100",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "NumberTemp",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_04.wav",
+                        "",
+                        "100",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2095,7 +2183,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "DamageTemp",
+                "NumberTemp",
                 "=",
                 "EnemyShip.CollisionDamage()"
               ]
@@ -2141,7 +2229,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "DamageTemp * 0.5",
+                    "NumberTemp * 0.5",
                     ""
                   ]
                 }
@@ -2169,7 +2257,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "DamageTemp",
+                    "NumberTemp",
                     ""
                   ]
                 }
@@ -2236,7 +2324,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "DamageTemp",
+                "NumberTemp",
                 "=",
                 "EnemyBullet.Damage"
               ]
@@ -2282,7 +2370,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "DamageTemp * 0.5",
+                    "NumberTemp * 0.5",
                     ""
                   ]
                 }
@@ -2310,7 +2398,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "DamageTemp",
+                    "NumberTemp",
                     ""
                   ]
                 }
@@ -2326,7 +2414,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2354,6 +2441,18 @@
                 "\"Red\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
@@ -2380,6 +2479,18 @@
                 "\"Yellow\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
@@ -2405,6 +2516,18 @@
                 "PlayerShip",
                 "\"Blue\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -2444,6 +2567,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_Explode_01.wav",
+                "",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Create"
@@ -2562,6 +2697,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2579,6 +2715,12 @@
                 ">",
                 "PlayerShip.ShootCooldown()"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2589,6 +2731,18 @@
               "parameters": [
                 "",
                 "\"ShootTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_Shoot_01.wav",
+                "",
+                "100",
+                "1"
               ]
             }
           ],
@@ -3177,6 +3331,18 @@
                     "EnemyShip",
                     "\"ShootTimer\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\RuleBreaker_SFX_Shoot_02.wav",
+                    "",
+                    "50",
+                    "1"
+                  ]
                 }
               ],
               "events": [
@@ -3305,6 +3471,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
