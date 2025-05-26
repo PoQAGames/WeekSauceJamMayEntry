@@ -547,6 +547,62 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/OldGameFatty.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/OldGameFatty.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/ArcadeClassic.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/ArcadeClassic.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/pixel/Pixel NES.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/pixel/Pixel NES.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/pixel/Pixel Tandy.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/pixel/Pixel Tandy.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/pixel/Pixel ModeX.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/pixel/Pixel ModeX.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/pixel/Pixel Gosub.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/pixel/Pixel Gosub.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/Pixel NES.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Fonts/Pixel NES.otf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -570,9 +626,9 @@
       "effects": [],
       "behaviors": [],
       "string": "$0",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 45,
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
       "color": {
         "b": 0,
         "g": 0,
@@ -593,10 +649,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "$0",
-        "font": "",
-        "textAlignment": "left",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 45,
+        "characterSize": 40,
         "color": "0;0;0"
       }
     }

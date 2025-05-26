@@ -43,16 +43,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
+      "customSize": true,
+      "depth": 80,
+      "height": 80,
       "layer": "",
       "name": "Play_Button",
       "persistentUuid": "635b7fb9-38a5-4efa-8431-767b22bd20d5",
-      "width": 0,
-      "x": 259,
+      "width": 480,
+      "x": 102,
       "y": 1060,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -124,7 +124,31 @@
       "name": "Play_Button",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": 10,
+            "blueY": -4,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 10,
+            "greenY": -4,
+            "minSize": 8,
+            "offset": 100,
+            "redX": 2,
+            "redY": 2,
+            "sampleSize": 512,
+            "slices": 5
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": false
+          }
+        }
+      ],
       "behaviors": [],
       "content": {
         "LeftPadding": 0,
@@ -161,7 +185,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Click To Play",
-          "font": "Roboto-Bold.ttf",
+          "font": "assets/Fonts/VCR_OSD_MONO.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -184,7 +208,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Click To Play",
-            "font": "Roboto-Bold.ttf",
+            "font": "assets/Fonts/VCR_OSD_MONO.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -193,13 +217,13 @@
         },
         "Pressed": {
           "bottomMargin": 6,
-          "height": 64,
+          "height": 80,
           "leftMargin": 6,
           "rightMargin": 6,
           "texture": "On Screen Controls Button_Pressed.png",
           "tiled": false,
           "topMargin": 6,
-          "width": 192
+          "width": 480
         }
       }
     }
