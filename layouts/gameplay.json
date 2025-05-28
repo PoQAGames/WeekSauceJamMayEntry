@@ -997,6 +997,7 @@
       "assetStoreId": "",
       "name": "EnemyShip",
       "type": "IkaRuleGa::EnemyShip",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -1023,6 +1024,7 @@
       "assetStoreId": "",
       "name": "PlayerShip",
       "type": "IkaRuleGa::PlayerShip",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -2697,7 +2699,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3357,7 +3358,7 @@
                       "parameters": [
                         "",
                         "EnemyBullet",
-                        "EnemyShip.CenterX()",
+                        "EnemyShip.CenterX()+130",
                         "EnemyShip.CenterY()",
                         ""
                       ]
