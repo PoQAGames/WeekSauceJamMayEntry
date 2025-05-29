@@ -1298,7 +1298,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1405,16 +1404,6 @@
                     "Colors[RandomInRange(0, 5)]",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "IkaRuleGa::EnemyShip::InitializeHealth"
-                  },
-                  "parameters": [
-                    "EnemyShip",
-                    "10 + 20 * RulesBad.EnemyHealthRule",
-                    "10 + 20 * Rules.EnemyHealthRule"
-                  ]
                 }
               ]
             },
@@ -1447,7 +1436,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1658,7 +1646,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1778,7 +1765,7 @@
               "parameters": [
                 "NumberTemp",
                 "=",
-                "PlayerBullet.Damage"
+                "5 + 5* UpgradeLevels.PlayerDamage"
               ]
             }
           ],
@@ -1936,7 +1923,7 @@
                   "parameters": [
                     "Currency",
                     "+",
-                    "1"
+                    "1 + 1 * RulesBad.EnemyCurrencyDropRule"
                   ]
                 },
                 {
@@ -3319,7 +3306,7 @@
                     "EnemyShip",
                     "\"ShootTimer\"",
                     ">=",
-                    "2"
+                    "max(0.5, 2.0 - (RulesBad.EnemyFirerateRule* 0.015))"
                   ]
                 }
               ],
@@ -3371,7 +3358,7 @@
                         "EnemyBullet",
                         "Damage",
                         "=",
-                        "EnemyShip.BulletDamage()"
+                        "1 + 1 * RulesBad.EnemyDamageRule"
                       ]
                     },
                     {
@@ -3472,7 +3459,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Enemy Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3544,6 +3530,16 @@
                   "parameters": [
                     "EnemyShip",
                     "\"ShootTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::InitializeHealth"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "10 + 20 * RulesBad.EnemyHealthRule",
+                    "10 + 20 * Rules.EnemyHealthRule"
                   ]
                 }
               ]
