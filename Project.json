@@ -733,6 +733,11 @@
           "value": 0
         },
         {
+          "name": "PlayerDamage",
+          "type": "number",
+          "value": 5
+        },
+        {
           "name": "ProjectileSpeed",
           "type": "number",
           "value": 0
@@ -789,18 +794,37 @@
       "type": "structure",
       "children": [
         {
-          "name": "EnemyHealthRule",
+          "name": "AstroidSpawnRateRule",
           "type": "number",
           "value": 0
-        }
-      ]
-    },
-    {
-      "name": "RulesGood",
-      "type": "structure",
-      "children": [
+        },
         {
-          "name": "PlayerHealthRule",
+          "name": "EnemyCanShootRule",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EnemyCurrencyDropRule",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EnemyDamageRule",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EnemyFirerateRule",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EnemyHealthRule",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "EnemySpawnRateRule",
           "type": "number",
           "value": 0
         }
