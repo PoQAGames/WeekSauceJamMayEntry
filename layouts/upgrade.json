@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210174,
+    "zoomFactor": 0.6672773998329975,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -136,7 +136,7 @@
         {
           "name": "Upgrade",
           "type": "string",
-          "value": "ChromaSpre"
+          "value": "ChromaSpread"
         }
       ]
     },
@@ -303,7 +303,13 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "DamageRock"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -320,7 +326,13 @@
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "FireRate"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -337,7 +349,13 @@
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "FireRate"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -353,7 +371,13 @@
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "FireRate"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -369,7 +393,13 @@
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "FireRate"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -385,7 +415,13 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "FireRate"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -402,7 +438,13 @@
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Health"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -419,7 +461,13 @@
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Health"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -435,7 +483,13 @@
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Health"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -451,7 +505,13 @@
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Health"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -467,7 +527,13 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Health"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -484,7 +550,13 @@
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "PlayerDamage"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -501,7 +573,13 @@
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "PlayerDamage"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -517,7 +595,13 @@
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "PlayerDamage"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -533,7 +617,13 @@
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "PlayerDamage"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -549,7 +639,13 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "PlayerDamage"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -566,7 +662,13 @@
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ProjectileSpeed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -583,7 +685,13 @@
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ProjectileSpeed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -599,7 +707,13 @@
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ProjectileSpeed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -615,7 +729,13 @@
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ProjectileSpeed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -631,7 +751,13 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ProjectileSpeed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -648,7 +774,13 @@
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Speed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -665,7 +797,13 @@
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Speed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -681,7 +819,13 @@
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Speed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -697,7 +841,13 @@
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Speed"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -713,7 +863,125 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Speed"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeIcon",
+      "persistentUuid": "4eaee82f-dae2-42d6-9b48-11147969bbac",
+      "width": 70,
+      "x": 27,
+      "y": 873,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "TwinCannons"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeName",
+      "persistentUuid": "08cc09b6-3495-435a-b1ab-da5be726e78b",
+      "width": 0,
+      "x": 221,
+      "y": 899,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "TwinCannons"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "b8e46e41-e994-4a00-92b9-8b9b29ad2d03",
+      "width": 0,
+      "x": 132,
+      "y": 899,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "TwinCannons"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BuyButton",
+      "persistentUuid": "935b251e-cae7-4340-8240-53a61e4482f4",
+      "width": 70,
+      "x": 537,
+      "y": 877,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "TwinCannons"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "a26e2f82-3453-4ad1-8cac-bfdd0da478dc",
+      "width": 0,
+      "x": 619,
+      "y": 899,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "Speed"
+        }
+      ]
     }
   ],
   "objects": [
@@ -763,6 +1031,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ReadyButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -847,6 +1116,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugAddMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -931,6 +1201,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugRemoveMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1076,7 +1347,7 @@
       ],
       "effects": [],
       "behaviors": [],
-      "string": "Chroma Spread",
+      "string": "Anti-Asteroid",
       "font": "assets/Fonts/VCR_OSD_MONO.ttf",
       "textAlignment": "left",
       "characterSize": 32,
@@ -1099,7 +1370,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Chroma Spread",
+        "text": "Anti-Asteroid",
         "font": "assets/Fonts/VCR_OSD_MONO.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -1111,6 +1382,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "BuyButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [
         {
           "name": "Upgrade",
@@ -1428,14 +1700,35 @@
             },
             {
               "type": {
-                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "",
-                "\"Upgrade Menu Row\"",
-                "",
-                "",
-                ""
+                "UpgradeName",
+                "Text",
+                "=",
+                "IkaRuleGa::GetUpgradeName(UpgradeName.Upgrade)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "UpgradeLevel",
+                "Text",
+                "=",
+                "ToString(UpgradeLevels[UpgradeLevel.Upgrade]) + \"/\" + ToString(IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "UpgradePrice",
+                "Text",
+                "=",
+                "ToString(IkaRuleGa::GetNextRankCost(UpgradePrice.Upgrade, UpgradeLevels[UpgradePrice.Upgrade]))"
               ]
             }
           ]
@@ -1443,53 +1736,105 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Debug",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
-          },
-          "parameters": [
-            "DebugAddMoney",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "DebugAddMoney",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Currency",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "DebugRemoveMoney",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Currency",
+                "=",
+                "max(0, Currency- 1)"
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Currency",
-            "+",
-            "1"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+            "value": "NumberObjectVariable"
           },
           "parameters": [
-            "DebugRemoveMoney",
-            ""
+            "CurrencyDisplay",
+            "CurrentCurrency",
+            "!=",
+            "Currency"
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "SetNumberVariable"
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "Currency",
+            "CurrencyDisplay",
+            "Text",
             "=",
-            "max(0, Currency- 1)"
+            "\"$\" + Currency"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "CurrencyDisplay",
+            "CurrentCurrency",
+            "=",
+            "Currency"
           ]
         }
       ]
@@ -1547,876 +1892,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberObjectVariable"
-          },
-          "parameters": [
-            "CurrencyDisplay",
-            "CurrentCurrency",
-            "!=",
-            "Currency"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "CurrencyDisplay",
-            "Text",
-            "=",
-            "\"$\" + Currency"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "CurrencyDisplay",
-            "CurrentCurrency",
-            "=",
-            "Currency"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Health Upgrade",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "CurrentLevel",
-                "!=",
-                "UpgradeLevels.Health"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "Cost",
-                "=",
-                "pow(UpgradeLevels.Health, 2)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Current_Health_Display",
-                "Text",
-                "=",
-                "\"Health: \" + UpgradeLevels.Health"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "UpgradeHealthButton.Cost",
-                "="
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "CurrentLevel",
-                "=",
-                "UpgradeLevels.Health"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "Cost",
-                ">",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "Opacity",
-                "=",
-                "128"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "Cost",
-                "<=",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                "Opacity",
-                "=",
-                "255"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "UpgradeHealthButton",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "UpgradeLevels.Health",
-                "=",
-                "UpgradeLevels.Health + 1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Currency",
-                "=",
-                "Currency - UpgradeHealthButton.Cost"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Rock Damage",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "CurrentLevel",
-                "!=",
-                "UpgradeLevels.DamageRock"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "Cost",
-                "=",
-                "pow(UpgradeLevels.DamageRock, 2)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeLevel_RockDamage",
-                "Text",
-                "=",
-                "\"Damage Rock: \" + UpgradeLevels.DamageRock"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "UpgradeDamageRock.Cost",
-                "="
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "CurrentLevel",
-                "=",
-                "UpgradeLevels.DamageRock"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "Cost",
-                ">",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "Opacity",
-                "=",
-                "128"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "Cost",
-                "<=",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                "Opacity",
-                "=",
-                "255"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "UpgradeDamageRock",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "UpgradeLevels.DamageRock",
-                "=",
-                "UpgradeLevels.DamageRock + 1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Currency",
-                "=",
-                "Currency - UpgradeDamageRock.Cost"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Projectile Speed",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "CurrentLevel",
-                "!=",
-                "UpgradeLevels.ProjectileSpeed"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "Cost",
-                "=",
-                "pow(UpgradeLevels.ProjectileSpeed, 2)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeLevel_ProjectileSpeed",
-                "Text",
-                "=",
-                "\"Projectile Speed: \" + UpgradeLevels.ProjectileSpeed"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "UpgradeProjectileSpeed.Cost",
-                "="
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "CurrentLevel",
-                "=",
-                "UpgradeLevels.ProjectileSpeed"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "Cost",
-                ">",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "Opacity",
-                "=",
-                "128"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "Cost",
-                "<=",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                "Opacity",
-                "=",
-                "255"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "UpgradeProjectileSpeed",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "UpgradeLevels.ProjectileSpeed",
-                "=",
-                "UpgradeLevels.ProjectileSpeed + 1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Currency",
-                "=",
-                "Currency - UpgradeProjectileSpeed.Cost"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Chroma Spread",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "CurrentLevel",
-                "!=",
-                "UpgradeLevels.ChromaSpread"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "Cost",
-                "=",
-                "pow(UpgradeLevels.ChromaSpread, 2)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeLevel_ChromaSpread",
-                "Text",
-                "=",
-                "\"Chroma Spread: \" + UpgradeLevels.ChromaSpread"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "UpgradeChromaSpread.Cost",
-                "="
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "CurrentLevel",
-                "=",
-                "UpgradeLevels.ChromaSpread"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "Cost",
-                ">",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "Opacity",
-                "=",
-                "128"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "Cost",
-                "<=",
-                "Currency"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                "Opacity",
-                "=",
-                "255"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "UpgradeChromaSpread",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "UpgradeLevels.ChromaSpread",
-                "=",
-                "UpgradeLevels.ChromaSpread + 1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Currency",
-                "=",
-                "Currency - UpgradeChromaSpread.Cost"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [
