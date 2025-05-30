@@ -1020,6 +1020,51 @@
         }
       ],
       "objectGroups": []
+    },
+    {
+      "fullName": "Enemy rule to text",
+      "functionType": "StringExpression",
+      "group": "Ikerulega Rules",
+      "name": "Function",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"\""
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "Rule",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
     }
   ],
   "eventsBasedBehaviors": [],

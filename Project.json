@@ -675,6 +675,13 @@
         "name": "assets/UI/icon_nobuy.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/Pixel NES.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Fonts\\Pixel NES.otf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1320,6 +1327,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/repeateveryxseconds"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
     }
   ],
   "externalLayouts": [

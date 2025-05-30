@@ -1159,8 +1159,8 @@
       "name": "NoBuy",
       "persistentUuid": "55ee8711-5193-480e-b235-c88ca04e0fa0",
       "width": 70,
-      "x": 538,
-      "y": 873,
+      "x": 537,
+      "y": 886,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -2147,14 +2147,21 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "BuyButton",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "BuyButton",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -2184,20 +2191,39 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "BuyButton"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "BuyButton"
+                  ]
+                }
               ]
             }
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "NoBuy",
+                "Upgrade",
+                "!=",
+                "\"\""
+              ]
+            },
             {
               "type": {
                 "value": "NumberVariable"
@@ -2207,7 +2233,30 @@
                 ">=",
                 "IkaRuleGa::GetNextRankCost(NoBuy.Upgrade, UpgradeLevels[NoBuy.Upgrade])"
               ]
-            },
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "NoBuy"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
                 "value": "StringObjectVariable"
@@ -2218,22 +2267,7 @@
                 "!=",
                 "\"\""
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "NoBuy"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "value": "NumberVariable"
@@ -2243,27 +2277,23 @@
                 "<",
                 "IkaRuleGa::GetNextRankCost(NoBuy.Upgrade, UpgradeLevels[NoBuy.Upgrade])"
               ]
-            },
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "NoBuy",
-                "Upgrade",
-                "!=",
-                "\"\""
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "NoBuy",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "NoBuy",
+                    ""
+                  ]
+                }
               ]
             }
           ]

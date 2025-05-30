@@ -18,11 +18,42 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.5117784035210173,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "RulesToUpgrade",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "AsteroidSpawnRateRule"
+        },
+        {
+          "type": "string",
+          "value": "EnemyCanShootRule"
+        },
+        {
+          "type": "string",
+          "value": "EnemyDamageRule"
+        },
+        {
+          "type": "string",
+          "value": "EnemyFirerateRule"
+        },
+        {
+          "type": "string",
+          "value": "EnemyHealthRule"
+        },
+        {
+          "type": "string",
+          "value": "EnemySpawnRateRule"
+        }
+      ]
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -43,18 +74,82 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 80,
+      "depth": 1,
+      "height": 147,
+      "keepRatio": true,
       "layer": "",
-      "name": "ContinueButton",
-      "persistentUuid": "b0644d15-4ecd-4a25-bf2a-7857c88df1c4",
-      "width": 320,
-      "x": 200,
-      "y": 1150,
-      "zOrder": 3,
+      "name": "ChooseRuleText",
+      "persistentUuid": "7606e4c8-dd4b-4518-ba3f-d3a3711f19e7",
+      "width": 699,
+      "x": 10,
+      "y": 200,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 144,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ChooseRuleButton",
+      "persistentUuid": "5d0dfffc-1d11-47a4-88e0-44a73d959298",
+      "width": 686,
+      "x": 14,
+      "y": 377,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 144,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ChooseRuleButton",
+      "persistentUuid": "b749af86-1904-423d-be41-397c29a70530",
+      "width": 686,
+      "x": 13,
+      "y": 557,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Index",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 144,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ChooseRuleButton",
+      "persistentUuid": "2c53c147-4965-400c-b844-7e8d1a48beb3",
+      "width": 686,
+      "x": 15,
+      "y": 732,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Index",
+          "type": "number",
+          "value": 2
+        }
+      ]
     }
   ],
   "objects": [
@@ -184,6 +279,144 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ChooseRuleText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Choose a new rule!",
+      "font": "assets\\Fonts\\Pixel NES.otf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Choose a new rule!",
+        "font": "assets\\Fonts\\Pixel NES.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
+      "name": "ChooseRuleButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [
+        {
+          "name": "Rule",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "Index",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 1,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Idle.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Blah blah blah",
+          "font": "assets\\Fonts\\Pixel NES.otf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Blah blah blah",
+            "font": "assets\\Fonts\\Pixel NES.otf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -194,6 +427,12 @@
       },
       {
         "objectName": "ContinueButton"
+      },
+      {
+        "objectName": "ChooseRuleText"
+      },
+      {
+        "objectName": "ChooseRuleButton"
       }
     ]
   },
@@ -203,10 +442,88 @@
       "conditions": [
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+            "value": "DepartScene"
           },
           "parameters": [
-            "ContinueButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
+                "0",
+                "yes",
+                "100",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ArrayTools::Shuffle"
+              },
+              "parameters": [
+                "",
+                "RulesToUpgrade",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "ChooseRuleButton",
+                "Rule",
+                "=",
+                "RulesToUpgrade[ChooseRuleButton.Index]"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "ChooseRuleButton",
+                "ChooseRuleButton.Rule",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "ChooseRuleButton",
             ""
           ]
         }
@@ -220,32 +537,6 @@
             "",
             "\"gameplay\"",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
-            "0",
-            "yes",
-            "100",
-            "1"
           ]
         }
       ]
