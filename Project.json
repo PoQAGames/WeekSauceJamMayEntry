@@ -1,7 +1,7 @@
 {
   "firstLayout": "main",
   "gdVersion": {
-    "build": 228,
+    "build": 231,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -889,7 +889,7 @@
           ]
         },
         {
-          "name": "ShipSpeed",
+          "name": "Speed",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1033,7 +1033,7 @@
           ]
         },
         {
-          "name": "IncreasedHealth",
+          "name": "Health",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1164,7 +1164,7 @@
         {
           "name": "PlayerDamage",
           "type": "number",
-          "value": 5
+          "value": 0
         },
         {
           "name": "ProjectileSpeed",
@@ -1179,7 +1179,7 @@
         {
           "name": "TwinCannons",
           "type": "number",
-          "value": 1
+          "value": 0
         }
       ]
     },
@@ -1189,6 +1189,7 @@
       "value": 0
     },
     {
+      "folded": true,
       "name": "Colors",
       "type": "array",
       "children": [
@@ -1250,7 +1251,7 @@
         {
           "name": "EnemyHealthRule",
           "type": "number",
-          "value": 5
+          "value": 0
         },
         {
           "name": "EnemySpawnRateRule",

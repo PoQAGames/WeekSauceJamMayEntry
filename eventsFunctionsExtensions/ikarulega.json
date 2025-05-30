@@ -355,6 +355,671 @@
         }
       ],
       "objectGroups": []
+    },
+    {
+      "fullName": "Get the player-facing name of an upgrade",
+      "functionType": "StringExpression",
+      "group": "Ikerulega Upgrades",
+      "name": "GetUpgradeName",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"DamageRock\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Anti-Asteroid\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"ChromaSpread\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Chroma Spread\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"FireRate\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Fire Rate\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"Health\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Health\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"PlayerDamage\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Damage\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"ProjectileSpeed\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Bullet Speed\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"Speed\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Ship Speed\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"TwinCannons\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Twin Cannons\""
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "Upgrade",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "Get the the max level of an upgrade",
+      "functionType": "Expression",
+      "group": "Ikerulega Upgrades",
+      "name": "GetUpgradeMaxRank",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"DamageRock\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"ChromaSpread\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"FireRate\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "30"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"Health\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"PlayerDamage\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"ProjectileSpeed\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "10"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"Speed\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "20"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"TwinCannons\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "1"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "Upgrade",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "Get the cost of an upgrade's next rank",
+      "functionType": "Expression",
+      "group": "Ikerulega Upgrades",
+      "name": "GetNextRankCost",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"DamageRock\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 + 500 * CurrentLevel"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"ChromaSpread\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "1000 + 1500 * CurrentLevel"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"FireRate\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 * (CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"Health\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 * (CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"PlayerDamage\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 * (CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"ProjectileSpeed\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 * (CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"Speed\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 * (CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Upgrade",
+                "=",
+                "\"TwinCannons\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "100 * (CurrentLevel + 1)"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "Upgrade",
+          "type": "string"
+        },
+        {
+          "description": "",
+          "name": "CurrentLevel",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
     }
   ],
   "eventsBasedBehaviors": [],
@@ -371,6 +1036,407 @@
       "fullName": "",
       "isUsingLegacyInstancesRenderer": false,
       "name": "EnemyShip",
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Ship",
+          "preScale": 0.25,
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Red",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Red.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Yellow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Yellow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blue",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Blue.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Orange",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Orange.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Purple",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Purple.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 517,
+                            "y": 586
+                          },
+                          {
+                            "x": 614,
+                            "y": 350
+                          },
+                          {
+                            "x": 718,
+                            "y": 587.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "HealthBar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\health\\HealthBar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Ship"
+          },
+          {
+            "objectName": "HealthBar"
+          }
+        ]
+      },
+      "objectsGroups": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "instances": [
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Ship",
+          "persistentUuid": "ca4156da-b426-4779-b924-556b6fc5a9df",
+          "width": 0,
+          "x": -1,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HealthBar",
+          "persistentUuid": "11631948-2574-4ad8-a97a-3e9fc93eb918",
+          "width": 0,
+          "x": 133,
+          "y": 7,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "eventsFunctions": [
         {
           "description": "the color of the object.",
@@ -1000,6 +2066,21 @@
           "name": "TimeBetweenShooting"
         }
       ],
+      "variants": []
+    },
+    {
+      "areaMaxX": 320,
+      "areaMaxY": 180,
+      "areaMaxZ": 0,
+      "areaMinX": 0,
+      "areaMinY": 0,
+      "areaMinZ": 0,
+      "defaultName": "",
+      "description": "",
+      "fullName": "",
+      "isAnimatable": true,
+      "isUsingLegacyInstancesRenderer": false,
+      "name": "PlayerShip",
       "objects": [
         {
           "adaptCollisionMaskAutomatically": false,
@@ -1008,7 +2089,13 @@
           "preScale": 0.25,
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Color",
+              "type": "string",
+              "value": "None"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -1018,11 +2105,12 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.01,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Red.png",
+                      "image": "assets\\playership\\Spaceship_Red.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1030,7 +2118,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1038,16 +2126,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 517,
-                            "y": 586
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 614,
-                            "y": 350
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 718,
-                            "y": 587.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1066,7 +2158,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Yellow.png",
+                      "image": "assets\\playership\\Spaceship_Yellow.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1074,7 +2166,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1082,16 +2174,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 517,
-                            "y": 586
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 614,
-                            "y": 350
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 718,
-                            "y": 587.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1110,7 +2206,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Blue.png",
+                      "image": "assets\\playership\\Spaceship_Blue.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1118,7 +2214,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1126,60 +2222,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 517,
-                            "y": 586
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 614,
-                            "y": 350
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 718,
-                            "y": 587.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Green.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 517,
-                            "y": 586
+                            "x": 755,
+                            "y": 563
                           },
                           {
-                            "x": 614,
-                            "y": 350
-                          },
-                          {
-                            "x": 718,
-                            "y": 587.5
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1198,7 +2254,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Orange.png",
+                      "image": "assets\\playership\\Spaceship_Orange.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1206,7 +2262,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1214,16 +2270,68 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 517,
-                            "y": 586
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 614,
-                            "y": 350
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 718,
-                            "y": 587.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\playership\\Spaceship_Green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 473,
+                            "y": 567.5
+                          },
+                          {
+                            "x": 615,
+                            "y": 324
+                          },
+                          {
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1242,7 +2350,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyship\\Enemy1_Purple.png",
+                      "image": "assets\\playership\\Spaceship_Purple.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1250,7 +2358,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1258,16 +2366,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 517,
-                            "y": 586
+                            "x": 473,
+                            "y": 567.5
                           },
                           {
-                            "x": 614,
-                            "y": 350
+                            "x": 615,
+                            "y": 324
                           },
                           {
-                            "x": 718,
-                            "y": 587.5
+                            "x": 755,
+                            "y": 563
+                          },
+                          {
+                            "x": 618.5,
+                            "y": 594
                           }
                         ]
                       ]
@@ -1364,23 +2476,18 @@
       ],
       "instances": [
         {
-          "angle": 180,
+          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
           "layer": "",
           "name": "Ship",
-          "persistentUuid": "ca4156da-b426-4779-b924-556b6fc5a9df",
+          "persistentUuid": "435b9961-0707-4459-b043-4464c5a0524f",
           "width": 0,
-          "x": -1,
+          "x": 0,
           "y": 0,
-          "zOrder": 3,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
+          "zOrder": 1,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -1391,30 +2498,16 @@
           "keepRatio": true,
           "layer": "",
           "name": "HealthBar",
-          "persistentUuid": "11631948-2574-4ad8-a97a-3e9fc93eb918",
+          "persistentUuid": "01d43827-feb3-496d-8be1-0dc2f58e0331",
           "width": 0,
-          "x": 133,
-          "y": 7,
-          "zOrder": 4,
+          "x": 120,
+          "y": 42,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
-      ]
-    },
-    {
-      "areaMaxX": 320,
-      "areaMaxY": 180,
-      "areaMaxZ": 0,
-      "areaMinX": 0,
-      "areaMinY": 0,
-      "areaMinZ": 0,
-      "defaultName": "",
-      "description": "",
-      "fullName": "",
-      "isAnimatable": true,
-      "isUsingLegacyInstancesRenderer": false,
-      "name": "PlayerShip",
+      ],
       "eventsFunctions": [
         {
           "fullName": "Set Max HP",
@@ -2523,433 +3616,7 @@
           "name": "PreviousPreviousToggleColor"
         }
       ],
-      "objects": [
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Ship",
-          "preScale": 0.25,
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Color",
-              "type": "string",
-              "value": "None"
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Red",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.01,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_Red.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 473,
-                            "y": 567.5
-                          },
-                          {
-                            "x": 615,
-                            "y": 324
-                          },
-                          {
-                            "x": 755,
-                            "y": 563
-                          },
-                          {
-                            "x": 618.5,
-                            "y": 594
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Yellow",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_Yellow.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 473,
-                            "y": 567.5
-                          },
-                          {
-                            "x": 615,
-                            "y": 324
-                          },
-                          {
-                            "x": 755,
-                            "y": 563
-                          },
-                          {
-                            "x": 618.5,
-                            "y": 594
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Blue",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_Blue.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 473,
-                            "y": 567.5
-                          },
-                          {
-                            "x": 615,
-                            "y": 324
-                          },
-                          {
-                            "x": 755,
-                            "y": 563
-                          },
-                          {
-                            "x": 618.5,
-                            "y": 594
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Orange",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_Orange.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 473,
-                            "y": 567.5
-                          },
-                          {
-                            "x": 615,
-                            "y": 324
-                          },
-                          {
-                            "x": 755,
-                            "y": 563
-                          },
-                          {
-                            "x": 618.5,
-                            "y": 594
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_Green.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 473,
-                            "y": 567.5
-                          },
-                          {
-                            "x": 615,
-                            "y": 324
-                          },
-                          {
-                            "x": 755,
-                            "y": 563
-                          },
-                          {
-                            "x": 618.5,
-                            "y": 594
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Purple",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\playership\\Spaceship_Purple.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 473,
-                            "y": 567.5
-                          },
-                          {
-                            "x": 615,
-                            "y": 324
-                          },
-                          {
-                            "x": 755,
-                            "y": 563
-                          },
-                          {
-                            "x": 618.5,
-                            "y": 594
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "HealthBar",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\health\\HealthBar.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "Ship"
-          },
-          {
-            "objectName": "HealthBar"
-          }
-        ]
-      },
-      "objectsGroups": [],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        }
-      ],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Ship",
-          "persistentUuid": "435b9961-0707-4459-b043-4464c5a0524f",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "HealthBar",
-          "persistentUuid": "01d43827-feb3-496d-8be1-0dc2f58e0331",
-          "width": 0,
-          "x": 120,
-          "y": 42,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ]
+      "variants": []
     }
   ]
 }
