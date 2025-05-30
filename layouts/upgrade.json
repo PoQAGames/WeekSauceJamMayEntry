@@ -120,30 +120,38 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 45.17647058823528,
-      "height": 80,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
       "layer": "",
-      "name": "UpgradeHealthButton",
-      "persistentUuid": "259e67d6-ac19-469e-bd3f-65bb08417db0",
-      "width": 80,
-      "x": 84,
-      "y": 220,
+      "name": "UpgradeIcon",
+      "persistentUuid": "f7c971ee-7612-439d-8e4a-224c8df6cfea",
+      "width": 70,
+      "x": 25,
+      "y": 178,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ChromaSpre"
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 42,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
       "layer": "",
-      "name": "Current_Health_Display",
-      "persistentUuid": "3e276bb4-c4c0-4ece-9fa4-7bde228ac364",
-      "width": 343,
-      "x": 200,
-      "y": 240,
+      "name": "BuyButton",
+      "persistentUuid": "c3f0944d-7744-474d-ae7c-6d1b76d2e18a",
+      "width": 70,
+      "x": 535,
+      "y": 182,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -151,15 +159,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 39.183673469387756,
-      "height": 80,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
       "layer": "",
-      "name": "UpgradeDamageRock",
-      "persistentUuid": "5cd668e5-02f3-4348-8716-6cd0786b2b67",
-      "width": 80,
-      "x": 84,
-      "y": 315,
+      "name": "UpgradeName",
+      "persistentUuid": "2193222e-5e74-4b07-983b-68568d819025",
+      "width": 0,
+      "x": 219,
+      "y": 204,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -171,11 +179,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "UpgradeLevel_RockDamage",
-      "persistentUuid": "1c8edb26-3fb2-41b7-8e79-f60490b04f6e",
+      "name": "UpgradeLevel",
+      "persistentUuid": "cda8dfca-c25d-4ead-93a2-d125eba39c0d",
       "width": 0,
-      "x": 200,
-      "y": 330,
+      "x": 130,
+      "y": 204,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -183,15 +191,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 48,
-      "height": 80,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
       "layer": "",
-      "name": "UpgradeProjectileSpeed",
-      "persistentUuid": "7f7f34f6-ae48-4ea6-be1a-e1cb086dbbd1",
-      "width": 80,
-      "x": 84,
-      "y": 413,
+      "name": "UpgradePrice",
+      "persistentUuid": "dea86a04-3693-4b34-8125-c19d68ccbd32",
+      "width": 0,
+      "x": 617,
+      "y": 204,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -199,16 +207,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
       "keepRatio": true,
       "layer": "",
-      "name": "UpgradeLevel_ProjectileSpeed",
-      "persistentUuid": "6a56ec01-7a4c-4e9b-8324-2880147561ba",
-      "width": 0,
-      "x": 200,
-      "y": 430,
-      "zOrder": 11,
+      "name": "UpgradeIcon",
+      "persistentUuid": "a1c89113-bacf-41dd-8424-4a4e27d4b70b",
+      "width": 70,
+      "x": 25,
+      "y": 278,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -216,15 +225,116 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 80,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
       "layer": "",
-      "name": "UpgradeChromaSpread",
-      "persistentUuid": "a7a5117e-a5ed-4b52-95a7-b3d3a7ce7b8b",
-      "width": 80,
-      "x": 85,
-      "y": 505,
-      "zOrder": 12,
+      "name": "BuyButton",
+      "persistentUuid": "1996fc33-2e6b-406f-a6a1-0e93c3a301b7",
+      "width": 70,
+      "x": 535,
+      "y": 282,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "DamageRock"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeName",
+      "persistentUuid": "a887a00b-d95b-4f49-860f-60a958862276",
+      "width": 0,
+      "x": 219,
+      "y": 304,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "DamageRock"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "8224c9aa-7a77-4faa-9e6f-ee8e31b07c87",
+      "width": 0,
+      "x": 130,
+      "y": 304,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "DamageRock"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "9d7f1201-a8f3-465c-803f-a935e1a6c8e2",
+      "width": 0,
+      "x": 617,
+      "y": 304,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeIcon",
+      "persistentUuid": "88d5e355-8b68-4dab-a985-4f049f40af59",
+      "width": 70,
+      "x": 25,
+      "y": 382,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BuyButton",
+      "persistentUuid": "d74f3877-1c13-4d96-9a28-d0a276b871f4",
+      "width": 70,
+      "x": 535,
+      "y": 386,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -235,12 +345,372 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "UpgradeLevel_ChromaSpread",
-      "persistentUuid": "589fd071-a6ab-47ca-8c52-1a4d3e880db6",
+      "name": "UpgradeName",
+      "persistentUuid": "80b9a04e-fc47-4ce5-9377-71139d2d9504",
       "width": 0,
-      "x": 200,
-      "y": 520,
-      "zOrder": 13,
+      "x": 219,
+      "y": 408,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "ad975bcf-a075-4b50-aaa4-8313087d7cd3",
+      "width": 0,
+      "x": 130,
+      "y": 408,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "40d62eaa-4c27-483f-8be5-3e4a36b221ea",
+      "width": 0,
+      "x": 617,
+      "y": 408,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeIcon",
+      "persistentUuid": "59c17980-14b4-41d6-9ff2-3059d5ee44e9",
+      "width": 70,
+      "x": 25,
+      "y": 478,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BuyButton",
+      "persistentUuid": "47d31d0d-0e7d-4f24-9c73-bd3e191a9f1e",
+      "width": 70,
+      "x": 535,
+      "y": 482,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeName",
+      "persistentUuid": "36181579-6368-4edd-80cf-c2977b2a89c2",
+      "width": 0,
+      "x": 219,
+      "y": 504,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "43a7e50a-4263-4a80-8680-b7c8773055ff",
+      "width": 0,
+      "x": 130,
+      "y": 504,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "a1b5bad0-2d6e-4bed-8efe-58db06965e54",
+      "width": 0,
+      "x": 617,
+      "y": 504,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeIcon",
+      "persistentUuid": "77a9b983-6d9b-46d9-840b-d1f0b3793bfd",
+      "width": 70,
+      "x": 25,
+      "y": 578,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BuyButton",
+      "persistentUuid": "22273a62-8932-4d89-95eb-ecefeb679310",
+      "width": 70,
+      "x": 535,
+      "y": 582,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeName",
+      "persistentUuid": "f054c4a1-1b47-4bfc-bfe0-8b98c968c9ab",
+      "width": 0,
+      "x": 219,
+      "y": 604,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "6ab3f9ca-ac0f-42ef-8053-1399093c02e3",
+      "width": 0,
+      "x": 130,
+      "y": 604,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "2307223d-7fa6-41d6-8507-bb389372f129",
+      "width": 0,
+      "x": 617,
+      "y": 604,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeIcon",
+      "persistentUuid": "19a5169e-a5e3-4a04-b34a-0c5040e44ae2",
+      "width": 70,
+      "x": 25,
+      "y": 678,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BuyButton",
+      "persistentUuid": "afc22704-c236-4c16-9fe1-ed1868eb3b1e",
+      "width": 70,
+      "x": 535,
+      "y": 682,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeName",
+      "persistentUuid": "59a1766f-f5e9-4077-b52a-0eca0c28a872",
+      "width": 0,
+      "x": 219,
+      "y": 704,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "3d63a0c9-2f12-4860-87a0-a49444ad3998",
+      "width": 0,
+      "x": 130,
+      "y": 704,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "315aef63-2b60-4efe-ba66-16d1b3add531",
+      "width": 0,
+      "x": 617,
+      "y": 704,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.044776119402985,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeIcon",
+      "persistentUuid": "d77c640b-db15-4b9d-95d3-612b43c2f397",
+      "width": 70,
+      "x": 25,
+      "y": 778,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 57.75,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BuyButton",
+      "persistentUuid": "853e422a-f3fe-4e92-94f8-87a0b8f9f7b7",
+      "width": 70,
+      "x": 535,
+      "y": 782,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeName",
+      "persistentUuid": "eb825e41-3d3a-4438-b6e4-74cac69c9678",
+      "width": 0,
+      "x": 219,
+      "y": 804,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradeLevel",
+      "persistentUuid": "bbed5f91-8e9a-4ac5-bf70-e156b423dde5",
+      "width": 0,
+      "x": 130,
+      "y": 804,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UpgradePrice",
+      "persistentUuid": "02285a5f-21af-4c20-b956-87dfa369c514",
+      "width": 0,
+      "x": 617,
+      "y": 804,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -293,7 +763,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ReadyButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -378,7 +847,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugAddMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -463,7 +931,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugRemoveMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -545,20 +1012,110 @@
       }
     },
     {
-      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "UpgradeHealthButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "UpgradeLevel",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [
         {
-          "name": "Cost",
-          "type": "number",
-          "value": 1
-        },
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ChromaSpread"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "1/10",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "right",
+      "characterSize": 32,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "1/10",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "right",
+        "verticalTextAlignment": "top",
+        "characterSize": 32,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "UpgradeName",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
         {
-          "name": "CurrentLevel",
-          "type": "number",
-          "value": 1
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ChromaSpread"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "Chroma Spread",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "left",
+      "characterSize": 32,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Chroma Spread",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 32,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
+      "name": "BuyButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ChromaSpread"
         }
       ],
       "effects": [],
@@ -577,7 +1134,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "On Screen Controls Button_Hovered.png",
+          "texture": "assets/UI/icon_buy.png",
           "tiled": false,
           "topMargin": 6,
           "width": 192
@@ -587,7 +1144,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "On Screen Controls Button_Idle.png",
+          "texture": "assets/UI/icon_buy.png",
           "tiled": false,
           "topMargin": 6,
           "width": 192
@@ -597,7 +1154,7 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "+",
+          "string": "",
           "font": "Roboto-Bold.ttf",
           "textAlignment": "center",
           "characterSize": 40,
@@ -620,7 +1177,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "+",
+            "text": "",
             "font": "Roboto-Bold.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -633,7 +1190,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "On Screen Controls Button_Pressed.png",
+          "texture": "assets/UI/icon_buy.png",
           "tiled": false,
           "topMargin": 6,
           "width": 192
@@ -644,155 +1201,23 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Current_Health_Display",
+      "name": "UpgradePrice",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Health: 1",
-      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
-      "textAlignment": "left",
-      "characterSize": 50,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Health: 1",
-        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 50,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "UpgradeDamageRock",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [
         {
-          "name": "Cost",
-          "type": "number",
-          "value": 1
-        },
-        {
-          "name": "CurrentLevel",
-          "type": "number",
-          "value": 1
+          "name": "Upgrade",
+          "type": "string",
+          "value": "ChromaSpread"
         }
       ],
       "effects": [],
       "behaviors": [],
-      "content": {
-        "LeftPadding": 0,
-        "RightPadding": 0,
-        "PressedLabelOffsetY": 1,
-        "BottomPadding": 0,
-        "TopPadding": 0,
-        "HoveredFadeOutDuration": 0.2
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Hovered.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Idle.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "+",
-          "font": "Roboto-Bold.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "+",
-            "font": "Roboto-Bold.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Pressed.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "UpgradeLevel_RockDamage",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Rock Damage: 1",
+      "string": "100",
       "font": "assets/Fonts/VCR_OSD_MONO.ttf",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 32,
       "color": {
         "b": 0,
         "g": 0,
@@ -812,289 +1237,73 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Rock Damage: 1",
+        "text": "100",
         "font": "assets/Fonts/VCR_OSD_MONO.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 32,
         "color": "0;0;0"
       }
     },
     {
-      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "UpgradeProjectileSpeed",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
-      "variables": [
-        {
-          "name": "Cost",
-          "type": "number",
-          "value": 1
-        },
-        {
-          "name": "CurrentLevel",
-          "type": "number",
-          "value": 1
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 0,
-        "RightPadding": 0,
-        "PressedLabelOffsetY": 1,
-        "BottomPadding": 0,
-        "TopPadding": 0,
-        "HoveredFadeOutDuration": 0.2
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Hovered.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Idle.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "+",
-          "font": "Roboto-Bold.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "+",
-            "font": "Roboto-Bold.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Pressed.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        }
-      }
-    },
-    {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "UpgradeLevel_ProjectileSpeed",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "NoBuy",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Bullet Speed: 1",
-      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
-      "textAlignment": "left",
-      "characterSize": 50,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Bullet Speed: 1",
-        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 50,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "UpgradeChromaSpread",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
-      "variables": [
+      "animations": [
         {
-          "name": "Cost",
-          "type": "number",
-          "value": 1
-        },
-        {
-          "name": "CurrentLevel",
-          "type": "number",
-          "value": 1
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_nobuy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 12
+                      },
+                      {
+                        "x": 188,
+                        "y": 12
+                      },
+                      {
+                        "x": 188,
+                        "y": 187
+                      },
+                      {
+                        "x": 13,
+                        "y": 187
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 0,
-        "RightPadding": 0,
-        "PressedLabelOffsetY": 1,
-        "BottomPadding": 0,
-        "TopPadding": 0,
-        "HoveredFadeOutDuration": 0.2
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Hovered.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Idle.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "+",
-          "font": "Roboto-Bold.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "+",
-            "font": "Roboto-Bold.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "On Screen Controls Button_Pressed.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "UpgradeLevel_ChromaSpread",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Chroma Spread: 1",
-      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
-      "textAlignment": "left",
-      "characterSize": 50,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Chroma Spread: 1",
-        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 50,
-        "color": "0;0;0"
-      }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1110,31 +1319,22 @@
         "objectName": "DebugAddMoney"
       },
       {
+        "objectName": "BuyButton"
+      },
+      {
         "objectName": "DebugRemoveMoney"
       },
       {
-        "objectName": "UpgradeHealthButton"
+        "objectName": "UpgradeLevel"
       },
       {
-        "objectName": "UpgradeDamageRock"
+        "objectName": "UpgradePrice"
       },
       {
-        "objectName": "UpgradeProjectileSpeed"
+        "objectName": "UpgradeName"
       },
       {
-        "objectName": "UpgradeChromaSpread"
-      },
-      {
-        "objectName": "Current_Health_Display"
-      },
-      {
-        "objectName": "UpgradeLevel_RockDamage"
-      },
-      {
-        "objectName": "UpgradeLevel_ProjectileSpeed"
-      },
-      {
-        "objectName": "UpgradeLevel_ChromaSpread"
+        "objectName": "NoBuy"
       }
     ]
   },
@@ -1207,6 +1407,35 @@
               "parameters": [
                 "TempUpgrades",
                 "UpgradeLevels"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpgradeIcon",
+                "Animation",
+                "=",
+                "UpgradeIcon.Upgrade"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Upgrade Menu Row\"",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -2237,6 +2466,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"

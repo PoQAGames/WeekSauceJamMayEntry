@@ -1,7 +1,7 @@
 {
   "firstLayout": "main",
   "gdVersion": {
-    "build": 231,
+    "build": 228,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -603,6 +603,78 @@
         "metadata": "",
         "name": "assets/Fonts/Pixel NES.otf",
         "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_chromaspread.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_chromaspread.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_damagerock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_damagerock.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_firerate.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_firerate.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_speed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_speed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_projectilespeed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_projectilespeed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_twincannons.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_twincannons.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_health.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_health.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_buy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_buy.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_nobuy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/icon_nobuy.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -655,6 +727,360 @@
         "characterSize": 40,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "UpgradeIcon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Upgrade",
+          "type": "string",
+          "value": "DamageRock"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ChromaSpread",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_chromaspread.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DamageRock",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_damagerock.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FireRate",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_firerate.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ShipSpeed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_speed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ProjectileSpeed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_projectilespeed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TwinCannons",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_twincannons.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "IncreasedHealth",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/UI/icon_health.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 12
+                      },
+                      {
+                        "x": 192,
+                        "y": 191
+                      },
+                      {
+                        "x": 11,
+                        "y": 191
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -662,6 +1088,9 @@
     "children": [
       {
         "objectName": "CurrencyDisplay"
+      },
+      {
+        "objectName": "UpgradeIcon"
       }
     ]
   },
@@ -892,5 +1321,10 @@
       "referenceTo": "/eventsFunctionsExtensions/repeateveryxseconds"
     }
   ],
-  "externalLayouts": []
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/upgrade-menu-row"
+    }
+  ]
 }
