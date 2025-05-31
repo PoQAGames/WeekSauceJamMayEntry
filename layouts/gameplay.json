@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47893418845352814,
+    "zoomFactor": 0.4194339782759092,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1564,7 +1564,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1591,17 +1590,6 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "EnemySpawner",
-                    "SpawnCycles",
-                    "=",
-                    "EnemySpawner.SpawnCycles - 1"
-                  ]
-                },
                 {
                   "type": {
                     "value": "Create"
@@ -1680,13 +1668,33 @@
                 },
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NumberTemp",
+                    "=",
+                    "RandomInRange(3, 6)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NumberTemp",
+                    "=",
+                    "max(0.2, NumberTemp * (1 - (.1 * RulesBad.EnemySpawnRateRule)))"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "EnemySpawner",
                     "NextEnemySpawnTime",
                     "=",
-                    "RandomInRange(3, 6)"
+                    "NumberTemp"
                   ]
                 }
               ]
@@ -1793,17 +1801,6 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "AsteroidSpawner",
-                    "SpawnCycles",
-                    "=",
-                    "AsteroidSpawner.SpawnCycles - 1"
-                  ]
-                },
                 {
                   "type": {
                     "value": "Create"
@@ -1933,13 +1930,33 @@
                 },
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NumberTemp",
+                    "=",
+                    "RandomInRange(2, 10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NumberTemp",
+                    "=",
+                    "max(0.2, NumberTemp * (1 - (.1 * RulesBad.AstroidSpawnRateRule)))"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "AsteroidSpawner",
                     "NextEnemySpawnTime",
                     "=",
-                    "RandomInRange(1, 10)"
+                    "NumberTemp"
                   ]
                 }
               ]
@@ -1957,7 +1974,7 @@
                 "",
                 "\"LevelLength\"",
                 ">=",
-                "60"
+                "40"
               ]
             },
             {
