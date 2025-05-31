@@ -150,6 +150,23 @@
           "value": 2
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 332,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IncreaseCurrencyText",
+      "persistentUuid": "a899fe3e-943c-4429-8d13-940eec281ed8",
+      "width": 676,
+      "x": 23,
+      "y": 904,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -417,6 +434,48 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "IncreaseCurrencyText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Blah blah blah currency",
+      "font": "assets\\Fonts\\Pixel NES.otf",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Blah blah blah currency",
+        "font": "assets\\Fonts\\Pixel NES.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -433,6 +492,9 @@
       },
       {
         "objectName": "ChooseRuleButton"
+      },
+      {
+        "objectName": "IncreaseCurrencyText"
       }
     ]
   },
@@ -510,6 +572,17 @@
                 "IkaRuleGa::GetRuleUpgradeString(ChooseRuleButton.Rule, RulesBad[ChooseRuleButton.Rule])",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "IncreaseCurrencyText",
+                "Text",
+                "=",
+                "IkaRuleGa::GetRuleUpgradeString(\"EnemyCurrencyDropRule\", RulesBad[\"EnemyCurrencyDropRule\"])"
+              ]
             }
           ]
         }
@@ -547,6 +620,16 @@
             "RulesBad[ChooseRuleButton.Rule]",
             "=",
             "RulesBad[ChooseRuleButton.Rule] + 1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "RulesBad[\"EnemyCurrencyDropRule\"]",
+            "=",
+            "RulesBad[\"EnemyCurrencyDropRule\"] + 1"
           ]
         }
       ]

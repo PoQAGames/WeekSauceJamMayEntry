@@ -1048,7 +1048,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Asteroids spawn more often. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Asteroids spawn more often. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1073,7 +1073,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"More enemies can shoot. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"More enemies can shoot. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1098,7 +1098,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Enemies are worth more $. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Also, enemies are worth more $. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1123,7 +1123,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Enemies do more damage. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Enemies do more damage. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1148,7 +1148,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Increase enemy fire rate. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Increase enemy fire rate. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1173,7 +1173,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Increase enemy HP. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Increase enemy HP. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1198,7 +1198,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Enemies spawn more often. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Enemies spawn more often. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
