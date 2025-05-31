@@ -1048,7 +1048,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Asteroids spawn more often. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Asteroids spawn more often. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1073,7 +1073,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"More enemies can shoot. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"More enemies can shoot. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1098,7 +1098,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Enemies are worth more $. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Also, enemies are worth more $. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1123,7 +1123,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Enemies do more damage. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Enemies do more damage. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1148,7 +1148,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Increase enemy fire rate. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Increase enemy fire rate. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1173,7 +1173,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Increase enemy HP. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Increase enemy HP. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1198,7 +1198,7 @@
                 "value": "SetReturnString"
               },
               "parameters": [
-                "\"Enemies spawn more often. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+                "\"Enemies spawn more often. Level \" + CurrentLevel + \"=>\" + ToString(CurrentLevel + 1)"
               ]
             }
           ]
@@ -1533,7 +1533,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\health\\HealthBar.png",
                       "points": [],
                       "originPoint": {
@@ -1547,7 +1547,78 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 29.5,
+                            "y": 16
+                          },
+                          {
+                            "x": 30,
+                            "y": 16
+                          },
+                          {
+                            "x": 30,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Gun",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemyship\\Enemy1_Gun.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 602.5,
+                            "y": 343.5
+                          },
+                          {
+                            "x": 624,
+                            "y": 337
+                          },
+                          {
+                            "x": 606,
+                            "y": 363.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1559,6 +1630,9 @@
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "objectName": "Gun"
+          },
           {
             "objectName": "Ship"
           },
@@ -1632,6 +1706,23 @@
           "x": 133,
           "y": 7,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 180,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Gun",
+          "persistentUuid": "901765a0-e32c-485e-9041-1e2077c30a80",
+          "width": 320,
+          "x": 12,
+          "y": 2,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1929,7 +2020,16 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Gun"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
@@ -2187,6 +2287,39 @@
                     "BulletDamage",
                     "=",
                     "Value"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "IkaRuleGa::EnemyShip",
+              "type": "object"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "Enable enemy ship to shoot",
+          "functionType": "Action",
+          "group": "EnemyShip configuration",
+          "name": "EnableShooting",
+          "sentence": "Enable _PARAM0_  to shoot",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Gun",
+                    ""
                   ]
                 }
               ]
@@ -2609,7 +2742,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\health\\HealthBar.png",
                       "points": [],
                       "originPoint": {
@@ -2623,7 +2756,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 31,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 0.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -2700,8 +2848,8 @@
           "name": "HealthBar",
           "persistentUuid": "01d43827-feb3-496d-8be1-0dc2f58e0331",
           "width": 0,
-          "x": 120,
-          "y": 42,
+          "x": 121,
+          "y": 152,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
