@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5653158055126308,
+    "zoomFactor": 0.6455105703311479,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -806,7 +806,7 @@
         {
           "name": "Upgrade",
           "type": "string",
-          "value": "Speed"
+          "value": "TwinCannons"
         }
       ]
     },
@@ -1306,6 +1306,11 @@
           "name": "Upgrade",
           "type": "string",
           "value": "ChromaSpread"
+        },
+        {
+          "name": "MaxLevel",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1402,6 +1407,16 @@
           "name": "Upgrade",
           "type": "string",
           "value": "ChromaSpread"
+        },
+        {
+          "name": "MaxLevel",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1888,50 +1903,6 @@
                 "=",
                 "IkaRuleGa::GetUpgradeName(UpgradeName.Upgrade)"
               ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeLevel",
-                "Text",
-                "=",
-                "ToString(UpgradeLevels[UpgradeLevel.Upgrade]) + \"/\" + ToString(IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade))"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradePrice",
-                "Text",
-                "=",
-                "ToString(IkaRuleGa::GetNextRankCost(UpgradePrice.Upgrade, UpgradeLevels[UpgradePrice.Upgrade]))"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "BuyButton",
-                "Cost",
-                "=",
-                "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "BuyButton",
-                "Cost",
-                "=",
-                "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
-              ]
             }
           ],
           "events": [
@@ -1939,7 +1910,30 @@
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "BuyButton",
               "conditions": [],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "BuyButton",
+                    "Cost",
+                    "=",
+                    "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "BuyButton",
+                    "Animation",
+                    "=",
+                    "\"NoBuy\""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -1956,16 +1950,110 @@
                       ]
                     }
                   ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "UpgradeLevels[BuyButton.Upgrade]",
+                            "<",
+                            "IkaRuleGa::GetUpgradeMaxRank(BuyButton.Upgrade)"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "BuyButton",
+                            "Animation",
+                            "=",
+                            "\"CanBuy\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "UpgradeLevels[BuyButton.Upgrade]",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "BuyButton",
+                            "Animation",
+                            "=",
+                            "\"CanBuy\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "UpgradePrice",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "UpgradePrice",
+                    "MaxLevel",
+                    "=",
+                    "IkaRuleGa::GetUpgradeMaxRank(UpgradePrice.Upgrade)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "UpgradePrice",
+                    "Cost",
+                    "=",
+                    "IkaRuleGa::GetNextRankCost(UpgradePrice.Upgrade, UpgradeLevels[UpgradePrice.Upgrade])"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "BuyButton",
-                        "Animation",
+                        "UpgradePrice",
+                        "Text",
                         "=",
-                        "\"CanBuy\""
+                        "UpgradePrice.Cost"
                       ]
                     }
                   ]
@@ -1978,23 +2066,112 @@
                         "value": "NumberObjectVariable"
                       },
                       "parameters": [
-                        "BuyButton",
-                        "Cost",
-                        ">",
-                        "Currency"
+                        "UpgradePrice",
+                        "MaxLevel",
+                        "=",
+                        "UpgradeLevels[UpgradePrice.Upgrade]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "UpgradePrice",
+                        "MaxLevel",
+                        "!=",
+                        "0"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "BuyButton",
-                        "Animation",
+                        "UpgradePrice",
+                        "Text",
                         "=",
-                        "\"NoBuy\""
+                        "\"Max\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "UpgradeLevel",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "UpgradeLevel",
+                    "MaxLevel",
+                    "=",
+                    "IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "MaxLevel",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "Text",
+                        "=",
+                        "ToString(UpgradeLevels[UpgradeLevel.Upgrade])"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "MaxLevel",
+                        "!=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "Text",
+                        "=",
+                        "ToString(UpgradeLevels[UpgradeLevel.Upgrade]) + \"/\" + ToString(IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade))"
                       ]
                     }
                   ]
@@ -2054,6 +2231,18 @@
                 "UpgradeLevels[BuyButton.Upgrade]",
                 "=",
                 "UpgradeLevels[BuyButton.Upgrade] + 1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
+                "",
+                "VolumeSFX",
+                "1"
               ]
             }
           ]
