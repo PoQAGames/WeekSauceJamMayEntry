@@ -818,6 +818,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_ClickPlay_Big.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_ClickPlay_Big.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_TripleShot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_TripleShot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_6Shot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_6Shot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
