@@ -507,7 +507,7 @@
               },
               "parameters": [
                 "ChooseRuleButton",
-                "ChooseRuleButton.Rule",
+                "IkaRuleGa::GetRuleUpgradeString(ChooseRuleButton.Rule, RulesBad[ChooseRuleButton.Rule])",
                 ""
               ]
             }
@@ -537,6 +537,16 @@
             "",
             "\"gameplay\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "RulesBad[ChooseRuleButton.Rule]",
+            "=",
+            "RulesBad[ChooseRuleButton.Rule] + 1"
           ]
         }
       ]
