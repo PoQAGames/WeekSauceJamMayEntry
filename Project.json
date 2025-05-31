@@ -1,7 +1,7 @@
 {
   "firstLayout": "title",
   "gdVersion": {
-    "build": 228,
+    "build": 231,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -760,6 +760,22 @@
         "name": "assets\\Title_logo.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_buy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\icon_buy.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/icon_nobuy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\icon_nobuy.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1400,6 +1416,16 @@
       "name": "Level",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "VolumeBGM",
+      "type": "number",
+      "value": 50
+    },
+    {
+      "name": "VolumeSFX",
+      "type": "number",
+      "value": 50
     }
   ],
   "layouts": [

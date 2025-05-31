@@ -694,6 +694,7 @@
       "assetStoreId": "",
       "name": "EnemyShip",
       "type": "IkaRuleGa::EnemyShip",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -720,6 +721,7 @@
       "assetStoreId": "",
       "name": "PlayerShip",
       "type": "IkaRuleGa::PlayerShip",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -727,7 +729,7 @@
           "name": "LinearMovement",
           "type": "LinearMovement::LinearMovement",
           "SpeedX": 0,
-          "SpeedY": 0
+          "SpeedY": -500
         },
         {
           "name": "TopDownMovement",
@@ -1425,6 +1427,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2143,7 +2146,7 @@
                         "",
                         "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_03.wav",
                         "",
-                        "100",
+                        "VolumeSFX",
                         "1"
                       ]
                     }
@@ -2172,7 +2175,7 @@
                         "",
                         "assets\\Audio\\SFX\\RuleBreaker_SFX_Explosion_04.wav",
                         "",
-                        "100",
+                        "VolumeSFX",
                         "1"
                       ]
                     }
@@ -2650,6 +2653,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2688,7 +2692,7 @@
                 "",
                 "assets\\Audio\\SFX\\RuleBreaker_SFX_Shoot_01.wav",
                 "",
-                "100",
+                "VolumeSFX",
                 "1"
               ]
             }
@@ -3122,6 +3126,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Twin Cannons",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3252,6 +3257,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3445,7 +3451,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3505,6 +3510,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
+                "0",
+                "yes",
+                "VolumeBGM",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "EcrireFichierExp"
@@ -3705,143 +3723,6 @@
               ]
             }
           ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "mod(Level, 4)",
-                    "=",
-                    "0"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
-                    "0",
-                    "no",
-                    "100",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "mod(Level, 4)",
-                    "=",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets\\Audio\\Music\\RuleBreaker_Level2Start_01.wav",
-                    "0",
-                    "no",
-                    "100",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "mod(Level, 4)",
-                    "=",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
-                    "0",
-                    "no",
-                    "100",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "mod(Level, 4)",
-                    "=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
-                    "0",
-                    "no",
-                    "100",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MusicStopped"
-              },
-              "parameters": [
-                "",
-                "0"
-              ]
-            }
-          ],
           "actions": [
             {
               "type": {
@@ -3851,8 +3732,8 @@
                 "",
                 "assets\\Audio\\Music\\RuleBreaker_Combat_03.wav",
                 "0",
-                "",
-                "100",
+                "yes",
+                "VolumeBGM",
                 "1"
               ]
             }

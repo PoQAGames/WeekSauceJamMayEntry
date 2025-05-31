@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5653158055126308,
+    "zoomFactor": 0.6455105703311479,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -147,23 +147,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "c3f0944d-7744-474d-ae7c-6d1b76d2e18a",
-      "width": 70,
-      "x": 535,
-      "y": 182,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -226,29 +209,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "1996fc33-2e6b-406f-a6a1-0e93c3a301b7",
-      "width": 70,
-      "x": 535,
-      "y": 282,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "DamageRock"
-        }
-      ]
     },
     {
       "angle": 0,
@@ -329,29 +289,6 @@
       "x": 25,
       "y": 382,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "FireRate"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "d74f3877-1c13-4d96-9a28-d0a276b871f4",
-      "width": 70,
-      "x": 535,
-      "y": 386,
-      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -453,29 +390,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "47d31d0d-0e7d-4f24-9c73-bd3e191a9f1e",
-      "width": 70,
-      "x": 535,
-      "y": 482,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "Health"
-        }
-      ]
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -553,29 +467,6 @@
       "x": 25,
       "y": 578,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "PlayerDamage"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "22273a62-8932-4d89-95eb-ecefeb679310",
-      "width": 70,
-      "x": 535,
-      "y": 582,
-      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -677,29 +568,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "afc22704-c236-4c16-9fe1-ed1868eb3b1e",
-      "width": 70,
-      "x": 535,
-      "y": 682,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "ProjectileSpeed"
-        }
-      ]
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -777,29 +645,6 @@
       "x": 25,
       "y": 778,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "Speed"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "853e422a-f3fe-4e92-94f8-87a0b8f9f7b7",
-      "width": 70,
-      "x": 535,
-      "y": 782,
-      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -945,29 +790,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 57.75,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "935b251e-cae7-4340-8240-53a61e4482f4",
-      "width": 70,
-      "x": 537,
-      "y": 877,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "TwinCannons"
-        }
-      ]
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -984,7 +806,7 @@
         {
           "name": "Upgrade",
           "type": "string",
-          "value": "Speed"
+          "value": "TwinCannons"
         }
       ]
     },
@@ -995,7 +817,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "5aed55af-dac5-428c-8f98-5c7c01c27431",
       "width": 70,
       "x": 534,
@@ -1018,7 +840,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "c9d9e216-b4e9-4e6d-a5e7-1c1c039cc7da",
       "width": 70,
       "x": 536,
@@ -1041,7 +863,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "b32e5eef-82a2-48d5-829a-a60f3a855352",
       "width": 70,
       "x": 535,
@@ -1064,7 +886,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "21401ac7-331b-4ec3-af4d-d16dc1c65f64",
       "width": 70,
       "x": 536,
@@ -1087,7 +909,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "d9debbb0-bb09-4cbf-9fdf-98cec101478c",
       "width": 70,
       "x": 534,
@@ -1110,7 +932,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "d1b6a512-355f-4738-97b4-99f340fd11f1",
       "width": 70,
       "x": 536,
@@ -1133,11 +955,11 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "0df18426-0f74-4ffc-8fa8-d4ed3a848351",
       "width": 70,
       "x": 535,
-      "y": 783,
+      "y": 787,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1156,7 +978,7 @@
       "height": 70.00000000000001,
       "keepRatio": true,
       "layer": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "persistentUuid": "55ee8711-5193-480e-b235-c88ca04e0fa0",
       "width": 70,
       "x": 537,
@@ -1220,6 +1042,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ReadyButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1304,6 +1127,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugAddMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1388,6 +1212,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugRemoveMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1481,6 +1306,11 @@
           "name": "Upgrade",
           "type": "string",
           "value": "ChromaSpread"
+        },
+        {
+          "name": "MaxLevel",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1565,101 +1395,6 @@
       }
     },
     {
-      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
-      "name": "BuyButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "ChromaSpread"
-        },
-        {
-          "name": "Cost",
-          "type": "number",
-          "value": 0
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 0,
-        "RightPadding": 0,
-        "PressedLabelOffsetY": 1,
-        "BottomPadding": 0,
-        "TopPadding": 0,
-        "HoveredFadeOutDuration": 0.2
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "assets/UI/icon_buy.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "assets/UI/icon_buy.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "",
-          "font": "Roboto-Bold.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "",
-            "font": "Roboto-Bold.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 6,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "assets/UI/icon_buy.png",
-          "tiled": false,
-          "topMargin": 6,
-          "width": 192
-        }
-      }
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -1672,6 +1407,16 @@
           "name": "Upgrade",
           "type": "string",
           "value": "ChromaSpread"
+        },
+        {
+          "name": "MaxLevel",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1710,7 +1455,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NoBuy",
+      "name": "BuyButton",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1726,10 +1471,21 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
       "animations": [
         {
-          "name": "",
+          "name": "CanBuy",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1738,7 +1494,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/UI/icon_nobuy.png",
+                  "image": "assets\\UI\\icon_buy.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1754,20 +1510,68 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 13,
-                        "y": 12
+                        "x": 9,
+                        "y": 9
                       },
                       {
-                        "x": 188,
-                        "y": 12
+                        "x": 192,
+                        "y": 9
                       },
                       {
-                        "x": 188,
-                        "y": 187
+                        "x": 192,
+                        "y": 180
                       },
                       {
-                        "x": 13,
-                        "y": 187
+                        "x": 9,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NoBuy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\UI\\icon_nobuy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 9
+                      },
+                      {
+                        "x": 192,
+                        "y": 9
+                      },
+                      {
+                        "x": 192,
+                        "y": 180
+                      },
+                      {
+                        "x": 9,
+                        "y": 180
                       }
                     ]
                   ]
@@ -1792,9 +1596,6 @@
         "objectName": "DebugAddMoney"
       },
       {
-        "objectName": "BuyButton"
-      },
-      {
         "objectName": "DebugRemoveMoney"
       },
       {
@@ -1807,7 +1608,7 @@
         "objectName": "UpgradeName"
       },
       {
-        "objectName": "NoBuy"
+        "objectName": "BuyButton"
       }
     ]
   },
@@ -1887,16 +1688,7 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "NoBuy"
-              ]
-            }
-          ]
+          "actions": []
         }
       ]
     },
@@ -2006,7 +1798,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2061,7 +1852,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2113,50 +1903,6 @@
                 "=",
                 "IkaRuleGa::GetUpgradeName(UpgradeName.Upgrade)"
               ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradeLevel",
-                "Text",
-                "=",
-                "ToString(UpgradeLevels[UpgradeLevel.Upgrade]) + \"/\" + ToString(IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade))"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "UpgradePrice",
-                "Text",
-                "=",
-                "ToString(IkaRuleGa::GetNextRankCost(UpgradePrice.Upgrade, UpgradeLevels[UpgradePrice.Upgrade]))"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "BuyButton",
-                "Cost",
-                "=",
-                "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "NoBuy",
-                "Cost",
-                "=",
-                "IkaRuleGa::GetNextRankCost(NoBuy.Upgrade, UpgradeLevels[NoBuy.Upgrade])"
-              ]
             }
           ],
           "events": [
@@ -2164,7 +1910,30 @@
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "BuyButton",
               "conditions": [],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "BuyButton",
+                    "Cost",
+                    "=",
+                    "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "BuyButton",
+                    "Animation",
+                    "=",
+                    "\"NoBuy\""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -2176,45 +1945,67 @@
                       "parameters": [
                         "BuyButton",
                         "Cost",
-                        "<",
+                        "<=",
                         "Currency"
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "BuyButton",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "UpgradeLevels[BuyButton.Upgrade]",
+                            "<",
+                            "IkaRuleGa::GetUpgradeMaxRank(BuyButton.Upgrade)"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "BuyButton",
+                            "Animation",
+                            "=",
+                            "\"CanBuy\""
+                          ]
+                        }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                    },
                     {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "BuyButton",
-                        "Cost",
-                        ">=",
-                        "Currency"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "BuyButton"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "UpgradeLevels[BuyButton.Upgrade]",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "BuyButton",
+                            "Animation",
+                            "=",
+                            "\"CanBuy\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -2223,32 +2014,46 @@
             },
             {
               "type": "BuiltinCommonInstructions::ForEach",
-              "object": "NoBuy",
+              "object": "UpgradePrice",
               "conditions": [],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "UpgradePrice",
+                    "MaxLevel",
+                    "=",
+                    "IkaRuleGa::GetUpgradeMaxRank(UpgradePrice.Upgrade)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "UpgradePrice",
+                    "Cost",
+                    "=",
+                    "IkaRuleGa::GetNextRankCost(UpgradePrice.Upgrade, UpgradeLevels[UpgradePrice.Upgrade])"
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "NoBuy",
-                        "Cost",
-                        "<",
-                        "Currency"
-                      ]
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "value": "Cache"
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "NoBuy"
+                        "UpgradePrice",
+                        "Text",
+                        "=",
+                        "UpgradePrice.Cost"
                       ]
                     }
                   ]
@@ -2261,21 +2066,112 @@
                         "value": "NumberObjectVariable"
                       },
                       "parameters": [
-                        "NoBuy",
-                        "Cost",
-                        ">=",
-                        "Currency"
+                        "UpgradePrice",
+                        "MaxLevel",
+                        "=",
+                        "UpgradeLevels[UpgradePrice.Upgrade]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "UpgradePrice",
+                        "MaxLevel",
+                        "!=",
+                        "0"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Montre"
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "NoBuy",
-                        ""
+                        "UpgradePrice",
+                        "Text",
+                        "=",
+                        "\"Max\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "UpgradeLevel",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "UpgradeLevel",
+                    "MaxLevel",
+                    "=",
+                    "IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "MaxLevel",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "Text",
+                        "=",
+                        "ToString(UpgradeLevels[UpgradeLevel.Upgrade])"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "MaxLevel",
+                        "!=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "UpgradeLevel",
+                        "Text",
+                        "=",
+                        "ToString(UpgradeLevels[UpgradeLevel.Upgrade]) + \"/\" + ToString(IkaRuleGa::GetUpgradeMaxRank(UpgradeLevel.Upgrade))"
                       ]
                     }
                   ]
@@ -2287,26 +2183,27 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+            "value": "ButtonStates::ButtonFSM::IsClicked"
           },
           "parameters": [
             "BuyButton",
+            "ButtonFSM",
             ""
           ]
         },
         {
           "type": {
-            "value": "NumberVariable"
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
           },
           "parameters": [
-            "Currency",
-            ">=",
-            "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
+            "BuyButton",
+            "Animation",
+            "=",
+            "\"CanBuy\""
           ]
         }
       ],
@@ -2334,6 +2231,18 @@
                 "UpgradeLevels[BuyButton.Upgrade]",
                 "=",
                 "UpgradeLevels[BuyButton.Upgrade] + 1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
+                "",
+                "VolumeSFX",
+                "1"
               ]
             }
           ]
@@ -2396,6 +2305,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

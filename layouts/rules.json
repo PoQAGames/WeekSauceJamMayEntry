@@ -216,6 +216,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ContinueButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -342,6 +343,7 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ChooseRuleButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [
         {
           "name": "Rule",
@@ -511,25 +513,6 @@
       ],
       "actions": [],
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusicCanal"
-              },
-              "parameters": [
-                "",
-                "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
-                "0",
-                "yes",
-                "100",
-                "1"
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
