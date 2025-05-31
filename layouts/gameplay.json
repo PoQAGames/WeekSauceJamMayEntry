@@ -1534,17 +1534,6 @@
             },
             {
               "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "EnemySpawner",
-                "SpawnCycles",
-                "=",
-                "RandomInRange(RulesBad.EnemySpawnRateRule + 3, RulesBad.EnemySpawnRateRule + 5)"
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -1621,6 +1610,28 @@
                     "EnemyShip",
                     "10 + 20 * RulesBad.EnemyHealthRule",
                     "10 + 20 * Rules.EnemyHealthRule"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetCollisionDamage"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "=",
+                    "1 + 1 * RulesBad.EnemyDamageRule",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetCollisionDamage"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "=",
+                    "1 + 1 * RulesBad.EnemyDamageRule",
+                    ""
                   ]
                 }
               ],
@@ -1750,17 +1761,6 @@
                 "NextEnemySpawnTime",
                 "=",
                 "RandomInRange(5, 10)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "AsteroidSpawner",
-                "SpawnCycles",
-                "=",
-                "RandomInRange(RulesBad.AstroidSpawnRateRule + 1, RulesBad.AstroidSpawnRateRule + 3)"
               ]
             },
             {
@@ -2013,7 +2013,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2841,7 +2840,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3451,7 +3449,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3519,7 +3516,7 @@
                         "EnemyBullet",
                         "Damage",
                         "=",
-                        "1 + 1 * RulesBad.EnemyDamageRule"
+                        "EnemyShip.BulletDamage()"
                       ]
                     },
                     {
