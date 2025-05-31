@@ -678,7 +678,7 @@
                 "value": "SetReturnNumber"
               },
               "parameters": [
-                "0"
+                "99"
               ]
             }
           ]
@@ -703,7 +703,7 @@
                 "value": "SetReturnNumber"
               },
               "parameters": [
-                "0"
+                "99"
               ]
             }
           ]
