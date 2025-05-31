@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410740929,
+    "zoomFactor": 0.5653158055126308,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -998,7 +998,7 @@
       "name": "NoBuy",
       "persistentUuid": "5aed55af-dac5-428c-8f98-5c7c01c27431",
       "width": 70,
-      "x": 537,
+      "x": 534,
       "y": 183,
       "zOrder": 11,
       "numberProperties": [],
@@ -1022,7 +1022,7 @@
       "persistentUuid": "c9d9e216-b4e9-4e6d-a5e7-1c1c039cc7da",
       "width": 70,
       "x": 536,
-      "y": 280,
+      "y": 283,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1045,7 +1045,7 @@
       "persistentUuid": "b32e5eef-82a2-48d5-829a-a60f3a855352",
       "width": 70,
       "x": 535,
-      "y": 385,
+      "y": 388,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1068,7 +1068,7 @@
       "persistentUuid": "21401ac7-331b-4ec3-af4d-d16dc1c65f64",
       "width": 70,
       "x": 536,
-      "y": 479,
+      "y": 483,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1090,8 +1090,8 @@
       "name": "NoBuy",
       "persistentUuid": "d9debbb0-bb09-4cbf-9fdf-98cec101478c",
       "width": 70,
-      "x": 536,
-      "y": 578,
+      "x": 534,
+      "y": 583,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1114,7 +1114,7 @@
       "persistentUuid": "d1b6a512-355f-4738-97b4-99f340fd11f1",
       "width": 70,
       "x": 536,
-      "y": 681,
+      "y": 683,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1136,8 +1136,8 @@
       "name": "NoBuy",
       "persistentUuid": "0df18426-0f74-4ffc-8fa8-d4ed3a848351",
       "width": 70,
-      "x": 533,
-      "y": 778,
+      "x": 535,
+      "y": 783,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1159,8 +1159,8 @@
       "name": "NoBuy",
       "persistentUuid": "55ee8711-5193-480e-b235-c88ca04e0fa0",
       "width": 70,
-      "x": 538,
-      "y": 873,
+      "x": 537,
+      "y": 879,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1577,6 +1577,11 @@
           "name": "Upgrade",
           "type": "string",
           "value": "ChromaSpread"
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1717,6 +1722,11 @@
           "name": "Upgrade",
           "type": "string",
           "value": "0"
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1881,7 +1891,16 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "NoBuy"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2046,6 +2065,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2119,151 +2139,151 @@
                 "=",
                 "ToString(IkaRuleGa::GetNextRankCost(UpgradePrice.Upgrade, UpgradeLevels[UpgradePrice.Upgrade]))"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "BuyButton",
-                "Upgrade",
-                "!=",
-                "\"\""
-              ]
             },
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "Currency",
-                ">=",
+                "BuyButton",
+                "Cost",
+                "=",
                 "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "BuyButton",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "BuyButton",
-                "Upgrade",
-                "!=",
-                "\"\""
-              ]
             },
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "Currency",
-                "<",
-                "IkaRuleGa::GetNextRankCost(BuyButton.Upgrade, UpgradeLevels[BuyButton.Upgrade])"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "BuyButton"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Currency",
-                ">=",
+                "NoBuy",
+                "Cost",
+                "=",
                 "IkaRuleGa::GetNextRankCost(NoBuy.Upgrade, UpgradeLevels[NoBuy.Upgrade])"
               ]
-            },
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "NoBuy",
-                "Upgrade",
-                "!=",
-                "\"\""
-              ]
             }
           ],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "NoBuy"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Currency",
-                "<",
-                "IkaRuleGa::GetNextRankCost(NoBuy.Upgrade, UpgradeLevels[NoBuy.Upgrade])"
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "BuyButton",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "BuyButton",
+                        "Cost",
+                        "<",
+                        "Currency"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "BuyButton",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "BuyButton",
+                        "Cost",
+                        ">=",
+                        "Currency"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BuyButton"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "NoBuy",
-                "Upgrade",
-                "!=",
-                "\"\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "NoBuy",
-                ""
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "NoBuy",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "NoBuy",
+                        "Cost",
+                        "<",
+                        "Currency"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "NoBuy"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "NoBuy",
+                        "Cost",
+                        ">=",
+                        "Currency"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "NoBuy",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -2271,6 +2291,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2322,6 +2343,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [

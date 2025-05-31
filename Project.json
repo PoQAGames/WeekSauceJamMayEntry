@@ -675,6 +675,13 @@
         "name": "assets/UI/icon_nobuy.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/Pixel NES.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Fonts\\Pixel NES.otf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -702,9 +709,9 @@
       "textAlignment": "center",
       "characterSize": 40,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -725,7 +732,7 @@
         "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 40,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
@@ -1081,6 +1088,54 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CurrencyDisplayWhite",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "CurrentCurrency",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "$0",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "$0",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1088,6 +1143,9 @@
     "children": [
       {
         "objectName": "CurrencyDisplay"
+      },
+      {
+        "objectName": "CurrencyDisplayWhite"
       },
       {
         "objectName": "UpgradeIcon"
@@ -1320,6 +1378,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/repeateveryxseconds"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
     }
   ],
   "externalLayouts": [

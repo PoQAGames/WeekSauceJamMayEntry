@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.40575189059438516,
+    "zoomFactor": 0.37971210019479573,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -575,6 +575,22 @@
       "x": 28,
       "y": 1007,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LevelEnd",
+      "persistentUuid": "305bba95-68b8-45d9-a915-9ede3755401f",
+      "width": 0,
+      "x": 337,
+      "y": -269,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1298,6 +1314,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1435,6 +1452,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1533,7 +1551,7 @@
       "colorR": 74,
       "creationTime": 0,
       "folded": true,
-      "name": "Level Win",
+      "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -1542,97 +1560,111 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
-                "LevelBottom",
-                "LevelEnd",
                 "",
-                "",
-                ""
+                "\"Num1\""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"Save\"",
-                "\"Currency\"",
-                "CurrencyTemp"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
               },
               "parameters": [
                 "PlayerShip",
-                "TopDownMovement",
-                "no"
+                "\"Red\"",
+                ""
               ]
             },
             {
               "type": {
-                "value": "ActivateBehavior"
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+                "",
+                "100",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Num2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
               },
               "parameters": [
                 "PlayerShip",
-                "LinearMovement",
-                "yes"
+                "\"Yellow\"",
+                ""
               ]
             },
             {
               "type": {
-                "value": "PauseTimer"
+                "value": "PlaySound"
               },
               "parameters": [
                 "",
-                "\"ShootTimer\""
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+                "",
+                "100",
+                "1"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "InvisibleWall",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "PlayerBullet",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",
-                "\"rules\"",
+                "\"Num3\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "IkaRuleGa::PlayerShip::ToggleColor"
+              },
+              "parameters": [
+                "PlayerShip",
+                "\"Blue\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -1645,6 +1677,103 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
+      "name": "Enemy Spawning",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "LevelTop",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyShip",
+                    "EnemySpawner.CenterX()",
+                    "EnemySpawner.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EnemySpawner",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::SetColor"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "=",
+                    "Colors[RandomInRange(0, 5)]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "\"ShootTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IkaRuleGa::EnemyShip::InitializeHealth"
+                  },
+                  "parameters": [
+                    "EnemyShip",
+                    "10 + 20 * RulesBad.EnemyHealthRule",
+                    "10 + 20 * Rules.EnemyHealthRule"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2402,231 +2531,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Player Controls",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Num1\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "IkaRuleGa::PlayerShip::ToggleColor"
-              },
-              "parameters": [
-                "PlayerShip",
-                "\"Red\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
-                "",
-                "100",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Num2\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "IkaRuleGa::PlayerShip::ToggleColor"
-              },
-              "parameters": [
-                "PlayerShip",
-                "\"Yellow\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
-                "",
-                "100",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Num3\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "IkaRuleGa::PlayerShip::ToggleColor"
-              },
-              "parameters": [
-                "PlayerShip",
-                "\"Blue\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
-                "",
-                "100",
-                "1"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "Game Over",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IkaRuleGa::PlayerShip::Health"
-              },
-              "parameters": [
-                "PlayerShip",
-                "<=",
-                "0",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\Audio\\SFX\\RuleBreaker_SFX_Explode_01.wav",
-                "",
-                "100",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Explosion",
-                "PlayerShip.CenterX()",
-                "PlayerShip.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "PlayerShip",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"Save\"",
-                "\"Currency\"",
-                "CurrencyTemp"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"main\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
       "name": "HUD",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2685,6 +2589,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3406,8 +3311,46 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Background",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::YOffset"
+              },
+              "parameters": [
+                "BG_Galaxy1",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::YOffset"
+              },
+              "parameters": [
+                "BG_Glaxaxy1_Stars",
+                "-",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Explosions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -3416,49 +3359,36 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
               },
               "parameters": [
-                ""
+                "Explosion",
+                "Animation"
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Explosion",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-          },
-          "parameters": [
-            "Explosion",
-            "Animation"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Explosion",
-            ""
-          ]
-        }
-      ]
     },
     {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Enemy Spawning",
+      "folded": true,
+      "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -3470,8 +3400,8 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "EnemySpawner",
                 "LevelTop",
+                "LevelEnd",
                 "",
                 "",
                 ""
@@ -3484,63 +3414,178 @@
               "parameters": []
             }
           ],
-          "actions": [],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyShip",
-                    "EnemySpawner.CenterX()",
-                    "EnemySpawner.CenterY()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "EnemySpawner",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IkaRuleGa::EnemyShip::SetColor"
-                  },
-                  "parameters": [
-                    "EnemyShip",
-                    "=",
-                    "Colors[RandomInRange(0, 5)]",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "EnemyShip",
-                    "\"ShootTimer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IkaRuleGa::EnemyShip::InitializeHealth"
-                  },
-                  "parameters": [
-                    "EnemyShip",
-                    "10 + 20 * RulesBad.EnemyHealthRule",
-                    "10 + 20 * Rules.EnemyHealthRule"
-                  ]
-                }
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"Currency\"",
+                "CurrencyTemp"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "PlayerShip",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "PlayerShip",
+                "LinearMovement",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"ShootTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "InvisibleWall",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "PlayerBullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"rules\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Game Over",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IkaRuleGa::PlayerShip::Health"
+              },
+              "parameters": [
+                "PlayerShip",
+                "<=",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_SFX_Explode_01.wav",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Explosion",
+                "PlayerShip.CenterX()",
+                "PlayerShip.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "PlayerShip",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"Currency\"",
+                "CurrencyTemp"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"main\"",
+                ""
               ]
             }
           ]

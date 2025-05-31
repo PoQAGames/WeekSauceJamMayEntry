@@ -1020,6 +1020,206 @@
         }
       ],
       "objectGroups": []
+    },
+    {
+      "fullName": "Rule upgrade string",
+      "functionType": "StringExpression",
+      "group": "Ikerulega Rules",
+      "name": "GetRuleUpgradeString",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"AsteroidSpawnRateRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Asteroids spawn more often. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"EnemyCanShootRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"More enemies can shoot. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"EnemyCurrencyDropRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Enemies are worth more $. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"EnemyDamageRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Enemies do more damage. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"EnemyFirerateRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Increase enemy fire rate. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"EnemyHealthRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Increase enemy HP. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Rule",
+                "=",
+                "\"EnemySpawnRateRule\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "\"Enemies spawn more often. Level \" + CurrentLevel + \"=>\" + CurrentLevel + ToString(CurrentLevel + 1)"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "Rule",
+          "type": "string"
+        },
+        {
+          "description": "",
+          "name": "CurrentLevel",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
     }
   ],
   "eventsBasedBehaviors": [],
