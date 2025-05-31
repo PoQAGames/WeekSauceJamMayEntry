@@ -690,6 +690,76 @@
         "name": "assets\\enemyship\\Enemy1_Gun.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_Level2Start_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_Level2Start_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_Level3Start_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_Level3Start_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/Music/RuleBreaker_Level4Start_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\RuleBreaker_Level4Start_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Title_BG.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Title_BG.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Title_poqa.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Title_poqa.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Title_color.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Title_color.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Title_logo_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Title_logo_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Title_logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Title_logo.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1325,6 +1395,11 @@
           "value": 0
         }
       ]
+    },
+    {
+      "name": "Level",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [

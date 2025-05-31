@@ -2742,7 +2742,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\health\\HealthBar.png",
                       "points": [],
                       "originPoint": {
@@ -2756,7 +2756,22 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 31,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 0.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -2833,8 +2848,8 @@
           "name": "HealthBar",
           "persistentUuid": "01d43827-feb3-496d-8be1-0dc2f58e0331",
           "width": 0,
-          "x": 120,
-          "y": 42,
+          "x": 121,
+          "y": 152,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],

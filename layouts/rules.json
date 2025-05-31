@@ -608,7 +608,7 @@
           },
           "parameters": [
             "",
-            "\"gameplay\"",
+            "\"upgrade\"",
             ""
           ]
         },
@@ -630,6 +630,16 @@
             "RulesBad[\"EnemyCurrencyDropRule\"]",
             "=",
             "RulesBad[\"EnemyCurrencyDropRule\"] + 1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Level",
+            "=",
+            "Level + 1"
           ]
         }
       ]

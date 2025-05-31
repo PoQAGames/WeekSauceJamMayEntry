@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.37971210019479573,
+    "zoomFactor": 0.47893418845352814,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -44,12 +44,12 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1299,
+      "height": 1433,
       "keepRatio": true,
       "layer": "",
       "name": "InvisibleWall",
       "persistentUuid": "4ec457b2-e270-4a17-b9f9-4bc25704248c",
-      "width": 32,
+      "width": 158,
       "x": 720,
       "y": -31,
       "zOrder": 2,
@@ -61,13 +61,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1299,
+      "height": 1386,
       "keepRatio": true,
       "layer": "",
       "name": "InvisibleWall",
       "persistentUuid": "d05b4824-5b4f-4d5d-af35-752de9f85afe",
-      "width": 32,
-      "x": -34,
+      "width": 79,
+      "x": -81,
       "y": -23,
       "zOrder": 2,
       "numberProperties": [],
@@ -95,7 +95,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 31,
+      "height": 180,
       "keepRatio": true,
       "layer": "",
       "name": "InvisibleWall",
@@ -146,23 +146,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 32,
-      "keepRatio": true,
-      "layer": "",
-      "name": "LevelEnd",
-      "persistentUuid": "b2db891e-bbad-4695-b082-075d2039c7cb",
-      "width": 1227,
-      "x": -379,
-      "y": -4783,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 49,
       "keepRatio": true,
       "layer": "",
@@ -172,38 +155,6 @@
       "x": 16,
       "y": 10,
       "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
-      "persistentUuid": "7236efb9-1703-4186-9257-72b717f1613e",
-      "width": 0,
-      "x": -55,
-      "y": -3551,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
-      "persistentUuid": "a65a8f48-6a32-4283-a496-0709b8d2b515",
-      "width": 0,
-      "x": -99,
-      "y": -4285,
-      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -267,8 +218,8 @@
       "layer": "",
       "name": "EnemySpawner",
       "persistentUuid": "c3fd7a63-9db0-42ed-8033-c91e61034b45",
-      "width": 670,
-      "x": 24,
+      "width": 528,
+      "x": 72,
       "y": -179,
       "zOrder": 17,
       "numberProperties": [],
@@ -288,6 +239,39 @@
       "x": 28,
       "y": 1007,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "ac4c9805-99a7-4a45-954a-9c5c4f83192d",
+      "width": 528,
+      "x": 74,
+      "y": -114,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 16,
+      "layer": "",
+      "name": "AsteroidSpawner",
+      "persistentUuid": "53d42301-cc1f-4942-ab99-2d34e716267f",
+      "width": 528,
+      "x": 71,
+      "y": -70,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -965,6 +949,82 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AsteroidSpawner",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "NextEnemySpawnTime",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "NextAsteroidSpawnTime",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SpawnCycles",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerBullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1011,6 +1071,9 @@
       },
       {
         "objectName": "EnemySpawner"
+      },
+      {
+        "objectName": "AsteroidSpawner"
       }
     ]
   },
@@ -1125,25 +1188,6 @@
                     "=",
                     "Colors[RandomInRange(0, 5)]",
                     ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
-                    "0",
-                    "yes",
-                    "100",
-                    "1"
                   ]
                 }
               ]
@@ -1383,8 +1427,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "Enemy Spawning",
+      "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -1420,7 +1463,7 @@
                 "EnemySpawner",
                 "SpawnCycles",
                 "=",
-                "RandomInRange(RulesBad.AstroidSpawnRateRule + 3, RulesBad.EnemySpawnRateRule + 5)"
+                "RandomInRange(RulesBad.EnemySpawnRateRule + 3, RulesBad.EnemySpawnRateRule + 5)"
               ]
             },
             {
@@ -1435,6 +1478,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1586,6 +1630,142 @@
               "parameters": [
                 "EnemySpawner",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "AsteroidSpawner",
+                "NextEnemySpawnTime",
+                "=",
+                "RandomInRange(5, 10)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "AsteroidSpawner",
+                "SpawnCycles",
+                "=",
+                "RandomInRange(RulesBad.AstroidSpawnRateRule + 1, RulesBad.AstroidSpawnRateRule + 3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "AsteroidSpawner",
+                "\"SpawnAsteroid\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "AsteroidSpawner",
+                "\"SpawnAsteroid\"",
+                ">=",
+                "AsteroidSpawner.NextEnemySpawnTime"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "AsteroidSpawner",
+                    "SpawnCycles",
+                    "=",
+                    "AsteroidSpawner.SpawnCycles - 1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Rock",
+                    "RandomInRange(AsteroidSpawner.BoundingBoxLeft(), AsteroidSpawner.BoundingBoxRight())",
+                    "AsteroidSpawner.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Rock",
+                    "=",
+                    "RandomFloatInRange(0, 360)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "AsteroidSpawner",
+                    "\"SpawnAsteroid\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "AsteroidSpawner",
+                    "NextEnemySpawnTime",
+                    "=",
+                    "RandomInRange(1, 10)"
+                  ]
+                }
               ]
             }
           ]
@@ -1887,6 +2067,17 @@
                     "NumberTemp",
                     "=",
                     "RandomInRange(0, 1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "debugText",
+                    "Text",
+                    "=",
+                    "\"Currency: \" + Currency"
                   ]
                 }
               ],
@@ -2391,7 +2582,7 @@
                 "CurrencyDisplay",
                 "CurrentCurrency",
                 "=",
-                "CurrencyTemp"
+                "Currency"
               ]
             },
             {
@@ -2402,7 +2593,7 @@
                 "CurrencyDisplay",
                 "Text",
                 "=",
-                "\"$\" + CurrencyTemp"
+                "\"$\" + Currency"
               ]
             }
           ]
@@ -3075,7 +3266,7 @@
                       "parameters": [
                         "",
                         "EnemyBullet",
-                        "EnemyShip.CenterX()+130",
+                        "EnemyShip.CenterX() + 3",
                         "EnemyShip.CenterY()",
                         ""
                       ]
@@ -3214,6 +3405,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3280,7 +3472,7 @@
               "parameters": [
                 "\"Save\"",
                 "\"Currency\"",
-                "CurrencyTemp"
+                "Currency"
               ]
             },
             {
@@ -3358,6 +3550,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Game Over",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3432,7 +3625,7 @@
               "parameters": [
                 "\"Save\"",
                 "\"Currency\"",
-                "CurrencyTemp"
+                "Currency"
               ]
             },
             {
@@ -3451,9 +3644,182 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "BGM",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "mod(Level, 4)",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
+                    "0",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "mod(Level, 4)",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\Music\\RuleBreaker_Level2Start_01.wav",
+                    "0",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "mod(Level, 4)",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
+                    "0",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "mod(Level, 4)",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\Music\\RuleBreaker_Level1Start_01.wav",
+                    "0",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MusicStopped"
+              },
+              "parameters": [
+                "",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\Music\\RuleBreaker_Combat_03.wav",
+                "0",
+                "",
+                "100",
+                "1"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
