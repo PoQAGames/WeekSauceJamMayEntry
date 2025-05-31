@@ -233,7 +233,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Click To Play",
-          "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+          "font": "assets\\Fonts\\Pixel NES.otf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -256,7 +256,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Click To Play",
-            "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+            "font": "assets\\Fonts\\Pixel NES.otf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
