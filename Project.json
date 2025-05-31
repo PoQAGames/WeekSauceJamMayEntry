@@ -776,6 +776,14 @@
         "name": "assets\\UI\\icon_nobuy.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Asteroid_Potato.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Asteroid_Potato.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

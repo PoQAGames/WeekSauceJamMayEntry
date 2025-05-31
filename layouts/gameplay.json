@@ -496,6 +496,78 @@
               ]
             }
           ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Asteroid_Potato.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 224,
+                        "y": 319
+                      },
+                      {
+                        "x": 372.5,
+                        "y": 231.5
+                      },
+                      {
+                        "x": 577.5,
+                        "y": 314.5
+                      },
+                      {
+                        "x": 670.5,
+                        "y": 403
+                      },
+                      {
+                        "x": 656.5,
+                        "y": 717.5
+                      },
+                      {
+                        "x": 591,
+                        "y": 845.5
+                      },
+                      {
+                        "x": 393,
+                        "y": 946
+                      },
+                      {
+                        "x": 242.5,
+                        "y": 902
+                      },
+                      {
+                        "x": 95,
+                        "y": 705.5
+                      },
+                      {
+                        "x": 109,
+                        "y": 466.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1427,7 +1499,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1749,6 +1820,24 @@
                     "=",
                     "RandomFloatInRange(0, 360)"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Rock",
+                    "Animation",
+                    "=",
+                    "RandomInRange(0, 1)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ]
             },
@@ -3451,6 +3540,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
