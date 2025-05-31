@@ -237,6 +237,88 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "d7c7bf68-b513-4441-b7c1-87864d76737d",
+      "width": 173,
+      "x": 145,
+      "y": 904,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "bfaab869-d750-44b8-8cc8-c4a55e665cbc",
+      "width": 173,
+      "x": 145,
+      "y": 984,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FontName",
+      "persistentUuid": "0478a066-ffa1-4ac9-b402-719b0887000f",
+      "width": 0,
+      "x": 375,
+      "y": 904,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FontName",
+      "persistentUuid": "cfa0ee89-5e0d-4ce7-8726-5d6f6c460bb3",
+      "width": 0,
+      "x": 375,
+      "y": 984,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FontTitle",
+      "persistentUuid": "e3208b43-503d-4dcc-8fd9-c20f12d23c09",
+      "width": 0,
+      "x": 280,
+      "y": 788,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -315,6 +397,16 @@
           "name": "Name5",
           "type": "string",
           "value": "Yoshi"
+        },
+        {
+          "name": "Name6",
+          "type": "string",
+          "value": "Neale Davidson"
+        },
+        {
+          "name": "Name7",
+          "type": "string",
+          "value": "Riciery Leal"
         }
       ],
       "effects": [],
@@ -417,6 +509,101 @@
         "characterSize": 40,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FontName",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Font1",
+          "type": "string",
+          "value": "Pixel NES"
+        },
+        {
+          "name": "Font2",
+          "type": "string",
+          "value": "VCR OSD Mono"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "FontName",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "FontName",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FontTitle",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Fonts",
+      "font": "assets/Fonts/Pixel NES.otf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Fonts",
+        "font": "assets/Fonts/Pixel NES.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -430,6 +617,12 @@
       },
       {
         "objectName": "DutiesText"
+      },
+      {
+        "objectName": "FontTitle"
+      },
+      {
+        "objectName": "FontName"
       }
     ]
   },
@@ -459,6 +652,13 @@
             "100",
             "1"
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     }
