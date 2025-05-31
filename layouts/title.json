@@ -538,7 +538,7 @@
             "assets\\Audio\\Music\\RuleBreaker_MainTitle_Suite_02.wav",
             "0",
             "yes",
-            "100",
+            "VolumeBGM",
             "1"
           ]
         }
@@ -576,7 +576,7 @@
             "",
             "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
             "",
-            "100",
+            "VolumeSFX",
             "1"
           ]
         }

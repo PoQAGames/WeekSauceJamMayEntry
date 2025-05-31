@@ -520,7 +520,7 @@
             "",
             "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
             "",
-            "100",
+            "VolumeSFX",
             "1"
           ]
         },
@@ -598,7 +598,7 @@
             "",
             "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
             "",
-            "100",
+            "VolumeSFX",
             "1"
           ]
         },
@@ -644,7 +644,7 @@
             "",
             "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
             "",
-            "100",
+            "VolumeSFX",
             "1"
           ]
         },
