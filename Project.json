@@ -1,7 +1,7 @@
 {
   "firstLayout": "title",
   "gdVersion": {
-    "build": 228,
+    "build": 231,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1400,6 +1400,16 @@
       "name": "Level",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "VolumeBGM",
+      "type": "number",
+      "value": 50
+    },
+    {
+      "name": "VolumeSFX",
+      "type": "number",
+      "value": 50
     }
   ],
   "layouts": [
