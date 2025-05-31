@@ -183,54 +183,6 @@
       "keepRatio": true,
       "layer": "",
       "name": "Rock",
-      "persistentUuid": "224deed5-8d1b-4ee4-a549-78dc85ea1caa",
-      "width": 0,
-      "x": -88,
-      "y": -1022,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
-      "persistentUuid": "f49f0098-ea50-41e5-a59f-f3894579b979",
-      "width": 0,
-      "x": 74,
-      "y": -1729,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
-      "persistentUuid": "83f05e79-9eee-4975-b423-4b7ce15cf7dc",
-      "width": 0,
-      "x": 59,
-      "y": -2487,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Rock",
       "persistentUuid": "7236efb9-1703-4186-9257-72b717f1613e",
       "width": 0,
       "x": -55,
@@ -308,255 +260,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "e3640e35-3892-464b-a534-073c6ca1691b",
-      "width": 0,
-      "x": 94,
-      "y": -289,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "b3ee4423-45ff-45cf-b7a8-62e965c418fd",
-      "width": 0,
-      "x": 238,
-      "y": -234,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
       "keepRatio": true,
       "layer": "",
       "name": "EnemySpawner",
       "persistentUuid": "c3fd7a63-9db0-42ed-8033-c91e61034b45",
-      "width": 0,
-      "x": 459,
+      "width": 670,
+      "x": 24,
       "y": -179,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "dcf76c2b-c186-4a55-bbfd-73f20fb97923",
-      "width": 0,
-      "x": 371,
-      "y": -420,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "8db38d4b-4430-4e5c-8fff-230fe1287939",
-      "width": 0,
-      "x": 621,
-      "y": -585,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "81961e2b-6382-4da0-9bd6-f7efafcff575",
-      "width": 0,
-      "x": 262,
-      "y": -632,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "e9a9c8ee-7313-496b-9429-4d5cee2c8ef8",
-      "width": 0,
-      "x": 435,
-      "y": -766,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "69a0bda9-fbc6-4129-bbaf-bda5de487ed7",
-      "width": 0,
-      "x": 137,
-      "y": -504,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "5855a9c4-9a42-4201-acd0-9607be06ec45",
-      "width": 0,
-      "x": 245,
-      "y": -902,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "931f5bab-1ed4-4562-8acc-a7cc766b7e73",
-      "width": 0,
-      "x": 526,
-      "y": -1090,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "8b51d24d-098b-4a5f-8504-3a24108e1c5f",
-      "width": 0,
-      "x": 223,
-      "y": -1222,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "51f78e7e-872e-48fe-abff-feb80de80b61",
-      "width": 0,
-      "x": 473,
-      "y": -1387,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "4022c3a1-8a44-44ee-bb84-9cfc4276a140",
-      "width": 0,
-      "x": 114,
-      "y": -1434,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "8dcb13ba-2830-4fdc-834d-6bc2ee2d55d5",
-      "width": 0,
-      "x": 287,
-      "y": -1568,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "f890c717-4c55-4d67-892a-7bc72024dd18",
-      "width": 0,
-      "x": 97,
-      "y": -1704,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "e5a334a5-961c-42f2-aff4-84865ef7978d",
-      "width": 0,
-      "x": 378,
-      "y": -1892,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -575,22 +288,6 @@
       "x": 28,
       "y": 1007,
       "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "LevelEnd",
-      "persistentUuid": "305bba95-68b8-45d9-a915-9ede3755401f",
-      "width": 0,
-      "x": 337,
-      "y": -269,
-      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1128,16 +825,25 @@
       "name": "EnemySpawner",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
+      "variables": [
         {
-          "name": "LinearMovement",
-          "type": "LinearMovement::LinearMovement",
-          "SpeedX": 0,
-          "SpeedY": 100
+          "name": "NextEnemySpawnTime",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "NextAsteroidSpawnTime",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SpawnCycles",
+          "type": "number",
+          "value": 0
         }
       ],
+      "effects": [],
+      "behaviors": [],
       "animations": [
         {
           "name": "",
@@ -1687,14 +1393,59 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
                 "EnemySpawner",
-                "LevelTop",
-                "",
-                "",
-                ""
+                "NextEnemySpawnTime",
+                "=",
+                "RandomInRange(3, 6)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "SpawnCycles",
+                "=",
+                "RandomInRange(RulesBad.AstroidSpawnRateRule + 3, RulesBad.EnemySpawnRateRule + 5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "\"SpawnEnemy\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "\"SpawnEnemy\"",
+                ">=",
+                "EnemySpawner.NextEnemySpawnTime"
               ]
             },
             {
@@ -1712,22 +1463,24 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnemySpawner",
+                    "SpawnCycles",
+                    "=",
+                    "EnemySpawner.SpawnCycles - 1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
                     "",
                     "EnemyShip",
-                    "EnemySpawner.CenterX()",
+                    "RandomInRange(EnemySpawner.BoundingBoxLeft(), EnemySpawner.BoundingBoxRight())",
                     "EnemySpawner.CenterY()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "EnemySpawner",
                     ""
                   ]
                 },
@@ -1744,15 +1497,6 @@
                 },
                 {
                   "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "EnemyShip",
-                    "\"ShootTimer\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "IkaRuleGa::EnemyShip::InitializeHealth"
                   },
                   "parameters": [
@@ -1761,6 +1505,87 @@
                     "10 + 20 * Rules.EnemyHealthRule"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "RandomInRange(1, 100)",
+                        "<=",
+                        "RulesBad.EnemyCanShootRule * 5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "EnemyShip",
+                        "\"ShootTimer\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemySpawner",
+                    "\"SpawnEnemy\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnemySpawner",
+                    "NextEnemySpawnTime",
+                    "=",
+                    "RandomInRange(3, 6)"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "SpawnCycles",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemySpawner",
+                ""
               ]
             }
           ]
@@ -3389,7 +3214,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3399,14 +3223,46 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "SceneInstancesCount"
               },
               "parameters": [
-                "LevelTop",
-                "LevelEnd",
                 "",
+                "EnemySpawner",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
                 "",
-                ""
+                "Rock",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "EnemyShip",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "PlayerShip",
+                "=",
+                "1"
               ]
             },
             {
@@ -3479,7 +3335,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "1.5"
+                "3"
               ]
             },
             {
@@ -3502,7 +3358,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Game Over",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

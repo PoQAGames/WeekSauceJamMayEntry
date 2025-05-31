@@ -682,6 +682,14 @@
         "metadata": "",
         "name": "assets\\Fonts\\Pixel NES.otf",
         "userAdded": false
+      },
+      {
+        "file": "assets/enemyship/Enemy1_Gun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemyship\\Enemy1_Gun.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
