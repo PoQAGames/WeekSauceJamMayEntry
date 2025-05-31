@@ -519,25 +519,6 @@
           "actions": [
             {
               "type": {
-                "value": "PlayMusicCanal"
-              },
-              "parameters": [
-                "",
-                "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
-                "0",
-                "yes",
-                "100",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
                 "value": "ArrayTools::Shuffle"
               },
               "parameters": [

@@ -729,7 +729,7 @@
           "name": "LinearMovement",
           "type": "LinearMovement::LinearMovement",
           "SpeedX": 0,
-          "SpeedY": 0
+          "SpeedY": -500
         },
         {
           "name": "TopDownMovement",
@@ -3451,7 +3451,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3511,6 +3510,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
+                "0",
+                "yes",
+                "VolumeBGM",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "EcrireFichierExp"
