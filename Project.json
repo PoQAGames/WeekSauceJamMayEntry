@@ -1,5 +1,5 @@
 {
-  "firstLayout": "main",
+  "firstLayout": "title",
   "gdVersion": {
     "build": 231,
     "major": 5,
@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 720,
     "windowHeight": 1280,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "E:\\Projects\\WeekSauceJamMayEntry\\assets\\Build",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,

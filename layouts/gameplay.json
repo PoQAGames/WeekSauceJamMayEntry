@@ -1427,6 +1427,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2068,17 +2069,6 @@
                     "=",
                     "RandomInRange(0, 1)"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "debugText",
-                    "Text",
-                    "=",
-                    "\"Currency: \" + Currency"
-                  ]
                 }
               ],
               "events": [
@@ -2661,6 +2651,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Single Bullet",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2722,6 +2713,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Chroma Spread",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
