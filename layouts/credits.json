@@ -23,10 +23,608 @@
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 95,
+      "layer": "",
+      "name": "Title",
+      "persistentUuid": "bd0d0658-4c60-4242-beaa-922ed4ccab7d",
+      "width": 716,
+      "x": 2,
+      "y": 102,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "a269ec40-eaff-4301-8dd3-1b09dfa602c0",
+      "width": 173,
+      "x": 145,
+      "y": 284,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "20a61ecc-58e3-44de-a94e-4663d9324782",
+      "width": 173,
+      "x": 145,
+      "y": 364,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "1a72b923-2324-4d2a-9c21-7ae34195276b",
+      "width": 173,
+      "x": 145,
+      "y": 444,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "8076792f-3cdd-4bc1-9e68-7c88785bc968",
+      "width": 173,
+      "x": 145,
+      "y": 524,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "8ec59fed-c491-4445-9bad-281305c4d4f5",
+      "width": 173,
+      "x": 145,
+      "y": 604,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DutiesText",
+      "persistentUuid": "d72ec0af-2155-454f-97b2-03809aac58cc",
+      "width": 0,
+      "x": 375,
+      "y": 284,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DutiesText",
+      "persistentUuid": "7a7923e0-36bd-42f1-87bd-57be1d970cb5",
+      "width": 0,
+      "x": 375,
+      "y": 364,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DutiesText",
+      "persistentUuid": "fd6d480c-5930-476f-92d5-ef2a8f249d66",
+      "width": 0,
+      "x": 375,
+      "y": 445,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DutiesText",
+      "persistentUuid": "a3577286-da5e-419f-9d34-f8259c9127b9",
+      "width": 0,
+      "x": 375,
+      "y": 524,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "83a1a633-9fe9-4463-85c6-9251b18ccd9f",
+      "width": 173,
+      "x": 145,
+      "y": 684,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DutiesText",
+      "persistentUuid": "3f4429be-38d8-482a-bdea-1d5e36828435",
+      "width": 0,
+      "x": 375,
+      "y": 604,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DutiesText",
+      "persistentUuid": "ec184e14-5574-4590-a85f-3c9f75c1bf05",
+      "width": 0,
+      "x": 375,
+      "y": 684,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "d7c7bf68-b513-4441-b7c1-87864d76737d",
+      "width": 173,
+      "x": 145,
+      "y": 904,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameText",
+      "persistentUuid": "bfaab869-d750-44b8-8cc8-c4a55e665cbc",
+      "width": 173,
+      "x": 145,
+      "y": 984,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FontName",
+      "persistentUuid": "0478a066-ffa1-4ac9-b402-719b0887000f",
+      "width": 0,
+      "x": 375,
+      "y": 904,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FontName",
+      "persistentUuid": "cfa0ee89-5e0d-4ce7-8726-5d6f6c460bb3",
+      "width": 0,
+      "x": 375,
+      "y": 984,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FontTitle",
+      "persistentUuid": "e3208b43-503d-4dcc-8fd9-c20f12d23c09",
+      "width": 0,
+      "x": 280,
+      "y": 788,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Title",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Credits",
+      "font": "assets/Fonts/Pixel NES.otf",
+      "textAlignment": "center",
+      "characterSize": 90,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Credits",
+        "font": "assets/Fonts/Pixel NES.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 90,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NameText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Name1",
+          "type": "string",
+          "value": "Derrick"
+        },
+        {
+          "name": "Name2",
+          "type": "string",
+          "value": "Tanner"
+        },
+        {
+          "name": "Name3",
+          "type": "string",
+          "value": "Tina"
+        },
+        {
+          "name": "Name4",
+          "type": "string",
+          "value": "Devon"
+        },
+        {
+          "name": "Name5",
+          "type": "string",
+          "value": "Yoshi"
+        },
+        {
+          "name": "Name6",
+          "type": "string",
+          "value": "Neale Davidson"
+        },
+        {
+          "name": "Name7",
+          "type": "string",
+          "value": "Riciery Leal"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "Name",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "right",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Name",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "right",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DutiesText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Duties1",
+          "type": "string",
+          "value": "Design"
+        },
+        {
+          "name": "Duties2",
+          "type": "string",
+          "value": "Code"
+        },
+        {
+          "name": "Duties3",
+          "type": "string",
+          "value": "Art"
+        },
+        {
+          "name": "Duties4",
+          "type": "string",
+          "value": "Audio"
+        },
+        {
+          "name": "Duties5",
+          "type": "string",
+          "value": "UX"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "Duties",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Duties",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FontName",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Font1",
+          "type": "string",
+          "value": "Pixel NES"
+        },
+        {
+          "name": "Font2",
+          "type": "string",
+          "value": "VCR OSD Mono"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "FontName",
+      "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "FontName",
+        "font": "assets/Fonts/VCR_OSD_MONO.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FontTitle",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Fonts",
+      "font": "assets/Fonts/Pixel NES.otf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Fonts",
+        "font": "assets/Fonts/Pixel NES.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "0;0;0"
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Title"
+      },
+      {
+        "objectName": "NameText"
+      },
+      {
+        "objectName": "DutiesText"
+      },
+      {
+        "objectName": "FontTitle"
+      },
+      {
+        "objectName": "FontName"
+      }
+    ]
   },
   "events": [
     {
@@ -54,6 +652,13 @@
             "100",
             "1"
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     }

@@ -1220,7 +1220,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ReadyButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1305,7 +1304,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugAddMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1390,7 +1388,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "DebugRemoveMoney",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -1571,7 +1568,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "BuyButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [
         {
           "name": "Upgrade",

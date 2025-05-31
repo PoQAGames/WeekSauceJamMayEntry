@@ -170,33 +170,8 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "Play_Button",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
-      "effects": [
-        {
-          "effectType": "Glitch",
-          "name": "Effect",
-          "doubleParameters": {
-            "animationFrequency": 60,
-            "blueX": 10,
-            "blueY": -4,
-            "direction": 0,
-            "fillMode": 0,
-            "greenX": 10,
-            "greenY": -4,
-            "minSize": 8,
-            "offset": 100,
-            "redX": 2,
-            "redY": 2,
-            "sampleSize": 512,
-            "slices": 5
-          },
-          "stringParameters": {},
-          "booleanParameters": {
-            "average": false
-          }
-        }
-      ],
+      "effects": [],
       "behaviors": [],
       "content": {
         "LeftPadding": 0,
