@@ -3311,24 +3311,35 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Background",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "conditions": [],
+          "actions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "TiledSpriteObject::YOffset"
               },
               "parameters": [
-                ""
+                "BG_Galaxy1",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::YOffset"
+              },
+              "parameters": [
+                "BG_Glaxaxy1_Stars",
+                "-",
+                "2"
               ]
             }
-          ],
-          "actions": []
+          ]
         }
       ],
       "parameters": []
