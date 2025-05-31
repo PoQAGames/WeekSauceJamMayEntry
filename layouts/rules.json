@@ -216,7 +216,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ContinueButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -343,7 +342,6 @@
       "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
       "name": "ChooseRuleButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [
         {
           "name": "Rule",
