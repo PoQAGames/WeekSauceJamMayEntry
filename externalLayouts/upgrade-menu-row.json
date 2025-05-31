@@ -54,23 +54,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 48,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "1ac24d7b-bb89-4e47-9e02-2b25fd2465b8",
-      "width": 66,
-      "x": 537,
-      "y": 235,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,

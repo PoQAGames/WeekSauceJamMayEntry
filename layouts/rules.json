@@ -526,7 +526,7 @@
                 "assets\\Audio\\Music\\RuleBreaker_Victory_02.wav",
                 "0",
                 "yes",
-                "VolumeBGM",
+                "100",
                 "1"
               ]
             }

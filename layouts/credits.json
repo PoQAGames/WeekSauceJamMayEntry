@@ -649,7 +649,7 @@
             "assets\\Audio\\Music\\RuleBreaker_HiddenEnd.wav",
             "0",
             "",
-            "VolumeBGM",
+            "100",
             "1"
           ]
         }
