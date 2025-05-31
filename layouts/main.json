@@ -533,6 +533,16 @@
             "\"upgrade\"",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Level",
+            "=",
+            "0"
+          ]
         }
       ]
     },
