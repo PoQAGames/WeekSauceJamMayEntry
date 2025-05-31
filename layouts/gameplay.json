@@ -219,8 +219,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "c3fd7a63-9db0-42ed-8033-c91e61034b45",
       "width": 528,
-      "x": 72,
-      "y": -179,
+      "x": 3,
+      "y": -181,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -253,8 +253,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "ac4c9805-99a7-4a45-954a-9c5c4f83192d",
       "width": 528,
-      "x": 74,
-      "y": -114,
+      "x": -3,
+      "y": -91,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -263,14 +263,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
+      "depth": 1,
       "height": 16,
       "layer": "",
       "name": "AsteroidSpawner",
       "persistentUuid": "53d42301-cc1f-4942-ab99-2d34e716267f",
-      "width": 528,
-      "x": 71,
-      "y": -70,
+      "width": 584,
+      "x": -4,
+      "y": -296,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -429,6 +429,11 @@
           "name": "Damage",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "HP",
+          "type": "number",
+          "value": 3
         }
       ],
       "effects": [],
@@ -1823,11 +1828,10 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Rock",
-                    "Animation",
+                    "NumberTemp",
                     "=",
                     "RandomInRange(0, 1)"
                   ]
@@ -1836,8 +1840,81 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "NumberTemp",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "Rock",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Rock",
+                        "HP",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "NumberTemp",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "Rock",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Rock",
+                        "HP",
+                        "=",
+                        "9"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -2359,7 +2436,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2384,6 +2460,17 @@
                 "PlayerBullet",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Rock",
+                "HP",
+                "=",
+                "max(0, Rock.HP - UpgradeLevels.DamageRock)"
+              ]
             }
           ],
           "events": [
@@ -2392,12 +2479,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "UpgradeLevels.DamageRock",
-                    ">=",
-                    "1"
+                    "Rock",
+                    "HP",
+                    "<=",
+                    "0"
                   ]
                 }
               ],
