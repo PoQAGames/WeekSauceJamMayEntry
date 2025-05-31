@@ -1160,6 +1160,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1278,6 +1279,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1375,6 +1377,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1501,6 +1504,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1983,6 +1987,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2810,6 +2815,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3416,6 +3422,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3609,6 +3616,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3766,7 +3774,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Game Over",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3852,6 +3859,18 @@
                 "",
                 "\"main\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_PLayerDeath.wav",
+                "",
+                "VolumeSFX",
+                "1"
               ]
             }
           ]

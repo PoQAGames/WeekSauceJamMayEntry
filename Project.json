@@ -808,6 +808,16 @@
         "name": "assets/On Screen Controls Button_Pressed.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_PLayerDeath.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_PLayerDeath.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
