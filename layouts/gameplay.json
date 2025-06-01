@@ -1160,7 +1160,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1254,6 +1253,33 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "RulesBad.EnemyCanShootRule",
+                    "<",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "RulesBad.EnemyCanShootRule",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
@@ -1279,7 +1305,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1504,7 +1529,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
