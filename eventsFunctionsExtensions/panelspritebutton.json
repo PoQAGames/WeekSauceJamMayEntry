@@ -2163,7 +2163,7 @@
                   },
                   "parameters": [
                     "True",
-                    "\"main\"",
+                    "\"mainmenu\"",
                     ""
                   ]
                 }
