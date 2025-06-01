@@ -22,7 +22,13 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "NumberTemp",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -528,18 +534,109 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "PlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "assets\\Audio\\Music\\RuleBreaker_MainTitle_Suite_02.wav",
-            "0",
-            "yes",
-            "100",
-            "1"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GroupExists"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"VolumeSFX\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "VolumeBGM",
+                "=",
+                "NumberTemp"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"VolumeSFX\"",
+                "",
+                "NumberTemp"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "VolumeSFX",
+                "=",
+                "NumberTemp"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GroupExists"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"VolumeBGM\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"VolumeBGM\"",
+                "",
+                "NumberTemp"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "VolumeBGM",
+                "=",
+                "NumberTemp"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\Music\\RuleBreaker_MainTitle_Suite_02.wav",
+                "0",
+                "yes",
+                "VolumeBGM",
+                "1"
+              ]
+            }
           ]
         }
       ]
@@ -575,7 +672,7 @@
           "parameters": [
             "",
             "assets\\Audio\\SFX\\RuleBreaker_ClickPlay_Big.wav",
-            "",
+            "no",
             "VolumeSFX",
             "1"
           ]
