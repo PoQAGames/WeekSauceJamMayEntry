@@ -564,7 +564,7 @@
           },
           "parameters": [
             "",
-            "\"main\"",
+            "\"mainmenu\"",
             ""
           ]
         },
@@ -574,9 +574,9 @@
           },
           "parameters": [
             "",
-            "assets\\Audio\\SFX\\RuleBreaker_SFX_MenuClick_01.wav",
+            "assets\\Audio\\SFX\\RuleBreaker_ClickPlay_Big.wav",
             "",
-            "100",
+            "VolumeSFX",
             "1"
           ]
         }

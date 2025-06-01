@@ -808,6 +808,82 @@
         "name": "assets/On Screen Controls Button_Pressed.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_PLayerDeath.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_PLayerDeath.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_ClickPlay_Big.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_ClickPlay_Big.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_TripleShot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_TripleShot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Audio/SFX/RuleBreaker_SFX_6Shot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\RuleBreaker_SFX_6Shot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -1471,7 +1547,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/main"
+      "referenceTo": "/layouts/mainmenu"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1523,12 +1599,11 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/arraytools"
-    }
-  ],
-  "externalLayouts": [
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalLayouts/upgrade-menu-row"
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
     }
-  ]
+  ],
+  "externalLayouts": []
 }

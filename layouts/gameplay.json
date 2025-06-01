@@ -1160,6 +1160,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1278,6 +1279,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1375,6 +1377,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1501,6 +1504,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1983,6 +1987,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2925,7 +2930,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Chroma Spread",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2944,7 +2948,20 @@
                       ]
                     }
                   ],
-                  "actions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\RuleBreaker_SFX_TripleShot.wav",
+                        "",
+                        "VolumeSFX",
+                        "1"
+                      ]
+                    }
+                  ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -3304,7 +3321,20 @@
                       ]
                     }
                   ],
-                  "actions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\RuleBreaker_SFX_6Shot.wav",
+                        "",
+                        "VolumeSFX",
+                        "1"
+                      ]
+                    }
+                  ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -3850,8 +3880,20 @@
               },
               "parameters": [
                 "",
-                "\"main\"",
+                "\"mainmenu\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Audio\\SFX\\RuleBreaker_PLayerDeath.wav",
+                "",
+                "VolumeSFX",
+                "1"
               ]
             }
           ]

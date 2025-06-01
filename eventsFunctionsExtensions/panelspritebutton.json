@@ -2159,12 +2159,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "SetReturnBoolean"
                   },
                   "parameters": [
-                    "True",
-                    "\"main\"",
-                    ""
+                    "True"
                   ]
                 }
               ]
