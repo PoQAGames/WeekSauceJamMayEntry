@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4194339782759092,
+    "zoomFactor": 0.5290357402156879,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -37,6 +37,11 @@
       "name": "NumberTemp",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "BGScrollSpeed",
+      "type": "number",
+      "value": 1
     }
   ],
   "instances": [
@@ -213,23 +218,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 16,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemySpawner",
-      "persistentUuid": "c3fd7a63-9db0-42ed-8033-c91e61034b45",
-      "width": 528,
-      "x": 3,
-      "y": -181,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 251,
       "keepRatio": true,
       "layer": "",
@@ -246,15 +234,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 16,
+      "depth": 1.1818181818181819,
+      "height": 18.90909090909091,
       "keepRatio": true,
       "layer": "",
       "name": "EnemySpawner",
       "persistentUuid": "ac4c9805-99a7-4a45-954a-9c5c4f83192d",
-      "width": 528,
-      "x": -3,
-      "y": -91,
+      "width": 624,
+      "x": -107,
+      "y": -83,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -268,10 +256,44 @@
       "layer": "",
       "name": "AsteroidSpawner",
       "persistentUuid": "53d42301-cc1f-4942-ab99-2d34e716267f",
-      "width": 584,
-      "x": -4,
+      "width": 718,
+      "x": -107,
       "y": -296,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.0469798657718121,
+      "height": 16.751677852348994,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "f2917f17-74f2-49c0-be68-0b5df9f93bd6",
+      "width": 624,
+      "x": -107,
+      "y": -143,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnemySpawner",
+      "persistentUuid": "5fd62f69-a9cc-4120-917d-dfdd64e27260",
+      "width": 624,
+      "x": -107,
+      "y": -183,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1160,11 +1182,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Load Variables At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1305,6 +1329,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1343,7 +1368,7 @@
                   },
                   "parameters": [
                     "PlayerShip",
-                    "1 + UpgradeLevels.Health * 1",
+                    "5 + UpgradeLevels.Health * 5",
                     "True",
                     ""
                   ]
@@ -1529,6 +1554,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy & Asteroid Spawning",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1590,15 +1616,19 @@
                 ">=",
                 "EnemySpawner.NextEnemySpawnTime"
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "EnemySpawner",
+                "\"SpawnEnemy\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1650,7 +1680,7 @@
                 },
                 {
                   "type": {
-                    "value": "IkaRuleGa::EnemyShip::SetCollisionDamage"
+                    "value": "IkaRuleGa::EnemyShip::SetBulletDamage"
                   },
                   "parameters": [
                     "EnemyShip",
@@ -1693,15 +1723,6 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
-                {
-                  "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "EnemySpawner",
-                    "\"SpawnEnemy\""
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetNumberVariable"
@@ -1785,12 +1806,6 @@
                 ">=",
                 "AsteroidSpawner.NextEnemySpawnTime"
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [],
@@ -1972,7 +1987,7 @@
                 "",
                 "\"LevelLength\"",
                 ">=",
-                "40"
+                "30"
               ]
             },
             {
@@ -2839,6 +2854,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3602,7 +3618,7 @@
               "parameters": [
                 "BG_Galaxy1",
                 "-",
-                "1"
+                "BGScrollSpeed * 1"
               ]
             },
             {
@@ -3612,7 +3628,7 @@
               "parameters": [
                 "BG_Glaxaxy1_Stars",
                 "-",
-                "2"
+                "BGScrollSpeed * 2"
               ]
             }
           ]
@@ -3663,6 +3679,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level Win",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3788,8 +3805,27 @@
                 "value": "Delete"
               },
               "parameters": [
+                "Rock",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
                 "PlayerBullet",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "BGScrollSpeed",
+                "=",
+                "5"
               ]
             },
             {

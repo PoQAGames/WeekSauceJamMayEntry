@@ -619,7 +619,7 @@
         {
           "name": "Upgrade",
           "type": "string",
-          "value": "Speed"
+          "value": "TwinCannons"
         }
       ]
     },
@@ -641,7 +641,7 @@
         {
           "name": "Upgrade",
           "type": "string",
-          "value": "Speed"
+          "value": "TwinCannons"
         }
       ]
     },
@@ -663,7 +663,7 @@
         {
           "name": "Upgrade",
           "type": "string",
-          "value": "Speed"
+          "value": "TwinCannons"
         }
       ]
     },
@@ -678,95 +678,6 @@
       "width": 0,
       "x": 617,
       "y": 804,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "Speed"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1.044776119402985,
-      "height": 70,
-      "keepRatio": true,
-      "layer": "",
-      "name": "UpgradeIcon",
-      "persistentUuid": "4eaee82f-dae2-42d6-9b48-11147969bbac",
-      "width": 70,
-      "x": 27,
-      "y": 873,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "TwinCannons"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "UpgradeName",
-      "persistentUuid": "08cc09b6-3495-435a-b1ab-da5be726e78b",
-      "width": 0,
-      "x": 235,
-      "y": 899,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "TwinCannons"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "UpgradeLevel",
-      "persistentUuid": "b8e46e41-e994-4a00-92b9-8b9b29ad2d03",
-      "width": 0,
-      "x": 132,
-      "y": 899,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "TwinCannons"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "UpgradePrice",
-      "persistentUuid": "a26e2f82-3453-4ad1-8cac-bfdd0da478dc",
-      "width": 0,
-      "x": 619,
-      "y": 899,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -928,29 +839,6 @@
       "width": 70,
       "x": 535,
       "y": 787,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Upgrade",
-          "type": "string",
-          "value": "Speed"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 70.00000000000001,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BuyButton",
-      "persistentUuid": "55ee8711-5193-480e-b235-c88ca04e0fa0",
-      "width": 70,
-      "x": 537,
-      "y": 879,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
