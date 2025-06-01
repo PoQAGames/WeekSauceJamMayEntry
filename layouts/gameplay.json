@@ -1439,7 +1439,7 @@
                 "",
                 "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
                 "",
-                "VolumeSFX",
+                "100",
                 "1"
               ]
             }
@@ -1477,7 +1477,7 @@
                 "",
                 "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
                 "",
-                "VolumeSFX",
+                "100",
                 "1"
               ]
             }
@@ -1515,7 +1515,7 @@
                 "",
                 "assets\\Audio\\SFX\\RuleBreaker_SFX_ColorSwap_01.wav",
                 "",
-                "VolumeSFX",
+                "100",
                 "1"
               ]
             }
@@ -3507,7 +3507,7 @@
                     "",
                     "assets\\Audio\\SFX\\RuleBreaker_SFX_Shoot_02.wav",
                     "",
-                    "VolumeSFX",
+                    "50",
                     "1"
                   ]
                 }
@@ -3855,7 +3855,7 @@
                 "",
                 "assets\\Audio\\SFX\\RuleBreaker_SFX_Explode_01.wav",
                 "",
-                "VolumeSFX",
+                "100",
                 "1"
               ]
             },

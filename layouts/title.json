@@ -636,17 +636,6 @@
                 "VolumeBGM",
                 "1"
               ]
-            },
-            {
-              "type": {
-                "value": "ModVolumeSoundCanal"
-              },
-              "parameters": [
-                "",
-                "0",
-                "=",
-                "0"
-              ]
             }
           ]
         }
