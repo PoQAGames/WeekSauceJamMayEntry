@@ -205,7 +205,7 @@
         {
           "name": "Index",
           "type": "number",
-          "value": 1
+          "value": 0
         }
       ]
     }
