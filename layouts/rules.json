@@ -154,7 +154,7 @@
         {
           "name": "Rule",
           "type": "string",
-          "value": "EnemyCurrencyDropRule "
+          "value": "EnemyCurrencyDropRule"
         }
       ]
     },
