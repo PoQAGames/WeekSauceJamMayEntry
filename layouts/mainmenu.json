@@ -1054,6 +1054,32 @@
             "0"
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "RulesBad",
+          "valueIteratorVariableName": "child",
+          "keyIteratorVariableName": "childName",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RulesBad[VariableString(childName)]",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
