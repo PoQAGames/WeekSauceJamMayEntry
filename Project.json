@@ -1357,6 +1357,7 @@
   "objectsGroups": [],
   "variables": [
     {
+      "folded": true,
       "name": "ColorCodes",
       "type": "structure",
       "children": [
