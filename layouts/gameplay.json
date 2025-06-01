@@ -1329,7 +1329,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configure PlayerShip At Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2026,7 +2025,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Collisions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2146,7 +2144,7 @@
               "parameters": [
                 "NumberTemp",
                 "=",
-                "5 + 5* UpgradeLevels.PlayerDamage"
+                "10 + 5* UpgradeLevels.PlayerDamage"
               ]
             }
           ],
@@ -2304,7 +2302,7 @@
                   "parameters": [
                     "Currency",
                     "+",
-                    "1 + 1 * RulesBad.EnemyCurrencyDropRule"
+                    "4 + 1 * RulesBad.EnemyCurrencyDropRule"
                   ]
                 },
                 {
@@ -2854,7 +2852,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Shooting",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
